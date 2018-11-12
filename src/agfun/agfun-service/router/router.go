@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Init() *gin.Engine{
+func Init() *gin.Engine {
 	router := gin.Default()
 	router.GET("/", controller.Hello)
 	return router
