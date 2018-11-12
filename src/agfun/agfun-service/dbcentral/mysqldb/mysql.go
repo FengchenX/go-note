@@ -1,0 +1,5 @@
+package mysqldb
+
+func init() {
+
+}
