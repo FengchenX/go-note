@@ -29,3 +29,18 @@ var sysdb *sql.DB
 func GetSysDB() *sql.DB {
 	return sysdb
 }
+
+var authdb *sql.DB
+func GetAuthDB() *sql.DB{
+	return authdb
+}
+
+func InitAuthDB() *sql.DB{
+	db, err := sql.Open("mysqldb",
+		"feng:feng@tcp(localhost:3306)/auth?charset=utf8&parseTime=true&loc=Local")
+	if err != nil {
+		log.Fatal(err)
+	}
+	sysdb = db
+	return sysdb
+}

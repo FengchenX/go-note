@@ -5,10 +5,10 @@ import (
 	"database/sql"
 )
 
-func SysDB() *sql.DB {
-	return sys.GetSysDB()
+func AuthDB() *sql.DB {
+	return sys.GetAuthDB()
 }
 
 func TestDB() {
-	SysDB().QueryRow("")
+	AuthDB().QueryRow("")
 }

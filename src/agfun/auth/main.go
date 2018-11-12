@@ -3,16 +3,17 @@ package main
 import (
 	"agfun/agfun-service/dbcentral/mysqldb"
 	"agfun/agfun-service/router"
-	"agfun/test/controller"
+	"agfun/auth/controller"
 	"log"
 )
 
 func main() {
-	sysdb := mysqldb.InitSysDB()
-	defer sysdb.Close()
+	authdb := mysqldb.InitAuthDB()
+	defer authdb.Close()
 
 	r := router.Init()
-	group := r.Group("/test")
+
+	group := r.Group("/auth")
 	group.GET("/", controller.Test)
 
 	log.Fatal(r.Run(":8080"))

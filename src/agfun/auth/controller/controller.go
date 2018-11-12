@@ -6,5 +6,5 @@ import (
 )
 
 func Test(c *gin.Context) {
-	c.JSON(http.StatusOK, "test")
+	c.JSON(http.StatusOK, "auth")
 }
