@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/dbcentral/mysqldb/sysdb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/controller/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="572">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#17#79#0" expanded="true" />
               </folding>
@@ -99,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/test/dbcentral/mysqldb/sysdb.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#17#89#0" expanded="true" />
               </folding>
@@ -136,7 +129,6 @@
     <option name="urls">
       <list>
         <option value="file://$PROJECT_DIR$/../.." />
-        <option value="file://$PROJECT_DIR$/../../../go" />
       </list>
     </option>
   </component>
@@ -160,7 +152,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="482" />
     <option name="width" value="1424" />
     <option name="height" value="1047" />
@@ -243,8 +235,7 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,7 +338,7 @@
     <entry file="file://$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#17#79#0" expanded="true" />
           </folding>
@@ -357,7 +348,7 @@
     <entry file="file://$PROJECT_DIR$/test/dbcentral/mysqldb/sysdb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#17#89#0" expanded="true" />
           </folding>
