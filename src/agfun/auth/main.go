@@ -2,6 +2,7 @@ package main
 
 import (
 	"agfun/agfun-service/dbcentral/mysqldb"
+	auth "agfun/auth/dbcentral/mysqldb"
 	"agfun/auth/router"
 	"log"
 )
@@ -10,7 +11,9 @@ func main() {
 	authdb := mysqldb.InitAuthDB()
 	defer authdb.Close()
 
-	r:=router.Init()
+	auth.CreateTable()
+
+	r := router.Init()
 
 	log.Fatal(r.Run(":8080"))
 }

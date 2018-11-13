@@ -1,23 +1,23 @@
 package mysqldb
 
 import (
-	"database/sql"
-	_ "github.com/go-sql-driver/mysql"
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
 )
 
 func Init() {
-	db, err := sql.Open("mysql",
-		"feng:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")
+	db, err := gorm.Open("mysql",
+		"root:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		log.Fatal(err)
 	}
 	sysdb = db
 }
 
-func InitSysDB() *sql.DB {
-	db, err := sql.Open("mysql",
-		"feng:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")
+func InitSysDB() *gorm.DB {
+	db, err := gorm.Open("mysql",
+		"root:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -25,22 +25,24 @@ func InitSysDB() *sql.DB {
 	return sysdb
 }
 
-var sysdb *sql.DB
-func GetSysDB() *sql.DB {
+var sysdb *gorm.DB
+
+func GetSysDB() *gorm.DB {
 	return sysdb
 }
 
-var authdb *sql.DB
-func GetAuthDB() *sql.DB{
+var authdb *gorm.DB
+
+func GetAuthDB() *gorm.DB {
 	return authdb
 }
 
-func InitAuthDB() *sql.DB{
-	db, err := sql.Open("mysql",
-		"feng:feng@tcp(localhost:3306)/auth?charset=utf8&parseTime=true&loc=Local")
+func InitAuthDB() *gorm.DB {
+	db, err := gorm.Open("mysql",
+		"root:feng@tcp(localhost:3306)/auth?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		log.Fatal(err)
 	}
-	sysdb = db
-	return sysdb
+	authdb = db
+	return authdb
 }

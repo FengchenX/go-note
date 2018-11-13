@@ -1,12 +1,13 @@
 package entity
 
-import "time"
+import (
+	"github.com/jinzhu/gorm"
+)
 
 type User struct {
-	Id uint
-	UserName string
-	Pwd string
-	NickName string
-	CreateAt time.Time
+	gorm.Model
+	UserName    string `json:"user_name"`
+	Pwd         string `json:"pwd"`
+	NickName    string
 	AccessToken string
 }
