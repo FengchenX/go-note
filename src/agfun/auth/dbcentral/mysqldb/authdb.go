@@ -1,12 +1,12 @@
 package mysqldb
 
 import (
-	sys "agfun/agfun-service/dbcentral/mysqldb"
+	auth "agfun/agfun-service/dbcentral/mysqldb"
 	"database/sql"
 )
 
 func AuthDB() *sql.DB {
-	return sys.GetAuthDB()
+	return auth.GetAuthDB()
 }
 
 func TestDB() {

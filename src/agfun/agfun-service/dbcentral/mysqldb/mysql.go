@@ -7,7 +7,7 @@ import (
 )
 
 func Init() {
-	db, err := sql.Open("mysqldb",
+	db, err := sql.Open("mysql",
 		"feng:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		log.Fatal(err)
@@ -16,7 +16,7 @@ func Init() {
 }
 
 func InitSysDB() *sql.DB {
-	db, err := sql.Open("mysqldb",
+	db, err := sql.Open("mysql",
 		"feng:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		log.Fatal(err)
@@ -36,7 +36,7 @@ func GetAuthDB() *sql.DB{
 }
 
 func InitAuthDB() *sql.DB{
-	db, err := sql.Open("mysqldb",
+	db, err := sql.Open("mysql",
 		"feng:feng@tcp(localhost:3306)/auth?charset=utf8&parseTime=true&loc=Local")
 	if err != nil {
 		log.Fatal(err)

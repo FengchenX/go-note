@@ -5,7 +5,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Init() {
+func Init() *gin.Engine{
 	rut=router.Init()
+	initUser()
+	return rut
 }
 var rut *gin.Engine
