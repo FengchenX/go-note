@@ -10,7 +10,6 @@ import (
 func main() {
 	authdb := mysqldb.InitAuthDB()
 	defer authdb.Close()
-	authdb.LogMode(true)
 
 	auth.CreateTable()
 

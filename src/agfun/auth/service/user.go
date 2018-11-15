@@ -36,7 +36,7 @@ func Login(req entity.User) (*entity.User, error) {
 	if e = mysqldb.UpdateUser(users[0]); e != nil {
 		return nil, e
 	}
-	//update redis
+	//update etcd
 
 	return users[0], nil
 }

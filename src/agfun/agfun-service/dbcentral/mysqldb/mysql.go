@@ -44,5 +44,6 @@ func InitAuthDB() *gorm.DB {
 		log.Fatal(err)
 	}
 	authdb = db
+	authdb.LogMode(true)
 	return authdb
 }
