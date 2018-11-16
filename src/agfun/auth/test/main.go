@@ -1,17 +1,20 @@
 package main
 
-import (
-	"github.com/sirupsen/logrus"
-)
+import "fmt"
 
 func main() {
-	// force colors on for TextFormatter
-	formatter := &logrus.TextFormatter{
-		ForceColors: true,
+	var a A
+	if a.B == nil || a.B.Name != a.Name {
+		fmt.Println("return")
 	}
-	logrus.SetFormatter(formatter)
-	// then wrap the log output with it
-	//logrus.SetOutput(ansicolor.NewAnsiColorWriter(os.Stdout))
-	logrus.Println("hello")
-	logrus.WithFields(logrus.Fields{"Animal": "bird", "Size": 10}).Infoln("todo")
+}
+
+type A struct {
+	B *B
+	Name string
+}
+
+type B struct {
+	Name string
+	Age int
 }

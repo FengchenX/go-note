@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agfun-service/dbcentral/etcddb/etcd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agfun-service/log/logger.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agfun-service/log/logger_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agfun-service/util/path.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/agfun-service/dbcentral/mysqldb.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/agfun-service/dbcentral/mysqldb.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/agfun-service/util.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/agfun-service/util.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/controller.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/controller.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/dbcentral/mysqldb.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/dbcentral/mysqldb.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/entity.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/entity.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/router.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/router.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/service.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../pkg/windows_amd64/agfun/auth/service.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/protocol/protocol.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/dto/dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/protocol/protocol.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/dto/user.dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/service/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/test/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/test/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,22 +15,23 @@
     <session id="-803090486">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="12" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="go" value="4524" />
+          <entry key="go" value="4658" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="4524" />
+          <entry key="Go" value="4658" />
           <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
@@ -56,13 +41,13 @@
           <entry key="201811151653" value="2" />
           <entry key="201811151656" value="1" />
           <entry key="201811151657" value="1" />
-          <entry key="go" value="73" />
+          <entry key="go" value="74" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="73" />
+          <entry key="Go" value="74" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -76,6 +61,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth/entity/user.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,20 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agfun-service/log/logger.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1057">
-              <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+            <state relative-caret-position="1716">
+              <caret line="91" column="61" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auth/test/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="132">
+              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -115,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../go/src/github.com/sirupsen/logrus/text_formatter.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528">
+            <state relative-caret-position="506">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
@@ -124,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agfun-service/dbcentral/etcddb/etcd.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -190,7 +184,6 @@
         <option value="$PROJECT_DIR$/auth/main.go" />
         <option value="$PROJECT_DIR$/agfun-service/dbcentral/mysqldb/mysql.go" />
         <option value="$PROJECT_DIR$/auth/service/user.go" />
-        <option value="$PROJECT_DIR$/auth/test/main.go" />
         <option value="$PROJECT_DIR$/agfun-service/util/path.go" />
         <option value="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" />
         <option value="$PROJECT_DIR$/agfun-service/dto/protocol.go" />
@@ -198,6 +191,7 @@
         <option value="$PROJECT_DIR$/agfun-service/dbcentral/etcddb/etcd.go" />
         <option value="$PROJECT_DIR$/agfun-service/log/logger_test.go" />
         <option value="$PROJECT_DIR$/agfun-service/log/logger.go" />
+        <option value="$PROJECT_DIR$/auth/test/main.go" />
       </list>
     </option>
   </component>
@@ -208,10 +202,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="7" />
-    <option name="y" value="27" />
+    <option name="x" value="-158" />
     <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -221,7 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,6 +265,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestInitLog in agfun/agfun-service/log">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="agfun" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -353,8 +346,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestInitLog in agfun/agfun-service/log" />
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.TestInitLog in agfun/agfun-service/log" />
       </list>
     </recent_temporary>
   </component>
@@ -391,15 +384,15 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-158" y="0" width="1400" height="1047" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3160981" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23283581" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3257329" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3257329" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -622,13 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -644,45 +630,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151657" />
+    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151652" />
+    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151653" />
+    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151656" />
+    <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/auth/entity/user.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/dbcentral/etcddb/etcd.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go/src/github.com/sirupsen/logrus/text_formatter.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/test/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151657">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151652">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151653">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/log/myTest_DESKTOP-L6E5UOH_TITAN.log.201811151656">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/agfun-service/log/logger_test.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,8 +657,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agfun-service/log/logger.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1057">
-          <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+        <state relative-caret-position="1716">
+          <caret line="91" column="61" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go/src/github.com/sirupsen/logrus/text_formatter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agfun-service/dbcentral/etcddb/etcd.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/test/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
         </state>
       </provider>
     </entry>
