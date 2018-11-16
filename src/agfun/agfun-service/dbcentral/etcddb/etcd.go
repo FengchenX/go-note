@@ -1,53 +1,71 @@
 package etcddb
 
 import (
+	"context"
+	"encoding/json"
 	"fmt"
 	"github.com/coreos/etcd/clientv3"
 	"time"
 )
 
-var cli *clientv3.Client
+type Client struct {
+	*clientv3.Client
+}
 
-func Init() *clientv3.Client {
+func NewCli(cli *clientv3.Client) *Client {
+	return &Client{
+		Client: cli,
+	}
+}
+
+func (cli Client) Put(key string, value interface{}, opts ...clientv3.OpOption) error {
+	buf, e := json.Marshal(&value)
+	if e != nil {
+		return e
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	_, e = cli.Client.Put(ctx, key, string(buf), opts...)
+	cancel()
+	if e != nil {
+		return e
+	}
+	return nil
+}
+
+func (cli Client) Get(key string, value interface{}, opts ...clientv3.OpOption) error {
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	resp, e := cli.Client.Get(ctx, key, opts...)
+	cancel()
+	if e != nil {
+		return e
+	}
+	if len(resp.Kvs) == 0 {
+		return fmt.Errorf("no this key")
+	}
+	for _, ev := range resp.Kvs {
+		e := json.Unmarshal(ev.Value, value)
+		return e
+
+	}
+
+	return nil
+}
+
+func GetCli() *Client {
+	return cli
+}
+
+var cli *Client
+
+func Init() {
 	client, e := clientv3.New(clientv3.Config{
 		Endpoints:   []string{"localhost:2379", "localhost:22379", "localhost:32379"},
 		DialTimeout: 5 * time.Second,
 	})
 	if e != nil {
 		fmt.Println("connect failed, err:", e)
-		return nil
+		return
 	}
 	fmt.Println("connect succ")
-
-	cli = client
-	return cli
+	cli = NewCli(client)
 }
-
-//cli, err := clientv3.New(clientv3.Config{
-//Endpoints:   []string{"localhost:2379", "localhost:22379", "localhost:32379"},
-//DialTimeout: 5 * time.Second,
-//})
-//if err != nil {
-//fmt.Println("connect failed, err:", err)
-//return
-//}
-//
-//fmt.Println("connect succ")
-//defer cli.Close()
-//ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-//_, err = cli.Put(ctx, "/logagent/conf/", "sample_value")
-//cancel()
-//if err != nil {
-//fmt.Println("put failed, err:", err)
-//return
-//}
-//ctx, cancel = context.WithTimeout(context.Background(), time.Second)
-//resp, err := cli.Get(ctx, "/logagent/conf/")
-//cancel()
-//if err != nil {
-//fmt.Println("get failed, err:", err)
-//return
-//}
-//for _, ev := range resp.Kvs {
-//fmt.Printf("%s : %s\n", ev.Key, ev.Value)
-//}
