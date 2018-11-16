@@ -1,15 +1,11 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"net/http"
+	"agfun/file-svc/router"
 )
 
 func main() {
-	router := gin.Default()
-	router.Static("/assets", "./file-svc/assets")
-	router.StaticFS("/more_static", http.Dir("my_file_system"))
-	router.StaticFile("/favicon.ico", "./resources/favicon.ico")
+	router := router.Init()
 
 	// Listen and serve on 0.0.0.0:8080
 	router.Run(":8080")
