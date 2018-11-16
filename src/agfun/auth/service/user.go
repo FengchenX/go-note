@@ -1,7 +1,7 @@
 package service
 
 import (
-	"agfun/agfun-service/util"
+	"agfun/agfun-service/crypto"
 	"agfun/auth/dbcentral/mysqldb"
 	"agfun/auth/entity"
 	"fmt"
@@ -31,7 +31,7 @@ func Login(req entity.User) (*entity.User, error) {
 	if len(users) == 0 {
 		return nil, fmt.Errorf("user name or pwd is error")
 	}
-	accessToken := util.SHA1(uuid.Must(uuid.NewV4()).String())
+	accessToken := crypto.SHA1(uuid.Must(uuid.NewV4()).String())
 	users[0].AccessToken = accessToken
 	if e = mysqldb.UpdateUser(users[0]); e != nil {
 		return nil, e

@@ -10,11 +10,11 @@ func main() {
 }
 
 type A struct {
-	B *B
+	B    *B
 	Name string
 }
 
 type B struct {
 	Name string
-	Age int
+	Age  int
 }

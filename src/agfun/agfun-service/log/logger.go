@@ -89,7 +89,7 @@ func InitLog(name, logPath string, configs LogConfs, saveTime, rotationTime time
 			logrus.FatalLevel: writer,
 			logrus.PanicLevel: writer,
 		}, &logrus.TextFormatter{
-			TimestampFormat:           "2006-01-02 15:04:05",
+			TimestampFormat: "2006-01-02 15:04:05",
 		})
 		logrus.AddHook(lfHook)
 	}
