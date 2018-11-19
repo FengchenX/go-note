@@ -8,7 +8,10 @@ import (
 
 func main() {
 
-	service.Init()
+	defaultSvc := service.GetDefaultSvc()
+	defer defaultSvc.Dynamic.Close()
+	defer defaultSvc.SysDB.Close()
+	defer defaultSvc.AuthDB.Close()
 
 	r := router.Init()
 
