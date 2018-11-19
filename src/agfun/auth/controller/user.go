@@ -14,7 +14,7 @@ func CreateUser(c *gin.Context) {
 		util.Fail(c, nil, err)
 		return
 	}
-	user, err := service.CreateUser(*req)
+	user, err := service.GetDefaultSvc().CreateUser(*req)
 	if err != nil {
 		util.Fail(c, user, err)
 		return
@@ -36,7 +36,7 @@ func Login(c *gin.Context) {
 		util.Fail(c, nil, err)
 		return
 	}
-	user, err := service.Login(*req)
+	user, err := service.GetDefaultSvc().Login(*req)
 	if err != nil {
 		util.Fail(c, user, err)
 		return

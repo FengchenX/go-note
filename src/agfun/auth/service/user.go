@@ -8,8 +8,8 @@ import (
 	"github.com/satori/go.uuid"
 )
 
-func CreateUser(req entity.User) (*entity.User, error) {
-	users, e := mysqldb.GetUsers(req)
+func (s *AuthSvc) CreateUser(req entity.User) (*entity.User, error) {
+	users, _, e := mysqldb.GetUsers(req)
 	if e != nil {
 		return nil, e
 	}
@@ -23,8 +23,8 @@ func CreateUser(req entity.User) (*entity.User, error) {
 	return user, nil
 }
 
-func Login(req entity.User) (*entity.User, error) {
-	users, e := mysqldb.GetUsers(req)
+func (s *AuthSvc) Login(req entity.User) (*entity.User, error) {
+	users, _, e := mysqldb.GetUsers(req)
 	if e != nil {
 		return nil, e
 	}
@@ -37,6 +37,10 @@ func Login(req entity.User) (*entity.User, error) {
 		return nil, e
 	}
 	//update etcd
+	e = s.Dynamic.PutAccessToken(accessToken, users[0].ID)
+	if e != nil {
+		return nil, e
+	}
 
 	return users[0], nil
 }

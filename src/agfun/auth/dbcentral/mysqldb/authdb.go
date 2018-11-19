@@ -30,7 +30,7 @@ func CreateUser(user *entity.User) (*entity.User, error) {
 	return user, nil
 }
 
-func GetUsers(user entity.User) ([]*entity.User, error) {
+func GetUsers(user entity.User) ([]*entity.User, int, error) {
 	args := ""
 	var params []interface{}
 	if user.UserName != "" {
@@ -46,9 +46,14 @@ func GetUsers(user entity.User) ([]*entity.User, error) {
 	var users []*entity.User
 	db := authDB().Where(args, params...).Find(&users)
 	if db.Error != nil {
-		return nil, db.Error
+		return nil, -1, db.Error
 	}
-	return users, nil
+	var total int
+	db = authDB().Model(&entity.User{}).Where(args, params...).Count(&total)
+	if db.Error != nil {
+		return nil, -1, db.Error
+	}
+	return users, -1, nil
 }
 
 func UpdateUser(user *entity.User) error {
