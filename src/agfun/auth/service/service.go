@@ -16,18 +16,19 @@ func NewAuthSvc() *AuthSvc {
 
 var stdSvc *AuthSvc
 
-func Init() {
+func initStdSvc() {
 	if stdSvc != nil {
 		return
 	}
 	stdSvc = NewAuthSvc()
 
-	service.Init()
 	stdSvc.Svc = service.GetDefaultSvc()
 
-	etcd.Init()
 	stdSvc.Dynamic = etcd.GetDefaultCli()
 }
 func GetDefaultSvc() *AuthSvc {
+	if stdSvc == nil {
+		initStdSvc()
+	}
 	return stdSvc
 }

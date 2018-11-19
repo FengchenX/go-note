@@ -52,15 +52,15 @@ func (cli Client) Get(key string, value interface{}, opts ...clientv3.OpOption) 
 }
 
 func GetCli() *Client {
+	if cli == nil {
+		initCli()
+	}
 	return cli
 }
 
 var cli *Client
 
-func Init() {
-	if cli != nil {
-		return
-	}
+func initCli() {
 	client, e := clientv3.New(clientv3.Config{
 		Endpoints:   []string{"localhost:2379", "localhost:22379", "localhost:32379"},
 		DialTimeout: 5 * time.Second,

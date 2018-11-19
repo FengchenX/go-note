@@ -17,13 +17,15 @@ func NewClient(cli *etcddb.Client) *Client {
 
 var stdCli *Client
 
-func Init() {
+func initCli() {
 	if stdCli != nil {
 		return
 	}
-	etcddb.Init()
 	stdCli = NewClient(etcddb.GetCli())
 }
 func GetDefaultCli() *Client {
+	if stdCli == nil {
+		initCli()
+	}
 	return stdCli
 }

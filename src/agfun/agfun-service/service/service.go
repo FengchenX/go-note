@@ -22,15 +22,12 @@ func NewSvc(dynamic *etcddb.Client, sys, auth *gorm.DB) *Svc {
 
 var std *Svc
 
-func Init() {
-	if std != nil {
-		return
-	}
-	etcddb.Init()
-	mysqldb.Init()
+func initStd() {
 	std = NewSvc(etcddb.GetCli(), mysqldb.GetSysDB(), mysqldb.GetAuthDB())
 }
-
 func GetDefaultSvc() *Svc {
+	if std == nil {
+		initStd()
+	}
 	return std
 }
