@@ -1,29 +1,37 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
+	"io/ioutil"
+
+	"github.com/mholt/archiver"
+	"github.com/nwaples/rardecode"
 )
 
 func main() {
-	a := A{
-		Name: "xiaohua",
-		Age:  15,
-	}
-	buf, e := json.Marshal(&a)
-	if e != nil {
-		panic(e)
-	}
-	var b A
-	Get(buf, &b)
-	fmt.Println(b)
-}
+	r := archiver.NewRar()
 
-type A struct {
-	Name string
-	Age  int
-}
+	err := r.Walk("./test/我的测试.rar", func(f archiver.File) error {
+		rh, ok := f.Header.(*rardecode.FileHeader)
+		if !ok {
+			return fmt.Errorf("expected header")
+		}
+		fmt.Println("FileName:", rh.Name)
 
-func Get(buf []byte, value interface{}) {
-	json.Unmarshal(buf, value)
+		content, err := ioutil.ReadAll(f)
+		if err != nil {
+			return err
+		}
+		fmt.Println("FileContent:", string(content))
+
+		return nil
+	})
+	if err != nil {
+		panic(err)
+	}
+
+	err = r.Unarchive("./test/我的测试.rar", "./test/我的测试")
+	if err != nil {
+		panic(err)
+	}
 }
