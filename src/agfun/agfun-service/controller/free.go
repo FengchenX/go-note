@@ -22,8 +22,8 @@ func GetFreeVideos(c *gin.Context) {
 	util.Success(c, videos)
 }
 
-func decodeGetFreeVideos(c *gin.Context) (dto.GetFreeVideos, error) {
-	var req dto.GetFreeVideos
+func decodeGetFreeVideos(c *gin.Context) (dto.GetVideos, error) {
+	var req dto.GetVideos
 	filter, e := util.ParsePageFilter(c)
 	if e != nil {
 		return req, e

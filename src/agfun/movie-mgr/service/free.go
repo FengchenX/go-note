@@ -1,14 +1,14 @@
 package service
 
 import (
+	"agfun/agfun-service/dto"
 	"agfun/movie-mgr/dbcentral/mysqldb"
-	"agfun/movie-mgr/dto"
 	"agfun/movie-mgr/entity"
 )
 
-func (s *MgrSvc) AddFreeMovies(frees []*entity.FreeMovie) error {
+func (s *MovieSvc) AddFreeMovies(frees []*entity.FreeMovie) error {
 	for _, free := range frees {
-		_, i, e := mysqldb.GetFreeVideos(*free, nil)
+		_, i, e := mysqldb.GetFreeMovies(*free, nil)
 		if e != nil {
 			return e
 		}
@@ -22,12 +22,17 @@ func (s *MgrSvc) AddFreeMovies(frees []*entity.FreeMovie) error {
 	}
 	return nil
 }
-func (s *MgrSvc) GetFreeMovies(req dto.GetFreeMovies) ([]*entity.FreeMovie, error) {
-	var id int
-	e := s.Dynamic.Get(req.Token, &id)
+func (s *MovieSvc) GetFreeMovies(req dto.GetVideos) (*entity.GetMoviesResp, error) {
+	movies, i, e := mysqldb.GetFreeMovies(entity.FreeMovie{}, req.Filter)
 	if e != nil {
 		return nil, e
 	}
-	var videos []*entity.FreeMovie
-	return videos, nil
+	var resp entity.GetMoviesResp
+	resp.Total = i
+	resp.Frees = movies
+	return &resp, nil
+}
+
+func (s *MovieSvc) UpdateFreeMovie(free entity.FreeMovie) error {
+	panic("todo")
 }

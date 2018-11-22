@@ -22,7 +22,7 @@ func (s *Svc) AddFreeVideos(frees []*entity.FreeVideo) error {
 	}
 	return nil
 }
-func (s *Svc) GetFreeVideos(req dto.GetFreeVideos) ([]*entity.FreeVideo, error) {
+func (s *Svc) GetFreeVideos(req dto.GetVideos) ([]*entity.FreeVideo, error) {
 	var id int
 	e := s.Dynamic.Get(req.Token, &id)
 	if e != nil {

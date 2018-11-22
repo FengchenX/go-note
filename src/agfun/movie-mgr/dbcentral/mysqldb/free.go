@@ -10,7 +10,7 @@ func AddFreeMovies(free *entity.FreeMovie) error {
 	db := getSysDB().Create(free)
 	return db.Error
 }
-func GetFreeVideos(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.FreeMovie, int, error) {
+func GetFreeMovies(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.FreeMovie, int, error) {
 	sql := ""
 	var params []interface{}
 	comma := ""

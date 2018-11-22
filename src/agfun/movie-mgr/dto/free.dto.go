@@ -1,8 +1,6 @@
 package dto
 
-import "agfun/agfun-service/util"
-
-type GetFreeMovies struct {
-	Token  string
-	Filter *util.PageFilter
-}
+//type GetMovies struct {
+//	Token  string
+//	Filter *util.PageFilter
+//}

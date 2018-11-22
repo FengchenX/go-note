@@ -6,3 +6,8 @@ type FreeMovie struct {
 	Movie
 	entity.FreeVideo
 }
+
+type GetMoviesResp struct {
+	Total int
+	Frees []*FreeMovie
+}

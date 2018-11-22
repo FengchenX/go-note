@@ -2,24 +2,24 @@ package service
 
 import "agfun/agfun-service/service"
 
-type MgrSvc struct {
+type MovieSvc struct {
 	*service.Svc
 }
 
-func NewAuthSvc() *MgrSvc {
-	return &MgrSvc{}
+func NewMovieSvc() *MovieSvc {
+	return &MovieSvc{}
 }
 
-var stdSvc *MgrSvc
+var stdSvc *MovieSvc
 
 func initStdSvc() {
 	if stdSvc != nil {
 		return
 	}
-	stdSvc = NewAuthSvc()
+	stdSvc = NewMovieSvc()
 	stdSvc.Svc = service.GetDefaultSvc()
 }
-func GetDefaultSvc() *MgrSvc {
+func GetDefaultSvc() *MovieSvc {
 	if stdSvc == nil {
 		initStdSvc()
 	}
