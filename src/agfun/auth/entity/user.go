@@ -2,6 +2,7 @@ package entity
 
 import (
 	"github.com/jinzhu/gorm"
+	"time"
 )
 
 type User struct {
@@ -10,4 +11,10 @@ type User struct {
 	Pwd         string `json:"pwd"`
 	NickName    string `json:"nick_name"`
 	AccessToken string `json:"access_token"`
+}
+type VipUser struct {
+	gorm.Model
+	UserID uint
+	Level int
+	Expire time.Time
 }

@@ -54,3 +54,8 @@ func decodeLoginReq(c *gin.Context) (*entity.User, error) {
 	}
 	return user, nil
 }
+
+func AddVip(c *gin.Context) {
+
+}
+
