@@ -34,5 +34,18 @@ func (s *MovieSvc) GetFreeMovies(req dto.GetVideos) (*entity.GetMoviesResp, erro
 }
 
 func (s *MovieSvc) UpdateFreeMovie(free entity.FreeMovie) error {
-	panic("todo")
+	if free.ID > 0 {
+		e := mysqldb.UpdateFreeMovie(free, nil)
+		if e != nil {
+			return e
+		}
+		return nil
+	}
+	//todo
+	return nil
+}
+
+func (s *MovieSvc) DelFreeMovie(free entity.FreeMovie) error {
+	e := mysqldb.DelFreeMovie(free)
+	return e
 }

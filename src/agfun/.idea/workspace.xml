@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/agfun-service/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/controller/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/dto/free-video.dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/dto/free-video.dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/controller/free.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dto/free.dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/dto/free.dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/entity/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/router/free-svc.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/router/free-svc.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/service/service.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie-mgr/service/free.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state relative-caret-position="718">
+              <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="e#17#113#0" expanded="true" />
               </folding>
@@ -75,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="718">
+              <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -201,7 +193,6 @@
         <option value="$PROJECT_DIR$/agfun-service/router/free-video.router.go" />
         <option value="$PROJECT_DIR$/agfun-service/controller/free.go" />
         <option value="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/sys.go" />
-        <option value="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go" />
         <option value="$PROJECT_DIR$/movie-mgr/router/free-svc.go" />
         <option value="$PROJECT_DIR$/movie-mgr/entity/entity.go" />
         <option value="$PROJECT_DIR$/movie-mgr/service/service.go" />
@@ -210,10 +201,11 @@
         <option value="$PROJECT_DIR$/movie-mgr/controller/free.go" />
         <option value="$PROJECT_DIR$/movie-mgr/entity/free.go" />
         <option value="$PROJECT_DIR$/movie-mgr/service/free.go" />
+        <option value="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-383" />
     <option name="width" value="1518" />
     <option name="height" value="1047" />
@@ -432,11 +424,11 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.15511727" />
+      <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.15511727" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
@@ -813,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/movie-mgr/service/free.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        <state relative-caret-position="718">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding>
             <element signature="e#17#113#0" expanded="true" />
           </folding>
@@ -823,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="718">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
         </state>
       </provider>
     </entry>
