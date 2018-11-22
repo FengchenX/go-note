@@ -45,7 +45,7 @@ func (s *MovieSvc) UpdateFreeMovie(free entity.FreeMovie) error {
 	return nil
 }
 
-func (s *MovieSvc) DelFreeMovie(free entity.FreeMovie) error {
+func (s *MovieSvc) DelFreeMovie(free entity.FreeMovie, token string) error {
 	e := mysqldb.DelFreeMovie(free)
 	return e
 }

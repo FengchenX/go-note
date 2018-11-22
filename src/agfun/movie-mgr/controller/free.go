@@ -74,5 +74,21 @@ func decodeUpdateFreeMovie(c *gin.Context) (*entity.FreeMovie, error) {
 }
 
 func DelFreeMovie(c *gin.Context) {
-
+	movie, token, e := decodeDelFreeMovie(c)
+	if e != nil {
+		util.Fail(c, nil, e)
+		return
+	}
+	e = service.GetDefaultSvc().DelFreeMovie(*movie, token)
+	if e != nil {
+		util.Fail(c, nil, e)
+		return
+	}
+	util.Success(c, nil)
+}
+func decodeDelFreeMovie(c *gin.Context) (*entity.FreeMovie, string, error) {
+	token := c.GetHeader("auth-session")
+	var free entity.FreeMovie
+	e := c.BindJSON(&free)
+	return &free, token, e
 }
