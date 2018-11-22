@@ -2,11 +2,11 @@ package mysqldb
 
 import (
 	"agfun/agfun-service/dbcentral/mysqldb"
-	"agfun/service-mgr/entity"
+	"agfun/movie-mgr/entity"
 	"github.com/jinzhu/gorm"
 )
 
-func getSysDB() *gorm.DB{
+func getSysDB() *gorm.DB {
 	return mysqldb.GetSysDB()
 }
 

@@ -6,7 +6,7 @@ import (
 )
 
 func (cli *Client) PutAccessToken(accessToken string, id uint) error {
-	response, e := cli.Grant(context.TODO(), 10000)
+	response, e := cli.Grant(context.TODO(), 100000000)
 	if e != nil {
 		return e
 	}

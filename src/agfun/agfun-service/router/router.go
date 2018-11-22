@@ -8,5 +8,6 @@ import (
 func Init() *gin.Engine {
 	router := gin.Default()
 	router.GET("/", controller.Hello)
+	initFreeVideoRouter(router)
 	return router
 }

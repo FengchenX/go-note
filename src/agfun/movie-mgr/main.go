@@ -1,9 +1,9 @@
 package main
 
 import (
-	"agfun/service-mgr/dbcentral/mysqldb"
-	"agfun/service-mgr/router"
-	"agfun/service-mgr/service"
+	"agfun/movie-mgr/dbcentral/mysqldb"
+	"agfun/movie-mgr/router"
+	"agfun/movie-mgr/service"
 )
 
 func main() {

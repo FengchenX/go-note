@@ -21,8 +21,5 @@ func TestMD5(t *testing.T) {
 func TestSHA1(t *testing.T) {
 	str1 := "qwertyqqqwee"
 	sha1 := SHA1(str1)
-	t.Log(sha1, len(sha1))
-	str2 := "uiopssssssffsfsff"
-	s := SHA1(str2)
-	t.Log(s, len(s))
+	fmt.Println(sha1)
 }
