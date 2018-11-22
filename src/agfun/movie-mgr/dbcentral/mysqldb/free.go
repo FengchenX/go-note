@@ -6,11 +6,11 @@ import (
 	"fmt"
 )
 
-func AddFreeVideo(free *entity.FreeVideo) error {
+func AddFreeMovies(free *entity.FreeMovie) error {
 	db := getSysDB().Create(free)
 	return db.Error
 }
-func GetFreeVideos(free entity.FreeVideo, filter *util.PageFilter) ([]*entity.FreeVideo, int, error) {
+func GetFreeVideos(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.FreeMovie, int, error) {
 	sql := ""
 	var params []interface{}
 	comma := ""
@@ -24,9 +24,9 @@ func GetFreeVideos(free entity.FreeVideo, filter *util.PageFilter) ([]*entity.Fr
 		params = append(params, free.Name)
 		comma = "AND"
 	}
-	var frees []*entity.FreeVideo
+	var frees []*entity.FreeMovie
 	var total int
-	db := getSysDB().Model(&entity.FreeVideo{}).Where(sql, params...).Count(&total)
+	db := getSysDB().Model(&entity.FreeMovie{}).Where(sql, params...).Count(&total)
 	if db.Error != nil {
 		return nil, -1, db.Error
 	}

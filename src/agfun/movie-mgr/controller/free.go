@@ -8,13 +8,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func GetFreeVideos(c *gin.Context) {
-	req, e := decodeGetFreeVideos(c)
+func GetFreeMovies(c *gin.Context) {
+	req, e := decodeGetFreeMovies(c)
 	if e != nil {
 		util.Fail(c, nil, e)
 		return
 	}
-	videos, e := service.GetDefaultSvc().GetFreeVideos(req)
+	videos, e := service.GetDefaultSvc().GetFreeMovies(req)
 	if e != nil {
 		util.Fail(c, nil, e)
 		return
@@ -22,8 +22,8 @@ func GetFreeVideos(c *gin.Context) {
 	util.Success(c, videos)
 }
 
-func decodeGetFreeVideos(c *gin.Context) (dto.GetFreeVideos, error) {
-	var req dto.GetFreeVideos
+func decodeGetFreeMovies(c *gin.Context) (dto.GetFreeMovies, error) {
+	var req dto.GetFreeMovies
 	filter, e := util.ParsePageFilter(c)
 	if e != nil {
 		return req, e
@@ -34,13 +34,13 @@ func decodeGetFreeVideos(c *gin.Context) (dto.GetFreeVideos, error) {
 	return req, nil
 }
 
-func AddFreeVideos(c *gin.Context) {
-	videos, e := decodeCreateFreeVideos(c)
+func AddFreeMovies(c *gin.Context) {
+	videos, e := decodeCreateFreeMovies(c)
 	if e != nil {
 		util.Fail(c, nil, e)
 		return
 	}
-	e = service.GetDefaultSvc().AddFreeVideos(videos)
+	e = service.GetDefaultSvc().AddFreeMovies(videos)
 	if e != nil {
 		util.Fail(c, nil, e)
 		return
@@ -48,8 +48,8 @@ func AddFreeVideos(c *gin.Context) {
 	util.Success(c, videos)
 }
 
-func decodeCreateFreeVideos(c *gin.Context) ([]*entity.FreeVideo, error) {
-	var req []*entity.FreeVideo
+func decodeCreateFreeMovies(c *gin.Context) ([]*entity.FreeMovie, error) {
+	var req []*entity.FreeMovie
 	e := c.BindJSON(&req)
 	return req, e
 }

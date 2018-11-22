@@ -53,3 +53,11 @@ func decodeCreateFreeVideos(c *gin.Context) ([]*entity.FreeVideo, error) {
 	e := c.BindJSON(&req)
 	return req, e
 }
+
+func UpdateFreeVideo(c *gin.Context) {
+
+}
+
+func DelFreeVideo(c *gin.Context) {
+
+}

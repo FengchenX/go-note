@@ -11,7 +11,7 @@ func getSysDB() *gorm.DB {
 }
 
 func CreateTable() {
-	if db := getSysDB().AutoMigrate(&entity.FreeVideo{}); db.Error != nil {
+	if db := getSysDB().AutoMigrate(&entity.FreeMovie{}); db.Error != nil {
 		panic(db.Error)
 	}
 }
