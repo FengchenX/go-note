@@ -11,12 +11,12 @@ import (
 func GetFreeMovies(c *gin.Context) {
 	req, e := decodeGetFreeMovies(c)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	videos, e := service.GetDefaultSvc().GetFreeMovies(req)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	util.Success(c, videos)
@@ -37,12 +37,12 @@ func decodeGetFreeMovies(c *gin.Context) (dto.GetVideos, error) {
 func AddFreeMovies(c *gin.Context) {
 	videos, e := decodeCreateFreeMovies(c)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	e = service.GetDefaultSvc().AddFreeMovies(videos)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	util.Success(c, videos)
@@ -57,12 +57,12 @@ func decodeCreateFreeMovies(c *gin.Context) ([]*entity.FreeMovie, error) {
 func UpdateFreeMovie(c *gin.Context) {
 	movie, e := decodeUpdateFreeMovie(c)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	e = service.GetDefaultSvc().UpdateFreeMovie(*movie)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)
@@ -76,12 +76,12 @@ func decodeUpdateFreeMovie(c *gin.Context) (*entity.FreeMovie, error) {
 func DelFreeMovie(c *gin.Context) {
 	movie, token, e := decodeDelFreeMovie(c)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	e = service.GetDefaultSvc().DelFreeMovie(*movie, token)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)

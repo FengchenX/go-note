@@ -44,3 +44,15 @@ func (s *AuthSvc) Login(req entity.User) (*entity.User, error) {
 
 	return users[0], nil
 }
+func (s *AuthSvc) AddVip(vip *entity.VipUser, session string) error {
+	panic("todo")
+}
+func (s *AuthSvc) GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
+	panic("todo")
+}
+func (s *AuthSvc) UpdateVip(vip *entity.VipUser) error {
+	panic("todo")
+}
+func (s *AuthSvc) DelVip(id int) error {
+	panic("todo")
+}

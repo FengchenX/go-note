@@ -11,12 +11,12 @@ import (
 func GetFreeVideos(c *gin.Context) {
 	req, e := decodeGetFreeVideos(c)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	videos, e := service.GetDefaultSvc().GetFreeVideos(req)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	util.Success(c, videos)
@@ -37,12 +37,12 @@ func decodeGetFreeVideos(c *gin.Context) (dto.GetVideos, error) {
 func AddFreeVideos(c *gin.Context) {
 	videos, e := decodeCreateFreeVideos(c)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	e = service.GetDefaultSvc().AddFreeVideos(videos)
 	if e != nil {
-		util.Fail(c, nil, e)
+		util.Fail(c, e)
 		return
 	}
 	util.Success(c, videos)

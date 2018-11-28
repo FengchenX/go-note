@@ -9,6 +9,6 @@ func Success(c *gin.Context, resp interface{}) {
 	c.JSON(http.StatusOK, gin.H{"Code": 0, "Msg": "success", "Data": resp})
 }
 
-func Fail(c *gin.Context, resp interface{}, err error) {
-	c.JSON(http.StatusOK, gin.H{"Code": -1, "Msg": err.Error(), "Data": resp})
+func Fail(c *gin.Context, err error) {
+	c.JSON(http.StatusOK, gin.H{"Code": -1, "Msg": err.Error(), "Data": nil})
 }

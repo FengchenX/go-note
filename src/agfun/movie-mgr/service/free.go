@@ -49,5 +49,3 @@ func (s *MovieSvc) DelFreeMovie(free entity.FreeMovie, token string) error {
 	e := mysqldb.DelFreeMovie(free)
 	return e
 }
-
-
