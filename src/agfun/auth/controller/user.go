@@ -2,11 +2,13 @@ package controller
 
 import (
 	"agfun/agfun-service/util"
+	"agfun/auth/dto"
 	"agfun/auth/entity"
 	"agfun/auth/service"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"strconv"
+	"time"
 )
 
 func CreateUser(c *gin.Context) {
@@ -71,12 +73,16 @@ func AddVip(c *gin.Context) {
 }
 func decodeAddVipReq(c *gin.Context) (*entity.VipUser, string, error) {
 	session := c.GetHeader("auth-session")
-	var vip entity.VipUser
+	var vip dto.VipUser
 	e := c.BindJSON(&vip)
 	if e != nil {
 		return nil, session, e
 	}
-	return &vip, session, nil
+	vip.VipUser.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
+	if e != nil {
+		return nil, session, e
+	}
+	return &vip.VipUser, session, nil
 }
 
 func GetVips(c *gin.Context) {
@@ -85,6 +91,7 @@ func GetVips(c *gin.Context) {
 		util.Fail(c, e)
 		return
 	}
+	vipUser.Expire = time.Now()
 	users, e := service.GetDefaultSvc().GetVips(vipUser)
 	if e != nil {
 		util.Fail(c, e)
@@ -94,46 +101,79 @@ func GetVips(c *gin.Context) {
 }
 func decodeGetVipsReq(c *gin.Context) (entity.VipUser, error) {
 	var vip entity.VipUser
-	e := c.ShouldBindQuery(&vip)
-	if e != nil {
-		return vip, e
+	level, b := c.GetQuery("level")
+	if b {
+		i, e := strconv.Atoi(level)
+		if e != nil {
+			return vip, e
+		}
+		vip.Level = i
+	}
+	user_id, b := c.GetQuery("user_id")
+	if b {
+		i, e := strconv.Atoi(user_id)
+		if e != nil {
+			return vip, e
+		}
+		vip.UserID = uint(i)
+	}
+	id, b := c.GetQuery("id")
+	if b {
+		i, e := strconv.Atoi(id)
+		if e != nil {
+			return vip, e
+		}
+		vip.ID = uint(i)
 	}
 	return vip, nil
 }
 func UpdateVip(c *gin.Context) {
-	user, e := decodeUpdateVipReq(c)
+	user, session, e := decodeUpdateVipReq(c)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
-	e = service.GetDefaultSvc().UpdateVip(user)
+	e = service.GetDefaultSvc().UpdateVip(user, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)
 }
-func decodeUpdateVipReq(c *gin.Context) (*entity.VipUser, error) {
-	var vip entity.VipUser
+func decodeUpdateVipReq(c *gin.Context) (*entity.VipUser, string, error) {
+	var vip dto.VipUser
 	e := c.BindJSON(&vip)
 	if e != nil {
-		return nil, e
+		return nil, "", e
 	}
-	return &vip, nil
+	id := c.Param("id")
+	i, e := strconv.Atoi(id)
+	if e != nil {
+		return nil, "", e
+	}
+	vip.ID = uint(i)
+	vip.VipUser.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
+	if e != nil {
+		return nil, "", e
+	}
+	session := c.GetHeader("auth-session")
+	return &vip.VipUser, session, nil
 }
 func DelVip(c *gin.Context) {
-	id, e := decodeDelVipReq(c)
+	id, session, e := decodeDelVipReq(c)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
-	e = service.GetDefaultSvc().DelVip(id)
+	e = service.GetDefaultSvc().DelVip(id, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)
 }
-func decodeDelVipReq(c *gin.Context) (int, error) {
-	return strconv.Atoi(c.Param("id"))
+func decodeDelVipReq(c *gin.Context) (int, string, error) {
+	session := c.GetHeader("auth-session")
+	id, e := strconv.Atoi(c.Param("id"))
+	return id, session, e
 }

@@ -6,6 +6,7 @@ import (
 	"log"
 )
 
+//&parseTime=true&loc=Local
 func initSysDB() {
 	db, err := gorm.Open("mysql",
 		"root:feng@tcp(localhost:3306)/agfun?charset=utf8&parseTime=true&loc=Local")

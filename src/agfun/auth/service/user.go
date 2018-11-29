@@ -5,6 +5,7 @@ import (
 	"agfun/auth/dbcentral/mysqldb"
 	"agfun/auth/entity"
 	"fmt"
+	"github.com/jinzhu/gorm"
 	"github.com/satori/go.uuid"
 )
 
@@ -45,14 +46,45 @@ func (s *AuthSvc) Login(req entity.User) (*entity.User, error) {
 	return users[0], nil
 }
 func (s *AuthSvc) AddVip(vip *entity.VipUser, session string) error {
-	panic("todo")
+	var id int
+	e := s.Dynamic.Get(session, &id)
+	if e != nil {
+		return e
+	}
+	if vip.UserID == 0 {
+		vip.UserID = uint(id)
+	}
+	e = mysqldb.AddVip(vip)
+	if e != nil {
+		return e
+	}
+	return nil
 }
 func (s *AuthSvc) GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
-	panic("todo")
+	users, e := mysqldb.GetVips(vip)
+	if e != nil {
+		return nil, e
+	}
+	return users, nil
 }
-func (s *AuthSvc) UpdateVip(vip *entity.VipUser) error {
-	panic("todo")
+func (s *AuthSvc) UpdateVip(vip *entity.VipUser, session string) error {
+	if vip == nil {
+		return fmt.Errorf("vip is nil")
+	}
+	src := entity.VipUser{
+		Model: gorm.Model{
+			ID: vip.ID,
+		},
+	}
+	e := mysqldb.UpdateVip(vip, src)
+	if e != nil {
+		return e
+	}
+	return nil
 }
-func (s *AuthSvc) DelVip(id int) error {
-	panic("todo")
+func (s *AuthSvc) DelVip(id int, session string) error {
+	user := entity.VipUser{}
+	user.ID = uint(id)
+	e := mysqldb.DelVip(user)
+	return e
 }

@@ -15,7 +15,7 @@ type User struct {
 }
 type VipUser struct {
 	gorm.Model
-	UserID uint
-	Level  int
-	Expire time.Time
+	UserID uint      `json:"user_id"`
+	Level  int       `json:"level"`
+	Expire time.Time `json:"expire"`
 }
