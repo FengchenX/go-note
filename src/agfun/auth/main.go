@@ -15,6 +15,7 @@ func main() {
 	defer defaultSvc.AuthDB.Close()
 
 	mysqldb.CreateTable()
+
 	r := router.Init()
 
 	log.Fatal(r.Run(":8080"))

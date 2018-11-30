@@ -20,6 +20,9 @@ func CreateTable() {
 	if db := authDB().AutoMigrate(&entity.VipUser{}); db.Error != nil {
 		log.Fatal(db.Error)
 	}
+	if db := authDB().AutoMigrate(&entity.WXFriend{}); db.Error != nil {
+		log.Fatal(db.Error)
+	}
 }
 
 func CreateUser(user *entity.User) (*entity.User, error) {
