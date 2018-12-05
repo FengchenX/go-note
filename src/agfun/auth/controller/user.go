@@ -17,6 +17,7 @@ func CreateUser(c *gin.Context) {
 		util.Fail(c, err)
 		return
 	}
+	req.ID = util.NewUUID()
 	user, err := service.GetDefaultSvc().CreateUser(*req)
 	if err != nil {
 		util.Fail(c, err)
@@ -64,6 +65,7 @@ func AddVip(c *gin.Context) {
 		util.Fail(c, e)
 		return
 	}
+	vipUser.ID = util.NewUUID()
 	e = service.GetDefaultSvc().AddVip(vipUser, session)
 	if e != nil {
 		util.Fail(c, e)
@@ -119,11 +121,7 @@ func decodeGetVipsReq(c *gin.Context) (entity.VipUser, error) {
 	}
 	id, b := c.GetQuery("id")
 	if b {
-		i, e := strconv.Atoi(id)
-		if e != nil {
-			return vip, e
-		}
-		vip.ID = uint(i)
+		vip.ID = id
 	}
 	return vip, nil
 }
@@ -147,11 +145,7 @@ func decodeUpdateVipReq(c *gin.Context) (*entity.VipUser, string, error) {
 		return nil, "", e
 	}
 	id := c.Param("id")
-	i, e := strconv.Atoi(id)
-	if e != nil {
-		return nil, "", e
-	}
-	vip.ID = uint(i)
+	vip.ID = id
 	vip.VipUser.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
 	if e != nil {
 		return nil, "", e
@@ -160,20 +154,16 @@ func decodeUpdateVipReq(c *gin.Context) (*entity.VipUser, string, error) {
 	return &vip.VipUser, session, nil
 }
 func DelVip(c *gin.Context) {
-	id, session, e := decodeDelVipReq(c)
-	if e != nil {
-		util.Fail(c, e)
-		return
-	}
-	e = service.GetDefaultSvc().DelVip(id, session)
+	id, session := decodeDelVipReq(c)
+	e := service.GetDefaultSvc().DelVip(id, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)
 }
-func decodeDelVipReq(c *gin.Context) (int, string, error) {
-	session := c.GetHeader("auth-session")
-	id, e := strconv.Atoi(c.Param("id"))
-	return id, session, e
+func decodeDelVipReq(c *gin.Context) (id string, session string) {
+	session = c.GetHeader("auth-session")
+	id = c.Param("id")
+	return id, session
 }

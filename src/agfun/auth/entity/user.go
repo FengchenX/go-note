@@ -1,12 +1,11 @@
 package entity
 
 import (
-	"github.com/jinzhu/gorm"
 	"time"
 )
 
 type User struct {
-	gorm.Model
+	ID          string `json:"id"`
 	UserName    string `json:"user_name"`
 	Pwd         string `json:"pwd"`
 	NickName    string `json:"nick_name"`
@@ -15,18 +14,18 @@ type User struct {
 	RoleID      uint   `json:"role_id"`
 }
 type VipUser struct {
-	gorm.Model
+	ID     string    `json:"id"`
 	UserID uint      `json:"user_id"`
 	Level  int       `json:"level"`
 	Expire time.Time `json:"expire"`
 }
 type UserRole struct {
-	gorm.Model
+	ID    string `json:"id"`
 	Name  string `json:"name"`
 	Level int    `json:"level"`
 }
 type WXFriend struct {
-	gorm.Model
+	ID          string `json:"id"`
 	UserName    string `json:"user_name"`
 	NickName    string `json:"nick_name"`
 	HeadImgUrl  string `json:"head_img_url"`

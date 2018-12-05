@@ -2,6 +2,7 @@ package mysqldb
 
 import (
 	auth "agfun/agfun-service/dbcentral/mysqldb"
+	"agfun/agfun-service/util"
 	"agfun/auth/entity"
 	"fmt"
 	"github.com/jinzhu/gorm"
@@ -29,6 +30,7 @@ func CreateUser(user *entity.User) (*entity.User, error) {
 	if user == nil {
 		return nil, fmt.Errorf("user is nil")
 	}
+	user.ID = util.NewUUID()
 	db := authDB().Create(user)
 	if db.Error != nil {
 		return nil, db.Error
@@ -80,7 +82,7 @@ func GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
 	sql := ""
 	var param []interface{}
 	comma := ""
-	if vip.ID > 0 {
+	if len(vip.ID) > 0 {
 		sql = fmt.Sprintf("%s %s id = ?", sql, comma)
 		param = append(param, vip.ID)
 		comma = "AND"
@@ -123,7 +125,7 @@ func UpdateVip(vip *entity.VipUser, src entity.VipUser) error {
 	sql := ""
 	var params []interface{}
 	comma := ""
-	if src.ID > 0 {
+	if len(src.ID) > 0 {
 		sql = fmt.Sprintf("%s %s id = ?", sql, comma)
 		params = append(params, src.ID)
 		comma = "AND"
@@ -145,7 +147,7 @@ func DelVip(vip entity.VipUser) error {
 	sql := ""
 	var params []interface{}
 	comma := ""
-	if vip.ID > 0 {
+	if len(vip.ID) > 0 {
 		sql = fmt.Sprintf("%s %s id = ?", sql, comma)
 		params = append(params, vip.ID)
 		comma = "AND"

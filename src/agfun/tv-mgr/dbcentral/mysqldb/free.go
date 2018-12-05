@@ -6,11 +6,11 @@ import (
 	"fmt"
 )
 
-func AddFreeMovies(free *entity.FreeTV) error {
+func AddFreeTVs(free *entity.FreeTV) error {
 	db := getSysDB().Create(free)
 	return db.Error
 }
-func GetFreeMovies(free entity.FreeTV, filter *util.PageFilter) ([]*entity.FreeTV, int, error) {
+func GetFreeTVs(free entity.FreeTV, filter *util.PageFilter) ([]*entity.FreeTV, int, error) {
 	sql := ""
 	var params []interface{}
 	comma := ""
@@ -35,7 +35,7 @@ func GetFreeMovies(free entity.FreeTV, filter *util.PageFilter) ([]*entity.FreeT
 	return frees, total, db.Error
 }
 
-func UpdateFreeMovie(free entity.FreeTV, querys map[string]interface{}) error {
+func UpdateFreeTV(free entity.FreeTV, querys map[string]interface{}) error {
 	up := make(map[string]interface{}, 20)
 	if len(free.ID) > 0 {
 		up["uidl"] = free.ID
@@ -50,7 +50,7 @@ func UpdateFreeMovie(free entity.FreeTV, querys map[string]interface{}) error {
 		up["url"] = free.URL
 	}
 
-	if len(free.ID) > 0 {
+	if free.ID > 0 {
 		db := getSysDB().Model(&free).Updates(up)
 		return db.Error
 	} else {
@@ -67,7 +67,7 @@ func UpdateFreeMovie(free entity.FreeTV, querys map[string]interface{}) error {
 	}
 }
 
-func DelFreeMovie(free entity.FreeTV) error {
+func DelFreeTV(free entity.FreeTV) error {
 	if free.ID > 0 {
 		db := getSysDB().Delete(&free)
 		return db.Error

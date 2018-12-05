@@ -5,7 +5,6 @@ import (
 	"agfun/auth/dbcentral/mysqldb"
 	"agfun/auth/entity"
 	"fmt"
-	"github.com/jinzhu/gorm"
 	"github.com/satori/go.uuid"
 )
 
@@ -72,9 +71,7 @@ func (s *AuthSvc) UpdateVip(vip *entity.VipUser, session string) error {
 		return fmt.Errorf("vip is nil")
 	}
 	src := entity.VipUser{
-		Model: gorm.Model{
-			ID: vip.ID,
-		},
+		ID: vip.ID,
 	}
 	e := mysqldb.UpdateVip(vip, src)
 	if e != nil {
@@ -82,9 +79,9 @@ func (s *AuthSvc) UpdateVip(vip *entity.VipUser, session string) error {
 	}
 	return nil
 }
-func (s *AuthSvc) DelVip(id int, session string) error {
+func (s *AuthSvc) DelVip(id string, session string) error {
 	user := entity.VipUser{}
-	user.ID = uint(id)
+	user.ID = id
 	e := mysqldb.DelVip(user)
 	return e
 }
