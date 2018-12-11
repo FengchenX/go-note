@@ -28,9 +28,17 @@ type CreateUserParams struct {
 	*/
 	Body *entity.User `json:"body"`
 }
+// login
+// swagger:parameters login
+type LoginParams struct {
+	// HTTP Request Object
+	HTTPRequest *http.Request `json:"-"`
 
-// createUserResp
-// swagger:response createUserResp
-type CreateUserResp struct {
+	 // UserName
+	 // In: path
+	 UserName string `json:"user-name"`
 
+	 // Pwd
+	 // In: query
+	 Pwd string `json:"pwd"`
 }

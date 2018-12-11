@@ -14,10 +14,21 @@ func initUser() {
 	//
 	// responses:
 	//   default: genericError
-	//   200: createUserResp
+	//   200: User
 	//   422: validationError
 	group.POST("/register", controller.CreateUser)
-	group.GET("/login/:user-name/:pwd", controller.Login)
+
+	// swagger:route GET /users/login/{user-name} users login
+	//
+	// user login
+	//
+	// user login
+	//
+	// responses:
+	//   default: genericError
+	//   200: User
+	//   422: validationError
+	group.GET("/login/:user-name", controller.Login)
 	group.POST("/vips", controller.AddVip)
 	group.GET("/vips", controller.GetVips)
 	group.PUT("/vips/:id", controller.UpdateVip)

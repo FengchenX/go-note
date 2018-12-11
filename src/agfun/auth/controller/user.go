@@ -37,7 +37,7 @@ func decodeCreateUserReq(c *gin.Context) (*entity.User, error) {
 func Login(c *gin.Context) {
 	req, err := decodeLoginReq(c)
 	if err != nil || req == nil {
-		util.Fail(c, err)
+		util.Fail(c, fmt.Errorf("req is error"))
 		return
 	}
 	user, err := service.GetDefaultSvc().Login(*req)
@@ -52,6 +52,10 @@ func decodeLoginReq(c *gin.Context) (*entity.User, error) {
 	user := &entity.User{
 		UserName: c.Param("user-name"),
 		Pwd:      c.Param("pwd"),
+	}
+	pwd, b := c.GetQuery("pwd")
+	if b {
+		user.Pwd = pwd
 	}
 	if user.UserName == "" || user.Pwd == "" {
 		return nil, fmt.Errorf("user name or pwd is nil")
