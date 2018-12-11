@@ -8,7 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func GetFreeTV(c *gin.Context) {
+func GetFreeTVs(c *gin.Context) {
 	req, e := decodeGetFreeTV(c)
 	if e != nil {
 		util.Fail(c, e)
@@ -34,7 +34,7 @@ func decodeGetFreeTV(c *gin.Context) (dto.GetVideos, error) {
 	return req, nil
 }
 
-func AddFreeTV(c *gin.Context) {
+func AddFreeTVs(c *gin.Context) {
 	videos, e := decodeCreateFreeTV(c)
 	if e != nil {
 		util.Fail(c, e)

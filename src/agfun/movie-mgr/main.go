@@ -1,9 +1,10 @@
 package main
 
 import (
-	"agfun/tv-mgr/dbcentral/mysqldb"
-	"agfun/tv-mgr/router"
-	"agfun/tv-mgr/service"
+	"agfun/agfun-service/util"
+	"agfun/movie-mgr/dbcentral/mysqldb"
+	"agfun/movie-mgr/router"
+	"agfun/movie-mgr/service"
 )
 
 func main() {

@@ -1,0 +1,68 @@
+definitions:
+  User:
+    description: User represents the user for this application
+    properties:
+      access_token:
+        type: string
+        x-go-name: AccessToken
+      id:
+        type: string
+        x-go-name: ID
+      nick_name:
+        type: string
+        x-go-name: NickName
+      pwd:
+        type: string
+        x-go-name: Pwd
+      role_id:
+        format: uint64
+        type: integer
+        x-go-name: RoleID
+      user_name:
+        type: string
+        x-go-name: UserName
+      we_chat:
+        type: string
+        x-go-name: WeChat
+    type: object
+    x-go-package: agfun/auth/entity
+host: localhost:8080
+info:
+  description: |-
+    The purpose of this service is to provide an application
+    that is using plain go code to define an API
+  title: Auth API.
+  version: 0.0.1
+paths:
+  /users/register:
+    post:
+      description: this will register user account
+      operationId: createUser
+      parameters:
+      - description: Created user object
+        in: body
+        name: body
+        schema:
+          $ref: '#/definitions/User'
+        x-go-name: Body
+      responses:
+        "200":
+          $ref: '#/responses/createUserResp'
+        "422":
+          $ref: '#/responses/validationError'
+        default:
+          $ref: '#/responses/genericError'
+      summary: register user account
+      tags:
+      - users
+responses:
+  createUserResp:
+    description: createUserResp
+  genericError:
+    description: genericError
+  validationError:
+    description: validationError
+schemes:
+- http
+- https
+swagger: "2.0"

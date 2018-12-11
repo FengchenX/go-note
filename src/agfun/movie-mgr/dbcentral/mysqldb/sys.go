@@ -2,7 +2,7 @@ package mysqldb
 
 import (
 	"agfun/agfun-service/dbcentral/mysqldb"
-	"agfun/tv-mgr/entity"
+	"agfun/movie-mgr/entity"
 	"github.com/jinzhu/gorm"
 )
 
@@ -11,7 +11,7 @@ func getSysDB() *gorm.DB {
 }
 
 func CreateTable() {
-	if db := getSysDB().AutoMigrate(&entity.FreeTV{}); db.Error != nil {
+	if db := getSysDB().AutoMigrate(&entity.FreeMovie{}); db.Error != nil {
 		panic(db.Error)
 	}
 }

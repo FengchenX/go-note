@@ -1,6 +1,6 @@
 package router
 
-import "agfun/tv-mgr/controller"
+import "agfun/movie-mgr/controller"
 
 func initPaidSvc() {
 	group := rut.Group("/paid")

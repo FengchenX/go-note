@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -17,6 +18,5 @@ func main() {
 	mysqldb.CreateTable()
 
 	r := router.Init()
-
 	log.Fatal(r.Run(":8080"))
 }

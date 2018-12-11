@@ -3,8 +3,8 @@ package controller
 import (
 	"agfun/agfun-service/dto"
 	"agfun/agfun-service/util"
-	"agfun/tv-mgr/entity"
-	"agfun/tv-mgr/service"
+	"agfun/movie-mgr/entity"
+	"agfun/movie-mgr/service"
 	"github.com/gin-gonic/gin"
 )
 
@@ -51,8 +51,8 @@ func AddFreeMovies(c *gin.Context) {
 	util.Success(c, videos)
 }
 
-func decodeCreateFreeMovies(c *gin.Context) ([]*entity.FreeTV, error) {
-	var req []*entity.FreeTV
+func decodeCreateFreeMovies(c *gin.Context) ([]*entity.FreeMovie, error) {
+	var req []*entity.FreeMovie
 	e := c.BindJSON(&req)
 	return req, e
 }
@@ -70,8 +70,8 @@ func UpdateFreeMovie(c *gin.Context) {
 	}
 	util.Success(c, nil)
 }
-func decodeUpdateFreeMovie(c *gin.Context) (*entity.FreeTV, error) {
-	var req entity.FreeTV
+func decodeUpdateFreeMovie(c *gin.Context) (*entity.FreeMovie, error) {
+	var req entity.FreeMovie
 	e := c.BindJSON(&req)
 	return &req, e
 }
@@ -89,9 +89,9 @@ func DelFreeMovie(c *gin.Context) {
 	}
 	util.Success(c, nil)
 }
-func decodeDelFreeMovie(c *gin.Context) (*entity.FreeTV, string, error) {
+func decodeDelFreeMovie(c *gin.Context) (*entity.FreeMovie, string, error) {
 	token := c.GetHeader("auth-session")
-	var free entity.FreeTV
+	var free entity.FreeMovie
 	e := c.BindJSON(&free)
 	return &free, token, e
 }

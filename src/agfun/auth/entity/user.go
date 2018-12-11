@@ -4,6 +4,9 @@ import (
 	"time"
 )
 
+// User represents the user for this application
+//
+// swagger:model
 type User struct {
 	ID          string `json:"id"`
 	UserName    string `json:"user_name"`
@@ -13,17 +16,20 @@ type User struct {
 	AccessToken string `json:"access_token"`
 	RoleID      uint   `json:"role_id"`
 }
+// swagger:model
 type VipUser struct {
 	ID     string    `json:"id"`
 	UserID uint      `json:"user_id"`
 	Level  int       `json:"level"`
 	Expire time.Time `json:"expire"`
 }
+// swagger:model
 type UserRole struct {
 	ID    string `json:"id"`
 	Name  string `json:"name"`
 	Level int    `json:"level"`
 }
+// swagger:model
 type WXFriend struct {
 	ID          string `json:"id"`
 	UserName    string `json:"user_name"`

@@ -2,15 +2,15 @@ package mysqldb
 
 import (
 	"agfun/agfun-service/util"
-	"agfun/tv-mgr/entity"
+	"agfun/movie-mgr/entity"
 	"fmt"
 )
 
-func AddFreeMovies(free *entity.FreeTV) error {
+func AddFreeMovies(free *entity.FreeMovie) error {
 	db := getSysDB().Create(free)
 	return db.Error
 }
-func GetFreeMovies(free entity.FreeTV, filter *util.PageFilter) ([]*entity.FreeTV, int, error) {
+func GetFreeMovies(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.FreeMovie, int, error) {
 	sql := ""
 	var params []interface{}
 	comma := ""
@@ -24,9 +24,9 @@ func GetFreeMovies(free entity.FreeTV, filter *util.PageFilter) ([]*entity.FreeT
 		params = append(params, free.Name)
 		comma = "AND"
 	}
-	var frees []*entity.FreeTV
+	var frees []*entity.FreeMovie
 	var total int
-	db := getSysDB().Model(&entity.FreeTV{}).Where(sql, params...).Count(&total)
+	db := getSysDB().Model(&entity.FreeMovie{}).Where(sql, params...).Count(&total)
 	if db.Error != nil {
 		return nil, -1, db.Error
 	}
@@ -35,7 +35,7 @@ func GetFreeMovies(free entity.FreeTV, filter *util.PageFilter) ([]*entity.FreeT
 	return frees, total, db.Error
 }
 
-func UpdateFreeMovie(free entity.FreeTV, querys map[string]interface{}) error {
+func UpdateFreeMovie(free entity.FreeMovie, querys map[string]interface{}) error {
 	up := make(map[string]interface{}, 20)
 	if len(free.ID) > 0 {
 		up["uidl"] = free.ID
@@ -62,13 +62,13 @@ func UpdateFreeMovie(free entity.FreeTV, querys map[string]interface{}) error {
 			params = append(params, v)
 			comma = "AND"
 		}
-		db := getSysDB().Model(&entity.FreeTV{}).Updates(up).Where(sql, params...)
+		db := getSysDB().Model(&entity.FreeMovie{}).Updates(up).Where(sql, params...)
 		return db.Error
 	}
 }
 
-func DelFreeMovie(free entity.FreeTV) error {
-	if free.ID > 0 {
+func DelFreeMovie(free entity.FreeMovie) error {
+	if len(free.ID) > 0 {
 		db := getSysDB().Delete(&free)
 		return db.Error
 	}
@@ -85,6 +85,6 @@ func DelFreeMovie(free entity.FreeTV) error {
 		params = append(params, free.Name)
 		comma = "AND"
 	}
-	db := getSysDB().Delete(&entity.FreeTV{}).Where(sql, params...)
+	db := getSysDB().Delete(&entity.FreeMovie{}).Where(sql, params...)
 	return db.Error
 }
