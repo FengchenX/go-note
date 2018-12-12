@@ -2,59 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/entity/role.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agfun-service/util/gin.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/util/gin.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/controller/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/dto/dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/dto/dto.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/dto/user.dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/dto/user.dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/entity/group.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/entity/group.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/entity/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/entity/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/router/user-router.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/router/user-router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/service/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/swagger.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/swagger.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file-svc/assets/swagger/swagger.yml" beforeDir="false" afterPath="$PROJECT_DIR$/file-svc/assets/swagger/auth.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file-svc/assets/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/fastcgi.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/fastcgi_params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/koi-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/koi-win" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/mime.types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/nginx - 副本.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/scgi_params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/uwsgi_params" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/conf/win-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/geo2nginx.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/unicode2nginx/koi-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/unicode2nginx/win-utf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/vim/indent/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/contrib/vim/syntax/nginx.vim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/CHANGES" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/CHANGES.ru" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/OpenSSL.LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/PCRE.LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/docs/zlib.LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/50x.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/oauth2-redirect.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui-bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui-bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui-standalone-preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui-standalone-preset.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/dist/swagger-ui.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/logs/access.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/logs/error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/logs/nginx.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx-1.14.2/nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file-svc/assets/swagger/auth.yml" beforeDir="false" afterPath="$PROJECT_DIR$/file-svc/assets/swagger/auth.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie-mgr/controller/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/snap/db" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/snap/db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/wal/0000000000000000-0000000000000000.wal" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/wal/0000000000000000-0000000000000000.wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-tools/nginx-1.14.2/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/nginx-1.14.2/logs/nginx.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/tv-mgr/controller/free.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +35,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auth/router/user-router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state relative-caret-position="410">
+              <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+              <folding>
+                <element signature="e#16#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/entity/group.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding>
+                <element signature="e#13#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/service/user.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/entity/user.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/entity/role.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/auth/controller/user.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -78,63 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-              <folding>
-                <element signature="e#13#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/service/service.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auth/entity/user.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auth/controller/user.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file-svc/assets/swagger/auth.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -196,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service-mgr/dto/free.dto.go" />
         <option value="$PROJECT_DIR$/service-mgr/controller/free.go" />
         <option value="$PROJECT_DIR$/service-mgr/service/free.go" />
         <option value="$PROJECT_DIR$/agfun-service/crypto/crypto_test.go" />
@@ -217,9 +205,7 @@
         <option value="$PROJECT_DIR$/auth/wxFriendToVip/main.go" />
         <option value="$PROJECT_DIR$/agfun-service/entity/entity.go" />
         <option value="$PROJECT_DIR$/agfun-service/util/uuid.go" />
-        <option value="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" />
         <option value="$PROJECT_DIR$/auth/dbcentral/etcd/user.go" />
-        <option value="$PROJECT_DIR$/auth/service/user.go" />
         <option value="$PROJECT_DIR$/movie-mgr/controller/free.go" />
         <option value="$PROJECT_DIR$/tv-mgr/service/service.go" />
         <option value="$PROJECT_DIR$/tv-mgr/router/paid-svc.go" />
@@ -231,8 +217,6 @@
         <option value="$PROJECT_DIR$/movie-mgr/router/free-svc.go" />
         <option value="$PROJECT_DIR$/tv-mgr/router/free-svc.go" />
         <option value="$PROJECT_DIR$/aa.go" />
-        <option value="$PROJECT_DIR$/auth/entity/user.go" />
-        <option value="$PROJECT_DIR$/auth/entity/group.go" />
         <option value="$PROJECT_DIR$/auth/swagger.yml" />
         <option value="$PROJECT_DIR$/auth/dto/dto.go" />
         <option value="$PROJECT_DIR$/auth/service/service.go" />
@@ -242,16 +226,22 @@
         <option value="$PROJECT_DIR$/file-svc/main.go" />
         <option value="$PROJECT_DIR$/auth/main.go" />
         <option value="$PROJECT_DIR$/auth/router/router.go" />
-        <option value="$PROJECT_DIR$/agfun-service/router/router.go" />
         <option value="$PROJECT_DIR$/nginx-1.14.2/html/dist/index.html" />
+        <option value="$PROJECT_DIR$/agfun-service/router/router.go" />
+        <option value="$PROJECT_DIR$/auth/dto/user.dto.go" />
+        <option value="$PROJECT_DIR$/auth/entity/user.go" />
+        <option value="$PROJECT_DIR$/auth/entity/group.go" />
+        <option value="$PROJECT_DIR$/auth/entity/role.go" />
+        <option value="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" />
+        <option value="$PROJECT_DIR$/auth/service/user.go" />
         <option value="$PROJECT_DIR$/auth/router/user-router.go" />
         <option value="$PROJECT_DIR$/auth/controller/user.go" />
-        <option value="$PROJECT_DIR$/auth/dto/user.dto.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="850" />
+    <option name="x" value="839" />
+    <option name="y" value="3" />
     <option name="width" value="1267" />
     <option name="height" value="1047" />
   </component>
@@ -270,6 +260,11 @@
             <path>
               <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
               <item name="agfun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="agfun-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
@@ -480,7 +475,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.14978679" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.15138593" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.15511727" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -545,35 +540,22 @@
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/auth/controller/user.go</url>
           <line>37</line>
-          <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/auth/controller/user.go</url>
           <line>42</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/auth/controller/user.go</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/movie-mgr/entity/free.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/sys.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/paid.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -639,27 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/dto/dto.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/service/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/entity/group.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../go/src/github.com/gin-gonic/gin/tree.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
@@ -702,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/router/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tv-mgr/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -723,13 +677,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx-1.14.2/html/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx-1.14.2/html/dist/index.html" />
     <entry file="file://$PROJECT_DIR$/agfun-service/util/gin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -744,30 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/router/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-          <folding>
-            <element signature="e#13#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth/swagger.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -775,38 +699,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file-svc/assets/swagger/auth.yml">
+    <entry file="file://$PROJECT_DIR$/agfun-service/router/router.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        <state relative-caret-position="110">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/router/user-router.go">
+    <entry file="file://$PROJECT_DIR$/auth/dto/dto.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        <state relative-caret-position="176">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file-svc/assets/swagger/auth.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/service/service.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
+        <state relative-caret-position="858">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auth/controller/user.go">
+    <entry file="file://$PROJECT_DIR$/auth/entity/group.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="440">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/auth/entity/user.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="418">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/service/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/router/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/entity/role.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/router/user-router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+          <folding>
+            <element signature="e#16#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/dto/user.dto.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#13#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/controller/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
         </state>
       </provider>
     </entry>

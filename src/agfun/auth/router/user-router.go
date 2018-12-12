@@ -1,6 +1,8 @@
 package router
 
-import "agfun/auth/controller"
+import (
+	"agfun/auth/controller"
+)
 
 func initUser() {
 	group := rut.Group("/users")
@@ -29,7 +31,36 @@ func initUser() {
 	//   200: User
 	//   422: validationError
 	group.GET("/login/:user-name", controller.Login)
-	group.POST("/vips", controller.AddVip)
+	// swagger:route POST /users/roles roles addRole
+	//
+	// add role
+	//
+	// add role
+	//
+	// responses:
+	//   200: Role
+	group.POST("/roles", controller.AddRole)
+	// swagger:route POST /users/roles roles delRole
+	//
+	// delete role
+	//
+	// delete role
+	//
+	// responses:
+	//   200: nil
+	group.DELETE("/roles/:id", controller.DelRole)
+	group.PUT("/roles/:id", controller.UpdateRole)
+	group.GET("roles", controller.GetRoles)
+
+	// swagger:route POST /users/{id}/roles/{id} roles addUserRole
+	//
+	// delete role
+	//
+	// delete role
+	//
+	// responses:
+	//   200: nil
+	group.POST("/vips", controller.AddUserRole)
 	group.GET("/vips", controller.GetVips)
 	group.PUT("/vips/:id", controller.UpdateVip)
 	group.DELETE("vips/:id", controller.DelVip)

@@ -5,12 +5,13 @@ import (
 	"net/http"
 )
 
-// swagger:parameters listVips addBars
-type VipUser struct {
+// user role
+// swagger:parameters listVips addUserRole
+type UserRole struct {
 	// a BarSlice has bars which are strings
 	//
 	// in: body
-	entity.VipUser
+	entity.UserRole
 	Expire string `json:"expire"`
 }
 
@@ -28,17 +29,38 @@ type CreateUserParams struct {
 	*/
 	Body *entity.User `json:"body"`
 }
+
 // login
 // swagger:parameters login
 type LoginParams struct {
 	// HTTP Request Object
 	HTTPRequest *http.Request `json:"-"`
 
-	 // UserName
-	 // In: path
-	 UserName string `json:"user-name"`
+	// UserName
+	// In: path
+	UserName string `json:"user-name"`
 
-	 // Pwd
-	 // In: query
-	 Pwd string `json:"pwd"`
+	// Pwd
+	// In: query
+	Pwd string `json:"pwd"`
+}
+
+// add role
+// swagger:parameters addRole
+type AddRoleParams struct {
+	// HTTP Request Object
+	HTTPRequest *http.Request `json:"-"`
+	// auth-session
+	// In: header
+	Session string `json:"session"`
+	// role
+	// In: body
+	Role Role `json:"role"`
+}
+
+// role
+// swagger:model
+type Role struct {
+	entity.Role
+	Draft interface{} `json:"draft"`
 }

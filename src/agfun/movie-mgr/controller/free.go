@@ -40,7 +40,7 @@ func AddFreeMovies(c *gin.Context) {
 		util.Fail(c, e)
 		return
 	}
-	for _, v := range videos{
+	for _, v := range videos {
 		v.ID = util.NewUUID()
 	}
 	e = service.GetDefaultSvc().AddFreeMovies(videos)

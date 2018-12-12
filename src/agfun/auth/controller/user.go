@@ -63,8 +63,8 @@ func decodeLoginReq(c *gin.Context) (*entity.User, error) {
 	return user, nil
 }
 
-func AddVip(c *gin.Context) {
-	vipUser, session, e := decodeAddVipReq(c)
+func AddUserRole(c *gin.Context) {
+	vipUser, session, e := decodeAddUserRoleReq(c)
 	if e != nil {
 		util.Fail(c, e)
 		return
@@ -77,18 +77,18 @@ func AddVip(c *gin.Context) {
 	}
 	util.Success(c, vipUser)
 }
-func decodeAddVipReq(c *gin.Context) (*entity.VipUser, string, error) {
+func decodeAddUserRoleReq(c *gin.Context) (*entity.UserRole, string, error) {
 	session := c.GetHeader("auth-session")
-	var vip dto.VipUser
-	e := c.BindJSON(&vip)
+	var userRole dto.UserRole
+	e := c.BindJSON(&userRole)
 	if e != nil {
 		return nil, session, e
 	}
-	vip.VipUser.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
+	userRole.UserRole.Expire, e = time.Parse("2006-01-02 15:04:05", userRole.Expire)
 	if e != nil {
 		return nil, session, e
 	}
-	return &vip.VipUser, session, nil
+	return &userRole.UserRole, session, nil
 }
 
 func GetVips(c *gin.Context) {
@@ -105,8 +105,8 @@ func GetVips(c *gin.Context) {
 	}
 	util.Success(c, users)
 }
-func decodeGetVipsReq(c *gin.Context) (entity.VipUser, error) {
-	var vip entity.VipUser
+func decodeGetVipsReq(c *gin.Context) (entity.UserRole, error) {
+	var vip entity.UserRole
 	level, b := c.GetQuery("level")
 	if b {
 		i, e := strconv.Atoi(level)
@@ -117,11 +117,7 @@ func decodeGetVipsReq(c *gin.Context) (entity.VipUser, error) {
 	}
 	user_id, b := c.GetQuery("user_id")
 	if b {
-		i, e := strconv.Atoi(user_id)
-		if e != nil {
-			return vip, e
-		}
-		vip.UserID = uint(i)
+		vip.UserID = user_id
 	}
 	id, b := c.GetQuery("id")
 	if b {
@@ -142,20 +138,20 @@ func UpdateVip(c *gin.Context) {
 	}
 	util.Success(c, nil)
 }
-func decodeUpdateVipReq(c *gin.Context) (*entity.VipUser, string, error) {
-	var vip dto.VipUser
+func decodeUpdateVipReq(c *gin.Context) (*entity.UserRole, string, error) {
+	var vip dto.UserRole
 	e := c.BindJSON(&vip)
 	if e != nil {
 		return nil, "", e
 	}
 	id := c.Param("id")
 	vip.ID = id
-	vip.VipUser.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
+	vip.UserRole.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
 	if e != nil {
 		return nil, "", e
 	}
 	session := c.GetHeader("auth-session")
-	return &vip.VipUser, session, nil
+	return &vip.UserRole, session, nil
 }
 func DelVip(c *gin.Context) {
 	id, session := decodeDelVipReq(c)
@@ -170,4 +166,17 @@ func decodeDelVipReq(c *gin.Context) (id string, session string) {
 	session = c.GetHeader("auth-session")
 	id = c.Param("id")
 	return id, session
+}
+
+func AddRole(c *gin.Context) {
+
+}
+func DelRole(c *gin.Context) {
+
+}
+func UpdateRole(c *gin.Context) {
+
+}
+func GetRoles(c *gin.Context) {
+
 }

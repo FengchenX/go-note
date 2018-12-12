@@ -8,27 +8,17 @@ import (
 //
 // swagger:model
 type User struct {
-	ID          string `json:"id"`
-	UserName    string `json:"user_name"`
-	Pwd         string `json:"pwd"`
-	NickName    string `json:"nick_name"`
-	WeChat      string `json:"we_chat"`
-	AccessToken string `json:"access_token"`
-	RoleID      uint   `json:"role_id"`
+	ID          string    `json:"id"`
+	UserName    string    `json:"user_name"`
+	Pwd         string    `json:"pwd"`
+	NickName    string    `json:"nick_name"`
+	WeChat      string    `json:"we_chat"`
+	AccessToken string    `json:"access_token"`
+	RoleID      uint      `json:"role_id"`
+	CreateTime  time.Time `json:"create_time"`
 }
-// swagger:model
-type VipUser struct {
-	ID     string    `json:"id"`
-	UserID uint      `json:"user_id"`
-	Level  int       `json:"level"`
-	Expire time.Time `json:"expire"`
-}
-// swagger:model
-type UserRole struct {
-	ID    string `json:"id"`
-	Name  string `json:"name"`
-	Level int    `json:"level"`
-}
+
+// friend
 // swagger:model
 type WXFriend struct {
 	ID          string `json:"id"`

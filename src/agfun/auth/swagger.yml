@@ -5,6 +5,10 @@ definitions:
       access_token:
         type: string
         x-go-name: AccessToken
+      create_time:
+        format: date-time
+        type: string
+        x-go-name: CreateTime
       id:
         type: string
         x-go-name: ID
@@ -85,6 +89,16 @@ paths:
       summary: register user account
       tags:
       - users
+  /users/roles:
+    post:
+      description: add role
+      operationId: addRole
+      responses:
+        "200":
+          $ref: '#/responses/Role'
+      summary: add role
+      tags:
+      - roles
 responses:
   genericError:
     description: genericError

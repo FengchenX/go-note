@@ -18,10 +18,13 @@ func CreateTable() {
 	if db := authDB().AutoMigrate(&entity.User{}); db.Error != nil {
 		log.Fatal(db.Error)
 	}
-	if db := authDB().AutoMigrate(&entity.VipUser{}); db.Error != nil {
+	if db := authDB().AutoMigrate(&entity.UserRole{}); db.Error != nil {
 		log.Fatal(db.Error)
 	}
 	if db := authDB().AutoMigrate(&entity.WXFriend{}); db.Error != nil {
+		log.Fatal(db.Error)
+	}
+	if db := authDB().AutoMigrate(&entity.Role{}); db.Error != nil {
 		log.Fatal(db.Error)
 	}
 }
@@ -71,14 +74,14 @@ func UpdateUser(user *entity.User) error {
 	}
 	return nil
 }
-func AddVip(vip *entity.VipUser) error {
+func AddVip(vip *entity.UserRole) error {
 	if vip == nil {
 		return fmt.Errorf("vip is nil")
 	}
 	db := auth.GetAuthDB().Create(vip)
 	return db.Error
 }
-func GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
+func GetVips(vip entity.UserRole) ([]*entity.UserRole, error) {
 	sql := ""
 	var param []interface{}
 	comma := ""
@@ -87,7 +90,7 @@ func GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
 		param = append(param, vip.ID)
 		comma = "AND"
 	}
-	if vip.UserID > 0 {
+	if len(vip.UserID) > 0 {
 		sql = fmt.Sprintf("%s %s user_id = ?", sql, comma)
 		param = append(param, vip.UserID)
 		comma = "AND"
@@ -103,14 +106,14 @@ func GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
 		comma = "AND"
 	}
 
-	var vips []*entity.VipUser
+	var vips []*entity.UserRole
 	db := auth.GetAuthDB().Where(sql, param...).Find(&vips)
 	if db.Error != nil {
 		return nil, db.Error
 	}
 	return vips, nil
 }
-func UpdateVip(vip *entity.VipUser, src entity.VipUser) error {
+func UpdateVip(vip *entity.UserRole, src entity.UserRole) error {
 	if vip == nil {
 		return fmt.Errorf("vip is nil")
 	}
@@ -130,7 +133,7 @@ func UpdateVip(vip *entity.VipUser, src entity.VipUser) error {
 		params = append(params, src.ID)
 		comma = "AND"
 	}
-	if src.UserID > 0 {
+	if len(src.UserID) > 0 {
 		sql = fmt.Sprintf("%s %s user_id = ?", sql, comma)
 		params = append(params, src.UserID)
 		comma = "AND"
@@ -143,7 +146,7 @@ func UpdateVip(vip *entity.VipUser, src entity.VipUser) error {
 	db := auth.GetAuthDB().Model(vip).Where(sql, params...).Updates(newVip)
 	return db.Error
 }
-func DelVip(vip entity.VipUser) error {
+func DelVip(vip entity.UserRole) error {
 	sql := ""
 	var params []interface{}
 	comma := ""
@@ -152,7 +155,7 @@ func DelVip(vip entity.VipUser) error {
 		params = append(params, vip.ID)
 		comma = "AND"
 	}
-	if vip.UserID > 0 {
+	if len(vip.UserID) > 0 {
 		sql = fmt.Sprintf("%s %s user_id = ?", sql, comma)
 		params = append(params, vip.UserID)
 		comma = "AND"
@@ -162,6 +165,6 @@ func DelVip(vip entity.VipUser) error {
 		params = append(params, vip.Expire)
 		comma = "AND"
 	}
-	db := auth.GetAuthDB().Where(sql, params...).Delete(entity.VipUser{})
+	db := auth.GetAuthDB().Where(sql, params...).Delete(entity.UserRole{})
 	return db.Error
 }

@@ -44,14 +44,14 @@ func (s *AuthSvc) Login(req entity.User) (*entity.User, error) {
 
 	return users[0], nil
 }
-func (s *AuthSvc) AddVip(vip *entity.VipUser, session string) error {
-	var id int
+func (s *AuthSvc) AddVip(vip *entity.UserRole, session string) error {
+	var id string
 	e := s.Dynamic.Get(session, &id)
 	if e != nil {
 		return e
 	}
-	if vip.UserID == 0 {
-		vip.UserID = uint(id)
+	if len(vip.UserID) == 0 {
+		vip.UserID = id
 	}
 	e = mysqldb.AddVip(vip)
 	if e != nil {
@@ -59,18 +59,18 @@ func (s *AuthSvc) AddVip(vip *entity.VipUser, session string) error {
 	}
 	return nil
 }
-func (s *AuthSvc) GetVips(vip entity.VipUser) ([]*entity.VipUser, error) {
+func (s *AuthSvc) GetVips(vip entity.UserRole) ([]*entity.UserRole, error) {
 	users, e := mysqldb.GetVips(vip)
 	if e != nil {
 		return nil, e
 	}
 	return users, nil
 }
-func (s *AuthSvc) UpdateVip(vip *entity.VipUser, session string) error {
+func (s *AuthSvc) UpdateVip(vip *entity.UserRole, session string) error {
 	if vip == nil {
 		return fmt.Errorf("vip is nil")
 	}
-	src := entity.VipUser{
+	src := entity.UserRole{
 		ID: vip.ID,
 	}
 	e := mysqldb.UpdateVip(vip, src)
@@ -80,7 +80,7 @@ func (s *AuthSvc) UpdateVip(vip *entity.VipUser, session string) error {
 	return nil
 }
 func (s *AuthSvc) DelVip(id string, session string) error {
-	user := entity.VipUser{}
+	user := entity.UserRole{}
 	user.ID = id
 	e := mysqldb.DelVip(user)
 	return e
