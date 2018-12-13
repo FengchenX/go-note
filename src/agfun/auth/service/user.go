@@ -44,7 +44,7 @@ func (s *AuthSvc) Login(req entity.User) (*entity.User, error) {
 
 	return users[0], nil
 }
-func (s *AuthSvc) AddVip(vip *entity.UserRole, session string) error {
+func (s *AuthSvc) AddRole(vip *entity.UserRole, session string) error {
 	var id string
 	e := s.Dynamic.Get(session, &id)
 	if e != nil {
@@ -53,7 +53,7 @@ func (s *AuthSvc) AddVip(vip *entity.UserRole, session string) error {
 	if len(vip.UserID) == 0 {
 		vip.UserID = id
 	}
-	e = mysqldb.AddVip(vip)
+	e = mysqldb.AddRole(vip)
 	if e != nil {
 		return e
 	}

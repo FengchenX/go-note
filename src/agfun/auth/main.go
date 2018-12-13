@@ -17,5 +17,6 @@ func main() {
 	mysqldb.CreateTable()
 
 	r := router.Init()
-	log.Fatal(r.Run(":8080"))
+	e := r.Run(":8080")
+	log.Fatal(e)
 }

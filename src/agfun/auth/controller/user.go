@@ -70,7 +70,7 @@ func AddUserRole(c *gin.Context) {
 		return
 	}
 	vipUser.ID = util.NewUUID()
-	e = service.GetDefaultSvc().AddVip(vipUser, session)
+	e = service.GetDefaultSvc().AddRole(vipUser, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
@@ -78,12 +78,17 @@ func AddUserRole(c *gin.Context) {
 	util.Success(c, vipUser)
 }
 func decodeAddUserRoleReq(c *gin.Context) (*entity.UserRole, string, error) {
-	session := c.GetHeader("auth-session")
+	session := c.GetHeader("session")
+
 	var userRole dto.UserRole
 	e := c.BindJSON(&userRole)
 	if e != nil {
 		return nil, session, e
 	}
+	userId := c.Param("user-id")
+	roleId := c.Param("role-id")
+	userRole.UserID = userId
+	userRole.RoleID = roleId
 	userRole.UserRole.Expire, e = time.Parse("2006-01-02 15:04:05", userRole.Expire)
 	if e != nil {
 		return nil, session, e
@@ -150,7 +155,7 @@ func decodeUpdateVipReq(c *gin.Context) (*entity.UserRole, string, error) {
 	if e != nil {
 		return nil, "", e
 	}
-	session := c.GetHeader("auth-session")
+	session := c.GetHeader("session")
 	return &vip.UserRole, session, nil
 }
 func DelVip(c *gin.Context) {
@@ -163,7 +168,7 @@ func DelVip(c *gin.Context) {
 	util.Success(c, nil)
 }
 func decodeDelVipReq(c *gin.Context) (id string, session string) {
-	session = c.GetHeader("auth-session")
+	session = c.GetHeader("session")
 	id = c.Param("id")
 	return id, session
 }

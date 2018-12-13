@@ -28,7 +28,7 @@ func decodeGetFreeTV(c *gin.Context) (dto.GetVideos, error) {
 	if e != nil {
 		return req, e
 	}
-	token := c.GetHeader("auth-session")
+	token := c.GetHeader("session")
 	req.Filter = filter
 	req.Token = token
 	return req, nil
@@ -90,7 +90,7 @@ func DelFreeTV(c *gin.Context) {
 	util.Success(c, nil)
 }
 func decodeDelFreeTV(c *gin.Context) (*entity.FreeTV, string, error) {
-	token := c.GetHeader("auth-session")
+	token := c.GetHeader("session")
 	var free entity.FreeTV
 	e := c.BindJSON(&free)
 	return &free, token, e

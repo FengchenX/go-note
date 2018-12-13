@@ -74,7 +74,7 @@ func UpdateUser(user *entity.User) error {
 	}
 	return nil
 }
-func AddVip(vip *entity.UserRole) error {
+func AddRole(vip *entity.UserRole) error {
 	if vip == nil {
 		return fmt.Errorf("vip is nil")
 	}

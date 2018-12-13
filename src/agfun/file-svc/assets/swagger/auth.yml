@@ -1,4 +1,28 @@
 definitions:
+  Role:
+    description: role
+    properties:
+      create_time:
+        format: date-time
+        type: string
+        x-go-name: CreateTime
+      desc:
+        type: string
+        x-go-name: Desc
+      draft:
+        type: object
+        x-go-name: Draft
+      id:
+        type: string
+        x-go-name: ID
+      label:
+        type: string
+        x-go-name: Label
+      name:
+        type: string
+        x-go-name: Name
+    type: object
+    x-go-package: agfun/auth/dto
   User:
     description: User represents the user for this application
     properties:
@@ -30,6 +54,27 @@ definitions:
         x-go-name: WeChat
     type: object
     x-go-package: agfun/auth/entity
+  UserRole:
+    description: user role
+    properties:
+      expire:
+        type: string
+        x-go-name: Expire
+      id:
+        type: string
+        x-go-name: ID
+      level:
+        format: int64
+        type: integer
+        x-go-name: Level
+      role_id:
+        type: string
+        x-go-name: RoleID
+      user_id:
+        type: string
+        x-go-name: UserID
+    type: object
+    x-go-package: agfun/auth/dto
 host: localhost:8080
 info:
   description: |-
@@ -38,7 +83,72 @@ info:
   title: Auth API.
   version: 0.0.1
 paths:
-  /users/login/{user-name}:
+  /users:
+    post:
+      description: this will register user account
+      operationId: createUser
+      parameters:
+      - description: UserName
+        in: path
+        name: user_name
+        required: true
+        type: string
+        x-go-name: UserName
+      - description: Created user object
+        in: body
+        name: body
+        schema:
+          $ref: '#/definitions/User'
+        x-go-name: Body
+      responses:
+        "200":
+          description: User
+          schema:
+            $ref: '#/definitions/User'
+        "422":
+          $ref: '#/responses/validationError'
+        default:
+          $ref: '#/responses/genericError'
+      summary: register user account
+      tags:
+      - users
+  /users/{user-id}/roles/{role-id}:
+    post:
+      description: add user role
+      operationId: addUserRole
+      parameters:
+      - description: auth session
+        in: header
+        name: session
+        type: string
+        x-go-name: Session
+      - description: user id
+        in: path
+        name: user-id
+        required: true
+        type: string
+        x-go-name: UserId
+      - description: role id
+        in: path
+        name: role-id
+        required: true
+        type: string
+        x-go-name: RoleId
+      - description: body
+        in: body
+        name: body
+        schema:
+          $ref: '#/definitions/UserRole'
+        x-go-name: Body
+      responses:
+        "200":
+          description: User
+          schema:
+            $ref: '#/definitions/User'
+      summary: add user role
+      tags:
+      - roles
+  /users/{user-name}:
     get:
       description: user login
       operationId: login
@@ -66,37 +176,11 @@ paths:
       summary: user login
       tags:
       - users
-  /users/register:
-    post:
-      description: this will register user account
-      operationId: createUser
-      parameters:
-      - description: Created user object
-        in: body
-        name: body
-        schema:
-          $ref: '#/definitions/User'
-        x-go-name: Body
-      responses:
-        "200":
-          description: User
-          schema:
-            $ref: '#/definitions/User'
-        "422":
-          $ref: '#/responses/validationError'
-        default:
-          $ref: '#/responses/genericError'
-      summary: register user account
-      tags:
-      - users
   /users/roles:
     post:
-      description: add role
-      operationId: addRole
-      responses:
-        "200":
-          $ref: '#/responses/Role'
-      summary: add role
+      description: delete role
+      operationId: delRole
+      summary: delete role
       tags:
       - roles
 responses:
