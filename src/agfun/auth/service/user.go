@@ -6,6 +6,7 @@ import (
 	"agfun/auth/entity"
 	"fmt"
 	"github.com/satori/go.uuid"
+	"time"
 )
 
 func (s *AuthSvc) CreateUser(req entity.User) (*entity.User, error) {
@@ -59,29 +60,31 @@ func (s *AuthSvc) AddRole(vip *entity.UserRole, session string) error {
 	}
 	return nil
 }
-func (s *AuthSvc) GetVips(vip entity.UserRole) ([]*entity.UserRole, error) {
-	users, e := mysqldb.GetVips(vip)
+func (s *AuthSvc) GetUserRoles(vip entity.UserRole) ([]*entity.UserRole, error) {
+	users, e := mysqldb.GetUserRoles(vip)
 	if e != nil {
 		return nil, e
 	}
 	return users, nil
 }
-func (s *AuthSvc) UpdateVip(vip *entity.UserRole, session string) error {
+func (s *AuthSvc) UpdateUserRole(vip *entity.UserRole, session string) error {
 	if vip == nil {
 		return fmt.Errorf("vip is nil")
 	}
 	src := entity.UserRole{
-		ID: vip.ID,
+		ID:     "",
+		UserID: vip.UserID,
+		RoleID: vip.RoleID,
+		Level:  0,
+		Expire: time.Time{},
 	}
-	e := mysqldb.UpdateVip(vip, src)
+	e := mysqldb.UpdateUserRole(vip, src)
 	if e != nil {
 		return e
 	}
 	return nil
 }
-func (s *AuthSvc) DelVip(id string, session string) error {
-	user := entity.UserRole{}
-	user.ID = id
-	e := mysqldb.DelVip(user)
+func (s *AuthSvc) DelUserRole(userRole entity.UserRole, session string) error {
+	e := mysqldb.DelUserRole(userRole)
 	return e
 }

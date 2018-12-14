@@ -6,8 +6,8 @@ import (
 )
 
 // user role
-// swagger:parameters listVips addUserRole
-type UserRoleParams struct {
+// swagger:parameters addUserRole updateUserRole
+type AddUserRoleParams struct {
 	// HTTP Request Object
 	HTTPRequest *http.Request `json:"-"`
 	// auth session
@@ -23,6 +23,23 @@ type UserRoleParams struct {
 	// body
 	// in: body
 	Body UserRole `json:"body"`
+}
+
+// user role
+// swagger:parameters  getUserRole delUserRole
+type GetUserRoleParams struct {
+	// HTTP Request Object
+	HTTPRequest *http.Request `json:"-"`
+	// auth session
+	// in: header
+	Session string `json:"session"`
+	// user id
+	// in: path
+	UserId string `json:"user-id"`
+
+	// level
+	// in: query
+	Level string `json:"level"`
 }
 
 // CreateUserParams contains all the bound params for the create user operation

@@ -27,6 +27,12 @@ func CreateTable() {
 	if db := authDB().AutoMigrate(&entity.Role{}); db.Error != nil {
 		log.Fatal(db.Error)
 	}
+	if db := authDB().AutoMigrate(&entity.Resource{}); db.Error != nil {
+		log.Fatal(db.Error)
+	}
+	if db := authDB().AutoMigrate(&entity.Verb{}); db.Error != nil {
+		log.Fatal(db.Error)
+	}
 }
 
 func CreateUser(user *entity.User) (*entity.User, error) {
@@ -81,7 +87,7 @@ func AddRole(vip *entity.UserRole) error {
 	db := auth.GetAuthDB().Create(vip)
 	return db.Error
 }
-func GetVips(vip entity.UserRole) ([]*entity.UserRole, error) {
+func GetUserRoles(vip entity.UserRole) ([]*entity.UserRole, error) {
 	sql := ""
 	var param []interface{}
 	comma := ""
@@ -113,7 +119,7 @@ func GetVips(vip entity.UserRole) ([]*entity.UserRole, error) {
 	}
 	return vips, nil
 }
-func UpdateVip(vip *entity.UserRole, src entity.UserRole) error {
+func UpdateUserRole(vip *entity.UserRole, src entity.UserRole) error {
 	if vip == nil {
 		return fmt.Errorf("vip is nil")
 	}
@@ -123,6 +129,9 @@ func UpdateVip(vip *entity.UserRole, src entity.UserRole) error {
 	}
 	if vip.Expire.Unix() > 0 {
 		newVip["expire"] = vip.Expire
+	}
+	if len(vip.RoleID) > 0 {
+		newVip["role_id"] = vip.RoleID
 	}
 
 	sql := ""
@@ -138,6 +147,11 @@ func UpdateVip(vip *entity.UserRole, src entity.UserRole) error {
 		params = append(params, src.UserID)
 		comma = "AND"
 	}
+	if len(src.RoleID) > 0 {
+		sql = fmt.Sprintf("%s %s role_id = ?", sql, comma)
+		params = append(params, src.RoleID)
+		comma = "AND"
+	}
 	if src.Expire.Unix() > 0 {
 		sql = fmt.Sprintf("%s %s expire > ?", sql, comma)
 		params = append(params, src.Expire)
@@ -146,7 +160,7 @@ func UpdateVip(vip *entity.UserRole, src entity.UserRole) error {
 	db := auth.GetAuthDB().Model(vip).Where(sql, params...).Updates(newVip)
 	return db.Error
 }
-func DelVip(vip entity.UserRole) error {
+func DelUserRole(vip entity.UserRole) error {
 	sql := ""
 	var params []interface{}
 	comma := ""

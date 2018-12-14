@@ -96,21 +96,21 @@ func decodeAddUserRoleReq(c *gin.Context) (*entity.UserRole, string, error) {
 	return &userRole.UserRole, session, nil
 }
 
-func GetVips(c *gin.Context) {
-	vipUser, e := decodeGetVipsReq(c)
+func GetUserRoles(c *gin.Context) {
+	vipUser, e := decodeGetUserRolesReq(c)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	vipUser.Expire = time.Now()
-	users, e := service.GetDefaultSvc().GetVips(vipUser)
+	users, e := service.GetDefaultSvc().GetUserRoles(vipUser)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	util.Success(c, users)
 }
-func decodeGetVipsReq(c *gin.Context) (entity.UserRole, error) {
+func decodeGetUserRolesReq(c *gin.Context) (entity.UserRole, error) {
 	var vip entity.UserRole
 	level, b := c.GetQuery("level")
 	if b {
@@ -120,57 +120,68 @@ func decodeGetVipsReq(c *gin.Context) (entity.UserRole, error) {
 		}
 		vip.Level = i
 	}
-	user_id, b := c.GetQuery("user_id")
-	if b {
-		vip.UserID = user_id
-	}
-	id, b := c.GetQuery("id")
-	if b {
-		vip.ID = id
-	}
+	userIid := c.Param("user-id")
+	vip.UserID = userIid
 	return vip, nil
 }
-func UpdateVip(c *gin.Context) {
-	user, session, e := decodeUpdateVipReq(c)
+func UpdateUserRole(c *gin.Context) {
+	user, session, e := decodeUpdateUserRoleReq(c)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
-	e = service.GetDefaultSvc().UpdateVip(user, session)
+	e = service.GetDefaultSvc().UpdateUserRole(user, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)
 }
-func decodeUpdateVipReq(c *gin.Context) (*entity.UserRole, string, error) {
+func decodeUpdateUserRoleReq(c *gin.Context) (*entity.UserRole, string, error) {
 	var vip dto.UserRole
 	e := c.BindJSON(&vip)
 	if e != nil {
 		return nil, "", e
 	}
-	id := c.Param("id")
-	vip.ID = id
-	vip.UserRole.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
-	if e != nil {
-		return nil, "", e
+	userId := c.Param("user-id")
+	roleId := c.Param("role-id")
+	vip.UserID, vip.RoleID = userId, roleId
+	if len(vip.Expire) > 0 {
+		vip.UserRole.Expire, e = time.Parse("2006-01-02 15:04:05", vip.Expire)
+		if e != nil {
+			return nil, "", e
+		}
 	}
 	session := c.GetHeader("session")
 	return &vip.UserRole, session, nil
 }
-func DelVip(c *gin.Context) {
-	id, session := decodeDelVipReq(c)
-	e := service.GetDefaultSvc().DelVip(id, session)
+func DelUserRole(c *gin.Context) {
+	userRole, session, e := decodeDelUserRoleReq(c)
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	e := service.GetDefaultSvc().DelUserRole(userRole, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
 	}
 	util.Success(c, nil)
 }
-func decodeDelVipReq(c *gin.Context) (id string, session string) {
+func decodeDelUserRoleReq(c *gin.Context) (userRole entity.UserRole, session string, e error) {
 	session = c.GetHeader("session")
-	id = c.Param("id")
-	return id, session
+	var vip entity.UserRole
+	level, b := c.GetQuery("level")
+	if b {
+		i, e := strconv.Atoi(level)
+		if e != nil {
+			return vip, "", e
+		}
+		vip.Level = i
+	}
+	vip.UserID = c.Param("user-id")
+	vip.RoleID = c.Param("role-id")
+	return userRole, session, nil
 }
 
 func AddRole(c *gin.Context) {
