@@ -5,7 +5,7 @@ import (
 )
 
 func initUser() {
-	group := rut.Group("/users/")
+	group := rut.Group("/users")
 
 	// swagger:route POST /users users createUser
 	//
@@ -18,9 +18,9 @@ func initUser() {
 	//   default: genericError
 	//   200: User
 	//   422: validationError
-	group.POST("/", controller.CreateUser)
+	group.POST("", controller.CreateUser)
 
-	// swagger:route GET /users/{user-name} users login
+	// swagger:route GET /users users login
 	//
 	// user login
 	//
@@ -30,7 +30,7 @@ func initUser() {
 	//   default: genericError
 	//   200: User
 	//   422: validationError
-	group.GET("/:user-name", controller.Login)
+	group.GET("", controller.Login)
 
 	// swagger:route POST /users/{user-id}/roles/{role-id} users addUserRole
 	//
@@ -49,7 +49,7 @@ func initUser() {
 	//
 	// responses:
 	//   200: []UserRole
-	group.GET(":user-id/roles", controller.GetUserRoles)
+	group.GET("/:user-id/roles", controller.GetUserRoles)
 	// swagger:route UPDATE /users/{user-id}/roles/{role-id} users updateUserRole
 	//
 	// update user role

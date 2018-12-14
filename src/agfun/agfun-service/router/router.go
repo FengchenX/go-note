@@ -11,7 +11,7 @@ func Init() *gin.Engine {
 	//router.Use(util.Cors()) //当直接使用swagger edit 时需要打开解决跨域问题
 	config := cors.DefaultConfig()
 	config.AllowAllOrigins = true
-	config.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "session", "accept"}
+	config.AllowHeaders = append(config.AllowHeaders, []string{"session", "accept"}...)
 	router.Use(cors.New(config))
 
 	router.GET("/", controller.Hello)

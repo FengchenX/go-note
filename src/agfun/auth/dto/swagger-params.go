@@ -26,7 +26,7 @@ type AddUserRoleParams struct {
 }
 
 // user role
-// swagger:parameters  getUserRole delUserRole
+// swagger:parameters  getUserRoles delUserRole
 type GetUserRoleParams struct {
 	// HTTP Request Object
 	HTTPRequest *http.Request `json:"-"`
@@ -63,7 +63,7 @@ type LoginParams struct {
 	HTTPRequest *http.Request `json:"-"`
 
 	// UserName
-	// In: path
+	// In: query
 	UserName string `json:"user-name"`
 
 	// Pwd

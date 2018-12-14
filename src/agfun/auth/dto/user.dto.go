@@ -17,3 +17,8 @@ type Role struct {
 	entity.Role
 	Draft interface{} `json:"draft"`
 }
+
+type Resource struct {
+	entity.Resource
+	Children []*Resource `json:"children"`
+}

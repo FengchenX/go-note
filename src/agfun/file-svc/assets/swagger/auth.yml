@@ -83,17 +83,67 @@ info:
   title: Auth API.
   version: 0.0.1
 paths:
+  /resources:
+    get:
+      description: get resources
+      operationId: getResources
+      responses:
+        "200":
+          $ref: '#/responses/null'
+      summary: get resources
+      tags:
+      - resources
+  /roles:
+    get:
+      description: get roles
+      operationId: getRoles
+      responses:
+        "200":
+          description: Role
+          schema:
+            items:
+              $ref: '#/definitions/Role'
+            type: array
+      summary: get roles
+      tags:
+      - roles
+    post:
+      description: delete role
+      operationId: delRole
+      summary: delete role
+      tags:
+      - roles
   /users:
+    get:
+      description: user login
+      operationId: login
+      parameters:
+      - description: UserName
+        in: query
+        name: user-name
+        type: string
+        x-go-name: UserName
+      - description: Pwd
+        in: query
+        name: pwd
+        type: string
+        x-go-name: Pwd
+      responses:
+        "200":
+          description: User
+          schema:
+            $ref: '#/definitions/User'
+        "422":
+          $ref: '#/responses/validationError'
+        default:
+          $ref: '#/responses/genericError'
+      summary: user login
+      tags:
+      - users
     post:
       description: this will register user account
       operationId: createUser
       parameters:
-      - description: UserName
-        in: path
-        name: user_name
-        required: true
-        type: string
-        x-go-name: UserName
       - description: Created user object
         in: body
         name: body
@@ -112,7 +162,66 @@ paths:
       summary: register user account
       tags:
       - users
+  /users/{user-id}/roles:
+    get:
+      description: get user roles
+      operationId: getUserRoles
+      parameters:
+      - description: auth session
+        in: header
+        name: session
+        type: string
+        x-go-name: Session
+      - description: user id
+        in: path
+        name: user-id
+        required: true
+        type: string
+        x-go-name: UserId
+      - description: level
+        in: query
+        name: level
+        type: string
+        x-go-name: Level
+      responses:
+        "200":
+          description: UserRole
+          schema:
+            items:
+              $ref: '#/definitions/UserRole'
+            type: array
+      summary: get user roles
+      tags:
+      - users
   /users/{user-id}/roles/{role-id}:
+    delete:
+      description: delete user role
+      operationId: delUserRole
+      parameters:
+      - description: auth session
+        in: header
+        name: session
+        type: string
+        x-go-name: Session
+      - description: user id
+        in: path
+        name: user-id
+        required: true
+        type: string
+        x-go-name: UserId
+      - description: level
+        in: query
+        name: level
+        type: string
+        x-go-name: Level
+      responses:
+        "200":
+          description: UserRole
+          schema:
+            $ref: '#/definitions/UserRole'
+      summary: delete user role
+      tags:
+      - users
     post:
       description: add user role
       operationId: addUserRole
@@ -142,47 +251,12 @@ paths:
         x-go-name: Body
       responses:
         "200":
-          description: User
+          description: UserRole
           schema:
-            $ref: '#/definitions/User'
+            $ref: '#/definitions/UserRole'
       summary: add user role
       tags:
-      - roles
-  /users/{user-name}:
-    get:
-      description: user login
-      operationId: login
-      parameters:
-      - description: UserName
-        in: path
-        name: user-name
-        required: true
-        type: string
-        x-go-name: UserName
-      - description: Pwd
-        in: query
-        name: pwd
-        type: string
-        x-go-name: Pwd
-      responses:
-        "200":
-          description: User
-          schema:
-            $ref: '#/definitions/User'
-        "422":
-          $ref: '#/responses/validationError'
-        default:
-          $ref: '#/responses/genericError'
-      summary: user login
-      tags:
       - users
-  /users/roles:
-    post:
-      description: delete role
-      operationId: delRole
-      summary: delete role
-      tags:
-      - roles
 responses:
   genericError:
     description: genericError

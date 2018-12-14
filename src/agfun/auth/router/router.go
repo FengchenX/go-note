@@ -8,6 +8,8 @@ import (
 func Init() *gin.Engine {
 	rut = router.Init()
 	initUser()
+	initRoles()
+	initResources()
 	return rut
 }
 

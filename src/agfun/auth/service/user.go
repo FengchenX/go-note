@@ -3,6 +3,7 @@ package service
 import (
 	"agfun/agfun-service/crypto"
 	"agfun/auth/dbcentral/mysqldb"
+	"agfun/auth/dto"
 	"agfun/auth/entity"
 	"fmt"
 	"github.com/satori/go.uuid"
@@ -87,4 +88,8 @@ func (s *AuthSvc) UpdateUserRole(vip *entity.UserRole, session string) error {
 func (s *AuthSvc) DelUserRole(userRole entity.UserRole, session string) error {
 	e := mysqldb.DelUserRole(userRole)
 	return e
+}
+
+func (s *AuthSvc) GetResources() ([]*dto.Resource, error) {
+	return mysqldb.GetResources("")
 }

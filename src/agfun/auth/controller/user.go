@@ -50,12 +50,8 @@ func Login(c *gin.Context) {
 
 func decodeLoginReq(c *gin.Context) (*entity.User, error) {
 	user := &entity.User{
-		UserName: c.Param("user-name"),
-		Pwd:      c.Param("pwd"),
-	}
-	pwd, b := c.GetQuery("pwd")
-	if b {
-		user.Pwd = pwd
+		UserName: c.Query("user-name"),
+		Pwd:      c.Query("pwd"),
 	}
 	if user.UserName == "" || user.Pwd == "" {
 		return nil, fmt.Errorf("user name or pwd is nil")
@@ -161,7 +157,7 @@ func DelUserRole(c *gin.Context) {
 		util.Fail(c, e)
 		return
 	}
-	e := service.GetDefaultSvc().DelUserRole(userRole, session)
+	e = service.GetDefaultSvc().DelUserRole(userRole, session)
 	if e != nil {
 		util.Fail(c, e)
 		return
@@ -195,4 +191,13 @@ func UpdateRole(c *gin.Context) {
 }
 func GetRoles(c *gin.Context) {
 
+}
+
+func GetResources(c *gin.Context) {
+	resources, e := service.GetDefaultSvc().GetResources()
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	util.Success(c, resources)
 }

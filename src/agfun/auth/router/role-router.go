@@ -12,7 +12,7 @@ func initRoles() {
 	//
 	// responses:
 	//   200: Role
-	roles.POST("/", controller.AddRole)
+	roles.POST("", controller.AddRole)
 	// swagger:route POST /roles roles delRole
 	//
 	// delete role
@@ -28,5 +28,5 @@ func initRoles() {
 	//
 	// responses:
 	//   200: []Role
-	roles.GET("/", controller.GetRoles)
+	roles.GET("", controller.GetRoles)
 }

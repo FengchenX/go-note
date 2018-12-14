@@ -3,6 +3,7 @@ package mysqldb
 import (
 	auth "agfun/agfun-service/dbcentral/mysqldb"
 	"agfun/agfun-service/util"
+	"agfun/auth/dto"
 	"agfun/auth/entity"
 	"fmt"
 	"github.com/jinzhu/gorm"
@@ -181,4 +182,29 @@ func DelUserRole(vip entity.UserRole) error {
 	}
 	db := auth.GetAuthDB().Where(sql, params...).Delete(entity.UserRole{})
 	return db.Error
+}
+
+func GetResources(layer string) ([]*dto.Resource, error) {
+	sql := fmt.Sprintf("layer = ?")
+	var resources []*entity.Resource
+	db := auth.GetAuthDB().Where(sql, layer).Find(&resources)
+	if resources == nil {
+		return nil, nil
+	}
+	var temps []*dto.Resource
+	for _, temp := range resources {
+		ret := dto.Resource{
+			Resource: *temp,
+			Children: nil,
+		}
+		layer := fmt.Sprintf("%s%s-", layer, temp.Name)
+		childResources, e := GetResources(layer)
+		if e != nil {
+			continue
+		}
+		ret.Children = childResources
+		temps = append(temps, &ret)
+	}
+
+	return temps, db.Error
 }
