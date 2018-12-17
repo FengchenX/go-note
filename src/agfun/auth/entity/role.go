@@ -32,3 +32,10 @@ type GroupRole struct {
 	Level   int       `json:"level"`
 	Expire  time.Time `json:"expire"`
 }
+
+type Rule struct {
+	ID         string `json:"id"`
+	RoleID     string `json:"role_id"`
+	ResourceID string `json:"resource_id"`
+	VerbID     string `json:"verb_id"`
+}

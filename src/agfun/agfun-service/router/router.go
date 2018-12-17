@@ -2,17 +2,19 @@ package router
 
 import (
 	"agfun/agfun-service/controller"
+	"agfun/agfun-service/dbcentral/etcddb"
+	"agfun/agfun-service/dbcentral/mysqldb"
+	"agfun/agfun-service/jwt"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
 func Init() *gin.Engine {
 	router := gin.Default()
-	//router.Use(util.Cors()) //当直接使用swagger edit 时需要打开解决跨域问题
 	config := cors.DefaultConfig()
 	config.AllowAllOrigins = true
 	config.AllowHeaders = append(config.AllowHeaders, []string{"session", "accept"}...)
-	router.Use(cors.New(config))
+	router.Use(cors.New(config), jwt.AuthMiddleWare(mysqldb.GetAuthDB(), etcddb.GetCli()))
 
 	router.GET("/", controller.Hello)
 	initFreeVideoRouter(router)

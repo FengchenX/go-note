@@ -34,6 +34,9 @@ func CreateTable() {
 	if db := authDB().AutoMigrate(&entity.Verb{}); db.Error != nil {
 		log.Fatal(db.Error)
 	}
+	if db := authDB().AutoMigrate(&entity.Rule{}); db.Error != nil {
+		log.Fatal(db.Error)
+	}
 }
 
 func CreateUser(user *entity.User) (*entity.User, error) {
