@@ -12,6 +12,11 @@ import (
 
 func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 	return func(c *gin.Context) {
+		// 开关
+		if true {
+			c.Next()
+			return
+		}
 		// 不用检查的url直接放行
 		if strings.Contains(c.Request.RequestURI, "/users?user-name") {
 			c.Next()

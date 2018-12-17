@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/agfun-service/jwt/auth-middle-ware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agfun-service/util/gin.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/util/gin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/dbcentral/mysqldb/authdb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/entity/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/auth/entity/role.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/snap/db" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/snap/db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/wal/0000000000000000-0000000000000000.wal" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/wal/0000000000000000-0000000000000000.wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agfun-service/jwt/auth-middle-ware.go" beforeDir="false" afterPath="$PROJECT_DIR$/agfun-service/jwt/auth-middle-ware.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third-tools/nginx-1.14.2/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/nginx-1.14.2/logs/nginx.pid" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/agfun-service/jwt/auth-middle-ware.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+            <state relative-caret-position="176">
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -248,7 +240,7 @@
               <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
               <item name="agfun" type="462c0819:PsiDirectoryNode" />
               <item name="agfun-service" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
@@ -865,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/agfun-service/jwt/auth-middle-ware.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+        <state relative-caret-position="176">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
