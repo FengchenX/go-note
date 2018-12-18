@@ -2,6 +2,8 @@ package entity
 
 import "agfun/agfun-service/entity"
 
+// free movie
+// swagger:model
 type FreeMovie struct {
 	Movie
 	entity.FreeVideo

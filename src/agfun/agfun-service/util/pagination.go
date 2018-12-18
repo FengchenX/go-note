@@ -5,11 +5,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// page filter
+// swagger:model
 type PageFilter struct {
-	Sort   string
-	Order  string
-	Limit  string
-	Offset string
+	Sort   string `json:"sort"`
+	Order  string `json:"order"`
+	Limit  string `json:"limit"`
+	Offset string `json:"offset"`
 }
 
 func ParsePageFilter(c *gin.Context) (*PageFilter, error) {

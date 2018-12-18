@@ -1,7 +1,6 @@
 package main
 
 import (
-	"agfun/agfun-service/util"
 	"agfun/movie-mgr/dbcentral/mysqldb"
 	"agfun/movie-mgr/router"
 	"agfun/movie-mgr/service"

@@ -35,7 +35,11 @@ type GetUserRoleParams struct {
 	Session string `json:"session"`
 	// user id
 	// in: path
-	UserId string `json:"user-id"`
+	UserID string `json:"user-id"`
+
+	// role id
+	// in: path
+	RoleID string `json:"role-id"`
 
 	// level
 	// in: query

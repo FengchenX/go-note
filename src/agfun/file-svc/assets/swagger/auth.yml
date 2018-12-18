@@ -177,7 +177,13 @@ paths:
         name: user-id
         required: true
         type: string
-        x-go-name: UserId
+        x-go-name: UserID
+      - description: role id
+        in: path
+        name: role-id
+        required: true
+        type: string
+        x-go-name: RoleID
       - description: level
         in: query
         name: level
@@ -208,7 +214,13 @@ paths:
         name: user-id
         required: true
         type: string
-        x-go-name: UserId
+        x-go-name: UserID
+      - description: role id
+        in: path
+        name: role-id
+        required: true
+        type: string
+        x-go-name: RoleID
       - description: level
         in: query
         name: level

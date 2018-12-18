@@ -18,6 +18,7 @@ func (s *AuthSvc) CreateUser(req entity.User) (*entity.User, error) {
 	if len(users) > 0 {
 		return nil, fmt.Errorf("user is had")
 	}
+	req.CreateTime = time.Now()
 	user, e := mysqldb.CreateUser(&req)
 	if e != nil {
 		return nil, e

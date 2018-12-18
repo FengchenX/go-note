@@ -13,12 +13,13 @@ import (
 func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		// 开关
-		if true {
+		if false {
 			c.Next()
 			return
 		}
 		// 不用检查的url直接放行
-		if strings.Contains(c.Request.RequestURI, "/users?user-name") {
+		if strings.Contains(c.Request.RequestURI, "/users?user-name") ||
+			c.Request.RequestURI == "/users" {
 			c.Next()
 			return
 		}
@@ -58,7 +59,7 @@ func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 			return
 		}
 
-		currentParts := splitPath(c.Request.RequestURI)
+		currentParts := splitPath(strings.Split(c.Request.RequestURI, "?")[0])
 
 		for _, userRole := range userRoles {
 			rule := entity.Rule{
@@ -97,13 +98,14 @@ func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 						if resourcePart != currentParts[j] {
 							continue
 						}
-						currentParts = append(currentParts[:j], currentParts[:j+1]...)
+						currentParts = append(currentParts[:j], currentParts[j+1:]...)
 						j--
 						length++
 						if length == len(resourceParts)-1 {
 							c.Next()
 							return
 						}
+						break
 					}
 				}
 			}
@@ -119,7 +121,8 @@ func splitPath(path string) []string {
 	if path == "" {
 		return []string{}
 	}
-	return strings.Split(path, "/")
+	split := strings.Split(path, "/")
+	return split
 }
 
 func splitLayer(layer string) []string {

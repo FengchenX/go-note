@@ -1,0 +1,31 @@
+host: localhost:8080
+info:
+  description: |-
+    The purpose of this service is to provide an application
+    that is using plain go code to define an API
+  title: movie API.
+  version: 0.0.1
+paths:
+  /free-movies:
+    get:
+      description: get free movies
+      operationId: getFreeMovies
+      responses:
+        "200":
+          $ref: '#/responses/FreeMovie'
+      summary: get free movies
+      tags:
+      - movies
+    post:
+      description: add free movies
+      operationId: addFreeMovies
+      responses:
+        "200":
+          $ref: '#/responses/FreeMovie'
+      summary: add free movies
+      tags:
+      - movies
+schemes:
+- http
+- https
+swagger: "2.0"
