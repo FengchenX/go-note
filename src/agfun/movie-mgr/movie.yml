@@ -22,7 +22,7 @@ paths:
       responses:
         "200":
           $ref: '#/responses/FreeMovie'
-      summary: add free movies
+      summary: add free movies addFreeMovies
       tags:
       - movies
 schemes:

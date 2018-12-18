@@ -17,7 +17,7 @@ func initFreeSvc() {
 
 	// swagger:route POST /free-movies movies addFreeMovies
 	//
-	// add free movies
+	// add free movies addFreeMovies
 	//
 	// add free movies
 	//
