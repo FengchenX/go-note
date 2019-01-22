@@ -1,4 +1,5 @@
-// Package classification movie API.
+
+// Package classification agfun API.
 //
 // The purpose of this service is to provide an application
 // that is using plain go code to define an API
@@ -8,4 +9,4 @@
 //   Version: 0.0.1
 //
 // swagger:meta
-package service
+package agfun

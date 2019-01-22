@@ -186,11 +186,10 @@ func DelUserRole(vip entity.UserRole) error {
 	db := auth.GetAuthDB().Where(sql, params...).Delete(entity.UserRole{})
 	return db.Error
 }
-
-func GetResources(layer string) ([]*dto.Resource, error) {
-	sql := fmt.Sprintf("layer = ?")
+func GetResources(parentID string) ([]*dto.Resource, error) {
+	sql := fmt.Sprintf("parent_id = ?")
 	var resources []*entity.Resource
-	db := auth.GetAuthDB().Where(sql, layer).Find(&resources)
+	db := auth.GetAuthDB().Where(sql, parentID).Find(&resources)
 	if resources == nil {
 		return nil, nil
 	}
@@ -200,8 +199,8 @@ func GetResources(layer string) ([]*dto.Resource, error) {
 			Resource: *temp,
 			Children: nil,
 		}
-		layer := fmt.Sprintf("%s%s-", layer, temp.Name)
-		childResources, e := GetResources(layer)
+		parentID := temp.ID
+		childResources, e := GetResources(parentID)
 		if e != nil {
 			continue
 		}

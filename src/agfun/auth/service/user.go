@@ -92,5 +92,5 @@ func (s *AuthSvc) DelUserRole(userRole entity.UserRole, session string) error {
 }
 
 func (s *AuthSvc) GetResources() ([]*dto.Resource, error) {
-	return mysqldb.GetResources("")
+	return mysqldb.GetResources("0")
 }

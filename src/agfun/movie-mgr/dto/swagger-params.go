@@ -26,7 +26,7 @@ type AddFreeMoviesParams struct {
 	// auth session
 	// in: header
 	Session string `json:"session"`
-	
+
 	// in:body
 	Body entity.FreeMovie `json:"body"`
 }

@@ -76,6 +76,18 @@ form [table]
 where [column] = ?
 */
 
+// 查询最新状态
+/*
+SELECT
+	order_change.*
+FROM
+	( SELECT order_id, MAX ( update_time ) FROM order_change GROUP BY order_id ) b
+	INNER JOIN order_change ON order_change.order_id = b.order_id 
+	AND order_change.update_time = b."max"
+*/
+
+
+
 func main() {
 
 /**  普通增删改查

@@ -2,6 +2,7 @@ package jwt
 
 import (
 	"agfun/agfun-service/dbcentral/etcddb"
+	"agfun/agfun-service/dbcentral/mysqldb"
 	"agfun/agfun-service/util"
 	"agfun/auth/entity"
 	"fmt"
@@ -13,13 +14,7 @@ import (
 func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		// 开关
-		if false {
-			c.Next()
-			return
-		}
-		// 不用检查的url直接放行
-		if strings.Contains(c.Request.RequestURI, "/users?user-name") ||
-			c.Request.RequestURI == "/users" {
+		if true {
 			c.Next()
 			return
 		}
@@ -77,7 +72,7 @@ func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 			}
 
 			for _, resource := range resources {
-				resourceParts := splitLayer(resource.Layer)
+				resourceParts := splitLayer(resource.ParentID)
 				resourceParts = append(resourceParts, resource.Name)
 				var length int
 				if len(resourceParts) == 1 {
@@ -115,6 +110,8 @@ func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 	}
 }
 
+
+
 // splitPath returns the segments for a URL path.
 func splitPath(path string) []string {
 	path = strings.Trim(path, "/")
@@ -131,4 +128,83 @@ func splitLayer(layer string) []string {
 		return []string{}
 	}
 	return strings.Split(layer, "-")
+}
+
+func GetResourceParts(parentID string) (string, error) {
+	if parentID == "0" {
+		return "", nil
+	}
+	resource := entity.Resource{}
+	db := mysqldb.GetAuthDB().Where("id = ?", parentID).First(&resource)
+	if db.Error != nil {
+		return "", db.Error
+	}
+	url := ""
+	if len(resource.Name) > 0 {
+		url = fmt.Sprintf("%s/%s", resource.Name, url)
+	}
+	if len(resource.Type) > 0 {
+		url = fmt.Sprintf("%s/%s", resource.Type, url)
+	}
+	s, e := GetResourceParts(resource.ParentID)
+	if e != nil {
+		return "", e
+	}
+	if len(s) > 0 {
+		url = fmt.Sprintf("%s/%s", s, url)
+	}
+	return url, nil
+}
+
+func IsResources(path string) (bool, error) {
+
+	//sql := fmt.Sprintf(`SELECT resource, parent_id FROM sys_resource WHERE "name" = ''`)
+	//rows, e := db.Conn.Query(sql)
+	//if e != nil {
+	//	return false, e
+	//}
+	//defer rows.Close()
+	//var resources []types.Resource
+	//for rows.Next() {
+	//	var resource types.Resource
+	//	e = rows.Scan(&resource.Resource, &resource.ParentId)
+	//	if e != nil {
+	//		return false, e
+	//	}
+	//	resources = append(resources, resource)
+	//}
+	//if e = rows.Err(); e != nil {
+	//	return false, e
+	//}
+	//b, e := IsResursIncludePath(db, resources, path)
+	//return b, e
+	return false, nil
+}
+
+func IsResursIncludePath(authDB *pg.AuthCentralDB, resources []types.Resource, path string) (bool, error) {
+//Label:
+//	for _, resource := range resources {
+//		resourceParts, e := GetResourceParts(authDB, resource.ParentId)
+//		if e != nil {
+//			continue
+//		}
+//		if len(resource.Resource) > 0 {
+//			resourceParts = fmt.Sprintf("%s/%s", resourceParts, resource.Resource)
+//		}
+//		if len(resource.Name) > 0 {
+//			resourceParts = fmt.Sprintf("%s/%s", resourceParts, resource.Name)
+//		}
+//		list := strings.Split(resourceParts, "/")
+//		if len(list) <= 1 {
+//			return false, nil
+//		}
+//		for i := 1; i < len(list); i++ {
+//			if !strings.Contains(path, list[i]) {
+//				continue Label
+//			}
+//		}
+//		return true, nil
+//	}
+//	return false, nil
+return false, nil
 }
