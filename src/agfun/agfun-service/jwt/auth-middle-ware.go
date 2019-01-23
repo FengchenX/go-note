@@ -54,8 +54,6 @@ func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 			return
 		}
 
-		currentParts := splitPath(strings.Split(c.Request.RequestURI, "?")[0])
-
 		for _, userRole := range userRoles {
 			rule := entity.Rule{
 				RoleID: userRole.RoleID,
@@ -71,63 +69,28 @@ func AuthMiddleWare(authDB *gorm.DB, cli *etcddb.Client) gin.HandlerFunc {
 				continue
 			}
 
-			for _, resource := range resources {
-				resourceParts := splitLayer(resource.ParentID)
-				resourceParts = append(resourceParts, resource.Name)
-				var length int
-				if len(resourceParts) == 1 {
-					if resourceParts[0] == "authMgr" {
-						if len(currentParts) >= 1 {
-							if currentParts[0] == "users" ||
-								currentParts[0] == "roles" ||
-								currentParts[0] == "resources" {
-								c.Next()
-								return
-							}
-						}
-					}
-				}
-
-				for _, resourcePart := range resourceParts[1:] {
-					for j := 0; j < len(currentParts); j++ {
-						if resourcePart != currentParts[j] {
-							continue
-						}
-						currentParts = append(currentParts[:j], currentParts[j+1:]...)
-						j--
-						length++
-						if length == len(resourceParts)-1 {
-							c.Next()
-							return
-						}
-						break
-					}
-				}
+			b, e := IsResursIncludePath(resources, c.Request.RequestURI)
+			if e != nil {
+				util.Fail(c, e)
+				return
 			}
+			if b {
+				c.Next()
+				return
+			}
+		}
+		b, e := IsResources(c.Request.RequestURI)
+		if e != nil {
+			util.Fail(c, e)
+			return
+		}
+		if !b {
+			c.Next()
+			return
 		}
 		util.Fail(c, fmt.Errorf("no auth"))
 		c.Abort()
 	}
-}
-
-
-
-// splitPath returns the segments for a URL path.
-func splitPath(path string) []string {
-	path = strings.Trim(path, "/")
-	if path == "" {
-		return []string{}
-	}
-	split := strings.Split(path, "/")
-	return split
-}
-
-func splitLayer(layer string) []string {
-	layer = strings.Trim(layer, "-")
-	if layer == "" {
-		return []string{}
-	}
-	return strings.Split(layer, "-")
 }
 
 func GetResourceParts(parentID string) (string, error) {
@@ -157,54 +120,35 @@ func GetResourceParts(parentID string) (string, error) {
 }
 
 func IsResources(path string) (bool, error) {
-
-	//sql := fmt.Sprintf(`SELECT resource, parent_id FROM sys_resource WHERE "name" = ''`)
-	//rows, e := db.Conn.Query(sql)
-	//if e != nil {
-	//	return false, e
-	//}
-	//defer rows.Close()
-	//var resources []types.Resource
-	//for rows.Next() {
-	//	var resource types.Resource
-	//	e = rows.Scan(&resource.Resource, &resource.ParentId)
-	//	if e != nil {
-	//		return false, e
-	//	}
-	//	resources = append(resources, resource)
-	//}
-	//if e = rows.Err(); e != nil {
-	//	return false, e
-	//}
-	//b, e := IsResursIncludePath(db, resources, path)
-	//return b, e
-	return false, nil
+	var resources []*entity.Resource
+	mysqldb.GetAuthDB().Where("name=?", "").Find(&resources)
+	b, e := IsResursIncludePath(resources, path)
+	return b, e
 }
 
-func IsResursIncludePath(authDB *pg.AuthCentralDB, resources []types.Resource, path string) (bool, error) {
-//Label:
-//	for _, resource := range resources {
-//		resourceParts, e := GetResourceParts(authDB, resource.ParentId)
-//		if e != nil {
-//			continue
-//		}
-//		if len(resource.Resource) > 0 {
-//			resourceParts = fmt.Sprintf("%s/%s", resourceParts, resource.Resource)
-//		}
-//		if len(resource.Name) > 0 {
-//			resourceParts = fmt.Sprintf("%s/%s", resourceParts, resource.Name)
-//		}
-//		list := strings.Split(resourceParts, "/")
-//		if len(list) <= 1 {
-//			return false, nil
-//		}
-//		for i := 1; i < len(list); i++ {
-//			if !strings.Contains(path, list[i]) {
-//				continue Label
-//			}
-//		}
-//		return true, nil
-//	}
-//	return false, nil
-return false, nil
+func IsResursIncludePath(resources []*entity.Resource, path string) (bool, error) {
+Label:
+	for _, resource := range resources {
+		resourceParts, e := GetResourceParts(resource.ParentID)
+		if e != nil {
+			continue
+		}
+		if len(resource.Type) > 0 {
+			resourceParts = fmt.Sprintf("%s/%s", resourceParts, resource.Type)
+		}
+		if len(resource.Name) > 0 {
+			resourceParts = fmt.Sprintf("%s/%s", resourceParts, resource.Name)
+		}
+		list := strings.Split(resourceParts, "/")
+		if len(list) <= 1 {
+			return false, nil
+		}
+		for i := 1; i < len(list); i++ {
+			if !strings.Contains(path, list[i]) {
+				continue Label
+			}
+		}
+		return true, nil
+	}
+	return false, nil
 }
