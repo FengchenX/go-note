@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"agfun/hotstreak"
+	"agfun/test/hotstreak"
 	"github.com/kennygrant/sanitize"
 	"github.com/sirupsen/logrus"
 )

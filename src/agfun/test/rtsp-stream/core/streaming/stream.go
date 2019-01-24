@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"agfun/hotstreak"
+	"agfun/test/hotstreak"
 )
 
 // Stream describes a given host's streaming

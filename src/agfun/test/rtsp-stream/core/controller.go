@@ -14,8 +14,8 @@ import (
 	"syscall"
 	"time"
 
-	"agfun/rtsp-stream/core/config"
-	"agfun/rtsp-stream/core/streaming"
+	"agfun/test/rtsp-stream/core/config"
+	"agfun/test/rtsp-stream/core/streaming"
 	"github.com/julienschmidt/httprouter"
 	"github.com/sirupsen/logrus"
 )

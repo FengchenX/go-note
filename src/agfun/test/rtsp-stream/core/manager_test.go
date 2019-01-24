@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"agfun/rtsp-stream/core/streaming"
+	"agfun/test/rtsp-streamtream/core/streaming"
 	"github.com/stretchr/testify/assert"
 )
 

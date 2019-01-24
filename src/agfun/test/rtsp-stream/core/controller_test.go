@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"agfun/hotstreak"
+	"agfun/test/hotstreaktreak"
 	"github.com/julienschmidt/httprouter"
 
-	"agfun/rtsp-stream/core/config"
-	"agfun/rtsp-stream/core/streaming"
+	"agfun/test/rtsp-streamtream/core/config"
+	"agfun/test/rtsp-streamtream/core/streaming"
 	"github.com/brianvoe/gofakeit"
 	"github.com/stretchr/testify/assert"
 )

@@ -3,7 +3,7 @@ package core
 import (
 	"os"
 
-	"agfun/rtsp-stream/core/config"
+	"agfun/test/rtsp-stream/core/config"
 	"github.com/sirupsen/logrus"
 )
 
