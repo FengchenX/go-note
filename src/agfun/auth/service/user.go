@@ -1,10 +1,10 @@
 package service
 
 import (
-	"agfun/agfun-service/crypto"
 	"agfun/auth/dbcentral/mysqldb"
 	"agfun/auth/dto"
 	"agfun/auth/entity"
+	"agfun/crypto"
 	"fmt"
 	"github.com/satori/go.uuid"
 	"time"

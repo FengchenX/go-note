@@ -1,8 +1,8 @@
 package service
 
 import (
-	"agfun/agfun-service/service"
 	"agfun/auth/dbcentral/etcd"
+	"agfun/service"
 )
 
 type AuthSvc struct {

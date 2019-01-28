@@ -1,7 +1,7 @@
 package service
 
 import (
-	"agfun/agfun-service/dto"
+	"agfun/dto"
 	"agfun/movie-mgr/dbcentral/mysqldb"
 	"agfun/movie-mgr/entity"
 )

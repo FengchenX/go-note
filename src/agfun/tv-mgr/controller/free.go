@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"agfun/agfun-service/dto"
-	"agfun/agfun-service/util"
+	"agfun/dto"
 	"agfun/tv-mgr/entity"
 	"agfun/tv-mgr/service"
+	"agfun/util"
 	"github.com/gin-gonic/gin"
 )
 

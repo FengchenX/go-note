@@ -1,7 +1,7 @@
 package etcd
 
 import (
-	"agfun/agfun-service/dbcentral/etcddb"
+	"agfun/dbcentral/etcddb"
 )
 
 type Client struct {

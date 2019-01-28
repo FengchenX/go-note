@@ -1,6 +1,6 @@
 package service
 
-import "agfun/agfun-service/service"
+import "agfun/service"
 
 type MovieSvc struct {
 	*service.Svc

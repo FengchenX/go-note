@@ -1,7 +1,7 @@
 package router
 
 import (
-	"agfun/agfun-service/router"
+	"agfun/router"
 	"github.com/gin-gonic/gin"
 )
 

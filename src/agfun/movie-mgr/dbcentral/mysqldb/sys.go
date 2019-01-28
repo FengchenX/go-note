@@ -1,7 +1,7 @@
 package mysqldb
 
 import (
-	"agfun/agfun-service/dbcentral/mysqldb"
+	"agfun/dbcentral/mysqldb"
 	"agfun/movie-mgr/entity"
 	"github.com/jinzhu/gorm"
 )

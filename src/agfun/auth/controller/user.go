@@ -1,10 +1,10 @@
 package controller
 
 import (
-	"agfun/agfun-service/util"
 	"agfun/auth/dto"
 	"agfun/auth/entity"
 	"agfun/auth/service"
+	"agfun/util"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"strconv"

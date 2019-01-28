@@ -1,6 +1,6 @@
 package etcd
 
-import "agfun/agfun-service/dbcentral/etcddb"
+import "agfun/dbcentral/etcddb"
 
 type Client struct {
 	*etcddb.Client

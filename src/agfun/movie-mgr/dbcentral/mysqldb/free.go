@@ -1,8 +1,8 @@
 package mysqldb
 
 import (
-	"agfun/agfun-service/util"
 	"agfun/movie-mgr/entity"
+	"agfun/util"
 	"fmt"
 )
 

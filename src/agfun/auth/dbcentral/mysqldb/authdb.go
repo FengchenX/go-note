@@ -1,10 +1,10 @@
 package mysqldb
 
 import (
-	auth "agfun/agfun-service/dbcentral/mysqldb"
-	"agfun/agfun-service/util"
 	"agfun/auth/dto"
 	"agfun/auth/entity"
+	auth "agfun/dbcentral/mysqldb"
+	"agfun/util"
 	"fmt"
 	"github.com/jinzhu/gorm"
 	"log"

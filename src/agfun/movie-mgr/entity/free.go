@@ -1,6 +1,6 @@
 package entity
 
-import "agfun/agfun-service/entity"
+import "agfun/entity"
 
 // free movie
 // swagger:model

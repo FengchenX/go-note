@@ -2,24 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39c7910-20d6-45f8-92b2-012c7c0189ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/.idea/agfun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/agfun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/conf/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/controller/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/controller/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/crypto/crypto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/crypto/crypto_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/etcddb/etcd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/etcddb/etcd_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/mysqldb/free-video.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/mysqldb/mysql.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dto/dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dto/free-video.dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/entity/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/jwt/auth-middle-ware.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/log/logger.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/log/logger_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/router/free-video.router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/service/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/gin.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/pagination.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/path.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/translation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/uuid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/auth/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/controller/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/auth/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/dbcentral/etcd/etcd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/auth/dbcentral/mysqldb/authdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/dbcentral/mysqldb/authdb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/auth/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/auth/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/auth/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/service/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/file-svc/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/file-svc/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/controller/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/etcd/etcd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/sys.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/entity/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/service/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/controller/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/etcd/etcd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/sys.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/entity/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/service/free.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/service/service.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1186856548">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
@@ -32,24 +71,18 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-176" />
     <option name="y" value="6" />
     <option name="width" value="1424" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -72,15 +105,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/agfun" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
@@ -100,14 +135,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -115,16 +145,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
 </project>
