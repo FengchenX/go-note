@@ -2,63 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39c7910-20d6-45f8-92b2-012c7c0189ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/agfun/.idea/agfun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/agfun.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mail/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/go-note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go-note.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agfun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/conf/config.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/controller/controller.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/controller/free.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/crypto/crypto.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/crypto/crypto_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/etcddb/etcd.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/etcddb/etcd_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/mysqldb/free-video.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dbcentral/mysqldb/mysql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dto/dto.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/dto/free-video.dto.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/entity/entity.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/jwt/auth-middle-ware.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/log/logger.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/log/logger_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/router/free-video.router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/router/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/service/free.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/service/service.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/gin.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/pagination.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/path.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/translation.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/agfun-service/util/uuid.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/auth/controller/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/controller/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/auth/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/dbcentral/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/auth/dbcentral/mysqldb/authdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/dbcentral/mysqldb/authdb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/auth/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/auth/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/auth/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/auth/service/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/file-svc/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/file-svc/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/controller/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/dbcentral/mysqldb/sys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/entity/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie-mgr/service/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/controller/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/dbcentral/mysqldb/sys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/entity/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/tv-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/tv-mgr/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mog/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mog/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mysql/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/mysql/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/so/TLSSign/TLSSignAPI.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/so/TLSSign/TLSSignAPI.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/so/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/so/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mail/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <element signature="e#14#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
@@ -67,7 +49,14 @@
   <component name="GoLibraries">
     <option name="urls">
       <list>
-        <option value="file://$PROJECT_DIR$" />
+        <option value="file://$PROJECT_DIR$/../go-third" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/mail/main.go" />
       </list>
     </option>
   </component>
@@ -83,6 +72,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,16 +89,16 @@
               <item name="go-note" type="b2602c69:ProjectViewProjectNode" />
               <item name="go-note" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
@@ -134,13 +124,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -158,5 +149,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/mail/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#14#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

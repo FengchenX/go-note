@@ -1,4 +1,5 @@
 package TLSSign
+
 /*
 #cgo CFLAGS: -I./
 #cgo LDFLAGS: -L $GOPATH/src/TLSSign -lsigcheck -ldl
@@ -15,18 +16,18 @@ import (
 
 // 签名设置结构体
 type TLSSignConf struct {
-        AccType int
-        Identifier string
+	AccType    int
+	Identifier string
 
-        AppId3rd string
-        SDKAppId int
+	AppId3rd string
+	SDKAppId int
 
-        Version int
-        Expire int
+	Version int
+	Expire  int
 
-		// PEM格式的密钥和公钥，如果要签名或者验证签名，就要设置其中一个
-        PriKey string
-		PubKey string
+	// PEM格式的密钥和公钥，如果要签名或者验证签名，就要设置其中一个
+	PriKey string
+	PubKey string
 }
 
 // 签名方法，返回签名的 Base64 字符串或者错误

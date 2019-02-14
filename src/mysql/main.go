@@ -33,7 +33,7 @@ CREATE TABLE `timestampTest` (
 
 10 --检测默认值，插入测试数据
 11 INSERT INTO timestampTest (name) VALUES ('aa'),('bb'),('cc');
-12 
+12
 13 --检测自动更新，更新某条数据
 14 UPDATE timestampTest SET name = 'ab' WHERE id = 1;
 
@@ -44,24 +44,24 @@ select *
 from expenses_bills
 -- join user_bills on user_bills.bill_id = expenses_bills.id
 -- where
--- order by column desc 
+-- order by column desc
 limit 2,1
 
 
-select * 
+select *
 from persons p
 where p.name in (
 select name
 from persons
-group by name 
+group by name
 having count(name)>1
 )
 
 
 //查询大于一次的数据
-select * 
-from persons 
-group by name 
+select *
+from persons
+group by name
 HAVING COUNT(name)>1;
 */
 /**增删改查sql语句
@@ -82,15 +82,13 @@ SELECT
 	order_change.*
 FROM
 	( SELECT order_id, MAX ( update_time ) FROM order_change GROUP BY order_id ) b
-	INNER JOIN order_change ON order_change.order_id = b.order_id 
+	INNER JOIN order_change ON order_change.order_id = b.order_id
 	AND order_change.update_time = b."max"
 */
 
-
-
 func main() {
 
-/**  普通增删改查
+	/**  普通增删改查
 	db, err := sql.Open("mysql", "root:feng@/test?charset=utf8")
 	checkErr(err)
 
@@ -139,8 +137,8 @@ func main() {
 	checkErr(err)
 	fmt.Println(affect)
 	db.Close()
-	
-*/
+
+	*/
 
 	/**更新时间示例
 	update,err := db.Prepare("update userinfo set created=? where uid=?")
@@ -170,40 +168,40 @@ func main() {
 	*/
 
 	/**
-	   for {
-	   	//准备一个删除状态
-	   	del,err:=db.Prepare("truncate table userinfo");
-	   	if err != nil {
-	   		fmt.Println(err)
-	   		return
-	   	}
-	   	//准备一个任务
-	   	if tx, err := db.Begin(); err != nil {
-	   		fmt.Println(err)
-	   		del.Close()
-	   	} else {
-	   		tx.Stmt(del).Exec()
-	   		insert,err := db.Prepare("insert into userinfo (username,departname,created) values(?,?,?)");
-	   		if err != nil {
-	   			fmt.Println(err)
-	   			return
-	   		}
-	   		for _,row:=range []struct{
-	   			username string
-	   			department string
-	   			created string}{
-	   				{"feng","yafa","2014-5-6"},
-	   				{"chen","faya","2018-2-3"},
-	   				{"xx","fyd","2017-6-25"},
-	   			} {
-	   			tx.Stmt(insert).Exec(row.username,row.department,row.created)
-	   		}
-	   		insert.Close()
+	  for {
+	  	//准备一个删除状态
+	  	del,err:=db.Prepare("truncate table userinfo");
+	  	if err != nil {
+	  		fmt.Println(err)
+	  		return
+	  	}
+	  	//准备一个任务
+	  	if tx, err := db.Begin(); err != nil {
+	  		fmt.Println(err)
+	  		del.Close()
+	  	} else {
+	  		tx.Stmt(del).Exec()
+	  		insert,err := db.Prepare("insert into userinfo (username,departname,created) values(?,?,?)");
+	  		if err != nil {
+	  			fmt.Println(err)
+	  			return
+	  		}
+	  		for _,row:=range []struct{
+	  			username string
+	  			department string
+	  			created string}{
+	  				{"feng","yafa","2014-5-6"},
+	  				{"chen","faya","2018-2-3"},
+	  				{"xx","fyd","2017-6-25"},
+	  			} {
+	  			tx.Stmt(insert).Exec(row.username,row.department,row.created)
+	  		}
+	  		insert.Close()
 
-	   		tx.Commit()
-	   		del.Close()
-	   	}
-	   }
+	  		tx.Commit()
+	  		del.Close()
+	  	}
+	  }
 	*/
 
 	db, err := sql.Open("mysql", "root:root@tcp(39.108.80.66:3306)/finance?charset=utf8&parseTime=true&loc=Local")
@@ -236,7 +234,6 @@ func checkErr(err error) {
 /**连接数据库方式还有
 user:password@tcp(localhost:5555)/dbname?charset=utf8
 */
-
 
 /**标准库操作数据库实例
 updateMoney, err := db.Prepare("UPDATE balance SET money=money+? WHERE id=?")

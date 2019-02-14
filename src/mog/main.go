@@ -7,8 +7,6 @@ import (
 	"log"
 )
 
-
-
 func main() {
 	url := "localhost:27017"
 	session, e := mgo.Dial(url)
@@ -57,5 +55,3 @@ type Size struct {
 	W   int
 	Uom string
 }
-
-
