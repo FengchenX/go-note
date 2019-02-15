@@ -2,68 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tv/controller/controller.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/controller/free.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/controller/paid.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/dbcentral/etcd/etcd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/dbcentral/mysqldb/paid.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/dbcentral/mysqldb/sys.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/dto/dto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/dto/free.dto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/entity/entity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/entity/free.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/router/free-svc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/router/paid-svc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/router/router.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/service/free.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/service/paid.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/service/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv/util/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/controller/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/controller/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/controller/paid.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/controller/paid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dbcentral/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/paid.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dbcentral/mysqldb/paid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dbcentral/mysqldb/sys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dto/dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dto/dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dto/free.dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dto/free.dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/dto/swagger-params.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dto/swagger-params.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/entity/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/entity/entity.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/entity/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/movie.yml" beforeDir="false" afterPath="$PROJECT_DIR$/movie/movie.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/router/free-router.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/router/free-router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/router/paid-router.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/router/paid-router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/service/paid.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/service/paid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-mgr/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/util/util.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/controller/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/controller/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/controller/paid.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/controller/paid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/dbcentral/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dbcentral/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/dbcentral/mysqldb/paid.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dbcentral/mysqldb/paid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dbcentral/mysqldb/sys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/dto/dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dto/dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/dto/free.dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dto/free.dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/entity/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/entity/entity.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/entity/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/entity/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/router/free-svc.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/free-svc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/router/paid-svc.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/paid-svc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/service/paid.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/service/paid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv-mgr/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/util/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/dto/dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dto/dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/dto/free.dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/entity/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/entity/entity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/entity/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/router/free-svc.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/free-svc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/router/paid-svc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/router.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,25 +22,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie/router/free-router.go">
+        <entry file="file://$PROJECT_DIR$/movie/entity/free.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="176">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file-svc/router/router.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file-svc/router/static-file.go">
+        <entry file="file://$PROJECT_DIR$/top/dto/dto.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
               <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
@@ -101,54 +40,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie/router/paid-router.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie/controller/free.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie/service/free.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie/entity/free.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/top/dto/dto.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/top/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="242">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding>
                 <element signature="e#14#105#0" expanded="true" />
               </folding>
@@ -157,10 +52,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go">
+        <entry file="file://$PROJECT_DIR$/top/entity/entity.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#16#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/top/router/free-svc.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/top/router/router.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/router/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie/entity/entity.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding>
+                <element signature="e#14#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -178,8 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sql.DB</find>
-      <find>path.</find>
       <find>GetCli</find>
       <find>autom</find>
       <find>rh</find>
@@ -208,6 +161,8 @@
       <find>agfun-service/</find>
       <find>connect succ</find>
       <find>\</find>
+      <find>agfun/tv-mgr/</find>
+      <find>agfun/movie-mgr/</find>
     </findStrings>
     <replaceStrings>
       <replace>gorm.DB</replace>
@@ -223,6 +178,8 @@
       <replace>agfun-service</replace>
       <replace>agfun/</replace>
       <replace>/</replace>
+      <replace>agfun/tv/</replace>
+      <replace>agfun/movie/</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -239,13 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/auth/dto/dto.go" />
-        <option value="$PROJECT_DIR$/file-svc/router/static-file.go" />
-        <option value="$PROJECT_DIR$/nginx-1.14.2/html/dist/index.html" />
-        <option value="$PROJECT_DIR$/auth/entity/user.go" />
-        <option value="$PROJECT_DIR$/auth/entity/group.go" />
-        <option value="$PROJECT_DIR$/auth/entity/auth.go" />
-        <option value="$PROJECT_DIR$/auth/router/user-router.go" />
         <option value="$PROJECT_DIR$/auth/router/role-router.go" />
         <option value="$PROJECT_DIR$/auth/router/router.go" />
         <option value="$PROJECT_DIR$/auth/router/resource-router.go" />
@@ -290,6 +240,13 @@
         <option value="$PROJECT_DIR$/test/config.yml.go" />
         <option value="$PROJECT_DIR$/test/config.yml" />
         <option value="$PROJECT_DIR$/test/main.go" />
+        <option value="$PROJECT_DIR$/top/main.go" />
+        <option value="$PROJECT_DIR$/movie/main.go" />
+        <option value="$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go" />
+        <option value="$PROJECT_DIR$/top/dto/dto.go" />
+        <option value="$PROJECT_DIR$/top/entity/entity.go" />
+        <option value="$PROJECT_DIR$/top/router/router.go" />
+        <option value="$PROJECT_DIR$/top/router/free-svc.go" />
       </list>
     </option>
   </component>
@@ -313,6 +270,40 @@
             <path>
               <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
               <item name="agfun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="movie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="movie" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agfun" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agfun" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -513,6 +504,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.08422175" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.15511727" />
@@ -583,36 +575,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../go/src/github.com/kennygrant/sanitize/sanitize.go" />
-    <entry file="file://$PROJECT_DIR$/test/rtsp-stream/ui/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/rtsp-stream/core/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#16#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie/entity/entity.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agfun-service/router/router.go" />
-    <entry file="file://$PROJECT_DIR$/../../../go/src/github.com/gin-gonic/gin/routergroup.go" />
-    <entry file="file://$PROJECT_DIR$/file-svc/controller/contoller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -659,16 +621,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../go/src/agfun-service/router/free-video.router.go" />
-    <entry file="file://$PROJECT_DIR$/movie/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#14#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auth/service/user.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -871,33 +823,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go">
+    <entry file="file://$PROJECT_DIR$/top/entity/free.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie/entity/free.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/top/dto/dto.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/top/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="242">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="e#14#105#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie/entity/entity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#14#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/dto/free.dto.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie/entity/free.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/dto/dto.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/entity/entity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/router/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/router/free-svc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/router/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

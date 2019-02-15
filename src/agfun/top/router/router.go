@@ -6,10 +6,12 @@ import (
 )
 
 var rut *gin.Engine
+var rutGroup *gin.RouterGroup
 
 func Init() *gin.Engine {
 	rut = router.Init()
-	initFreeSvc()
-	initPaidSvc()
+	rutGroup = rut.Group("/top")
+
+	initBannerSvc()
 	return rut
 }
