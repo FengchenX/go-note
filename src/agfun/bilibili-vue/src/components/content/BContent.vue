@@ -11,17 +11,17 @@
 			</div>
 		</div>
 		<!-- 推广 -->
-		<div class="container-row">
+		<!-- <div class="container-row">
 			<BPromote></BPromote>
-		</div>
+		</div> -->
 		<!-- 直播 -->
-		<div class="container-row">
+		<!-- <div class="container-row">
 			<BLive></BLive>
-		</div>
+		</div> -->
 		<!-- 各分类具体内容 -->
-		<div class="container-row"  v-for="(row, index) in rows" :id="row.b_id" v-if='rows'> 
+		<!-- <div class="container-row"  v-for="(row, index) in rows" :id="row.b_id" v-if='rows'> 
 			<BContentRow :category="row.category" :categoryId="row.categoryId" :row="row.item"></BContentRow>
-		</div>
+		</div> -->
 	</div>
 </template>
 
