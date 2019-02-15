@@ -5,9 +5,9 @@
 				<div class="b-l">
 					<Banner></Banner>
 				</div>
-				<div class="b-r">
+				<!-- <div class="b-r">
 					<BContentTop></BContentTop>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<!-- 推广 -->

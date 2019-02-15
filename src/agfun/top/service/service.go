@@ -2,24 +2,24 @@ package service
 
 import "agfun/service"
 
-type TVSvc struct {
+type TopSvc struct {
 	*service.Svc
 }
 
-func NewTVSvc() *TVSvc {
-	return &TVSvc{}
+func NewTopSvc() *TopSvc {
+	return &TopSvc{}
 }
 
-var stdSvc *TVSvc
+var stdSvc *TopSvc
 
 func initStdSvc() {
 	if stdSvc != nil {
 		return
 	}
-	stdSvc = NewTVSvc()
+	stdSvc = NewTopSvc()
 	stdSvc.Svc = service.GetDefaultSvc()
 }
-func GetDefaultSvc() *TVSvc {
+func GetDefaultSvc() *TopSvc {
 	if stdSvc == nil {
 		initStdSvc()
 	}
