@@ -3,8 +3,8 @@ package router
 import "agfun/top/controller"
 
 func initBannerSvc() {
-	group := rutGroup.Group("/banner")
-	group.GET("/", controller.GetFreeTVs)
+	group := rut.Group("/banner")
+	group.GET("", controller.GetBanners)
 	//group.POST("/", controller.AddFreeTVs)
 	//group.PUT("/{id}", controller.UpdateFreeTV)
 	//group.DELETE("/{id}", controller.DelFreeTV)

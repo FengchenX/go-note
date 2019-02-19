@@ -10,7 +10,7 @@ var rutGroup *gin.RouterGroup
 
 func Init() *gin.Engine {
 	rut = router.Init()
-	rutGroup = rut.Group("/top")
+	//rutGroup = rut.Group("/top")
 
 	initBannerSvc()
 	return rut

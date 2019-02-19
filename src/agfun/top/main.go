@@ -15,5 +15,5 @@ func main() {
 
 	mysqldb.CreateTable()
 	router := router.Init()
-	router.Run(":8080")
+	router.Run(":9050")
 }
