@@ -1,7 +1,7 @@
 <template>
 	<li class="banner-item" v-if="banner">
-		<a :href="banner.url" class="b-link" target="_blank">
-			<img :src="banner.pic">
+		<a :href="banner.video.url" class="b-link" target="_blank">
+			<img :src="banner.video.pic">
 		</a>
 	</li>
 </template>

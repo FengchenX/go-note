@@ -14,7 +14,7 @@ func (s *TopSvc) GetBanners() (dto.GetBannersResp, error) {
 			Video: entity.Video{
 				ID:   "111",
 				Name: "name1",
-				Pic:  "http://i0.hdslb.com/bfs/archive/5c1ad0c27885c11d9de7729abd3dd20d923ce745.jpg",
+				Pic:  "https://static.studygolang.com/avatar/gopher24.png?imageView2/2/w/48",
 				Desc: "",
 				URL:  "",
 			},
