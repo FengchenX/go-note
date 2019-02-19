@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-vue/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-vue/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-vue/src/api/urlConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-vue/src/api/urlConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bilibili-vue/src/store/modules/bannerStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/bilibili-vue/src/store/modules/bannerStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/controller/banner.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/controller/banner.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/dbcentral/mysqldb/sys.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/dbcentral/mysqldb/sys.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/router/banner.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/banner.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/service/banner.go" beforeDir="false" afterPath="$PROJECT_DIR$/top/service/banner.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -243,8 +233,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-46" />
-    <option name="width" value="1191" />
+    <option name="x" value="-82" />
+    <option name="y" value="1" />
+    <option name="width" value="1149" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
