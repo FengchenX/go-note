@@ -15,13 +15,18 @@ func GetFreeMovies(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.Fr
 	var params []interface{}
 	comma := ""
 	if len(free.ID) > 0 {
-		sql = fmt.Sprintf("%s %s uid = ?", sql, comma)
+		sql = fmt.Sprintf("%s %s id = ?", sql, comma)
 		params = append(params, free.ID)
 		comma = "AND"
 	}
-	if len(free.Name) > 0 {
-		sql = fmt.Sprintf("%s %s name = ?", sql, comma)
-		params = append(params, free.Name)
+	if len(free.MovieID) > 0 {
+		sql = fmt.Sprintf("%s %s movie_id = ?", sql, comma)
+		params = append(params, free.MovieID)
+		comma = "AND"
+	}
+	if len(free.FreeVideoID) > 0 {
+		sql = fmt.Sprintf("%s %s free_video_id = ?", sql, comma)
+		params = append(params, free.FreeVideoID)
 		comma = "AND"
 	}
 	var frees []*entity.FreeMovie
@@ -38,16 +43,13 @@ func GetFreeMovies(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.Fr
 func UpdateFreeMovie(free entity.FreeMovie, querys map[string]interface{}) error {
 	up := make(map[string]interface{}, 20)
 	if len(free.ID) > 0 {
-		up["uidl"] = free.ID
+		up["id"] = free.ID
 	}
-	if len(free.Name) > 0 {
-		up["name"] = free.Name
+	if len(free.MovieID) > 0 {
+		up["movie_id"] = free.MovieID
 	}
-	if len(free.Desc) > 0 {
-		up["desc"] = free.Desc
-	}
-	if len(free.URL) > 0 {
-		up["url"] = free.URL
+	if len(free.FreeVideoID) > 0 {
+		up["free_video_id"] = free.FreeVideoID
 	}
 
 	if len(free.ID) > 0 {
@@ -76,15 +78,15 @@ func DelFreeMovie(free entity.FreeMovie) error {
 	var params []interface{}
 	comma := ""
 	if len(free.ID) > 0 {
-		sql = fmt.Sprintf("%s %s uid = ?", sql, comma)
+		sql = fmt.Sprintf("%s %s id = ?", sql, comma)
 		params = append(params, free.ID)
 		comma = "AND"
 	}
-	if len(free.Name) > 0 {
-		sql = fmt.Sprintf("%s %s name = ?", sql, comma)
-		params = append(params, free.Name)
-		comma = "AND"
-	}
+	//if len(free.Name) > 0 {
+	//	sql = fmt.Sprintf("%s %s name = ?", sql, comma)
+	//	params = append(params, free.Name)
+	//	comma = "AND"
+	//}
 	db := getSysDB().Delete(&entity.FreeMovie{}).Where(sql, params...)
 	return db.Error
 }

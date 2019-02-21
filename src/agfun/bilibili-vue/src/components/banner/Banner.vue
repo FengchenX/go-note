@@ -13,7 +13,7 @@
 				<div class="title" v-if="bannerlist[count]">
 					<span class="">
 						<img src="//static.hdslb.com/images/base/ad.png" style="width: 32px; height: 20px: margin-left: 5px;vertical-align: middle;" v-if="bannerlist[count].is_ad">
-						<a :href="bannerlist[count].url" target="_blank">{{ bannerlist[count].name }}</a>
+						<a :href="bannerlist[count].video.url" target="_blank">{{ bannerlist[count].video.name }}</a>
 					</span>
 				</div>
 				<ul class="slide-bar">

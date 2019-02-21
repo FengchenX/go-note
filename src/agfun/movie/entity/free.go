@@ -1,15 +1,9 @@
 package entity
 
-import "agfun/entity"
-
 // free movie
 // swagger:model
 type FreeMovie struct {
-	Movie
-	entity.FreeVideo
-}
-
-type GetMoviesResp struct {
-	Total int
-	Frees []*FreeMovie
+	ID          string `json:"id"`
+	MovieID     string `json:"movie_id"`
+	FreeVideoID string `json:"free_video_id"`
 }

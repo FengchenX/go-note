@@ -1,45 +1,38 @@
 package main
 
 import (
+	"agfun/util"
+	"encoding/json"
 	"fmt"
-	"gopkg.in/yaml.v2"
-	"io/ioutil"
 )
 
-//配置文件中字母要小写，结构体属性首字母要大写
-
-type Myconf struct {
-	Ipport    string
-	StartSendTime string
-	SendMaxCountPerDay int
-	Devices []Device
-	WarnFrequency int
-	SendFrequency int
-}
-type Device struct {
-	DevId string
-	Nodes []Node
-}
-type Node struct {
-	PkId string
-	BkId string
-	Index string
-	MinValue float32
-	MaxValue float32
-	DataType string
-}
-
 func main() {
-	data, _ := ioutil.ReadFile("D:/myPro/go-note/src/agfun/test/config.yml")
-	fmt.Println(string(data))
-	t := Myconf{}
-	//把yaml形式的字符串解析成struct类型
-	yaml.Unmarshal(data, &t)
-	fmt.Println("初始数据", t)
-	if(t.Ipport==""){
-		fmt.Println("配置文件设置错误")
-		return;
+	a := A{
+		ID:   "aid",
+		Name: "myname",
 	}
-	d, _ := yaml.Marshal(&t)
-	fmt.Println("看看 :", string(d))
+	b := B{
+		ID:  "bid",
+		Age: 10,
+	}
+	var c C
+	util.Copy(&c.A, &a)
+	fmt.Println(c)
+	util.Copy(&c.B, &b)
+	fmt.Println(c)
+	buf, _ := json.Marshal(&c)
+	fmt.Println(string(buf))
+}
+
+type A struct {
+	ID   string `json:"id"`
+	Name string `json:"name"`
+}
+type B struct {
+	ID  string `json:"id"`
+	Age int    `json:"age"`
+}
+type C struct {
+	A
+	B
 }

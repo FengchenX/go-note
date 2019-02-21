@@ -5,7 +5,6 @@ import axios from 'axios'
 export const bannerApi = {
 	list() {
 		return axios.get(url.banner).then((response) => {
-			console.log(response)
 			return response.data
 		})
 	}
