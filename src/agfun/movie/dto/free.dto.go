@@ -11,9 +11,9 @@ import (
 //}
 
 type FreeMovie struct {
-	entity.Movie
-	entity2.FreeVideo
-	entity2.Video
+	Movie entity.Movie `json:"movie"`
+	FreeVideo entity2.FreeVideo `json:"free_video"`
+	Video entity2.Video `json:"video"`
 }
 
 type GetMoviesResp struct {

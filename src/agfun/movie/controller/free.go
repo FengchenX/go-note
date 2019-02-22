@@ -2,7 +2,7 @@ package controller
 
 import (
 	"agfun/dto"
-	"agfun/movie/entity"
+	dto2 "agfun/movie/dto"
 	"agfun/movie/service"
 	"agfun/util"
 	"github.com/gin-gonic/gin"
@@ -41,7 +41,9 @@ func AddFreeMovies(c *gin.Context) {
 		return
 	}
 	for _, v := range videos {
-		v.ID = util.NewUUID()
+		v.Video.ID = util.NewUUID()
+		v.FreeVideo.ID = util.NewUUID()
+		v.Movie.ID = util.NewUUID()
 	}
 	e = service.GetDefaultSvc().AddFreeMovies(videos)
 	if e != nil {
@@ -51,8 +53,8 @@ func AddFreeMovies(c *gin.Context) {
 	util.Success(c, videos)
 }
 
-func decodeCreateFreeMovies(c *gin.Context) ([]*entity.FreeMovie, error) {
-	var req []*entity.FreeMovie
+func decodeCreateFreeMovies(c *gin.Context) ([]*dto2.FreeMovie, error) {
+	var req []*dto2.FreeMovie
 	e := c.BindJSON(&req)
 	return req, e
 }
@@ -70,8 +72,8 @@ func UpdateFreeMovie(c *gin.Context) {
 	}
 	util.Success(c, nil)
 }
-func decodeUpdateFreeMovie(c *gin.Context) (*entity.FreeMovie, error) {
-	var req entity.FreeMovie
+func decodeUpdateFreeMovie(c *gin.Context) (*dto2.FreeMovie, error) {
+	var req dto2.FreeMovie
 	e := c.BindJSON(&req)
 	return &req, e
 }
@@ -89,9 +91,9 @@ func DelFreeMovie(c *gin.Context) {
 	}
 	util.Success(c, nil)
 }
-func decodeDelFreeMovie(c *gin.Context) (*entity.FreeMovie, string, error) {
+func decodeDelFreeMovie(c *gin.Context) (*dto2.FreeMovie, string, error) {
 	token := c.GetHeader("session")
-	var free entity.FreeMovie
+	var free dto2.FreeMovie
 	e := c.BindJSON(&free)
 	return &free, token, e
 }

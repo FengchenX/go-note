@@ -11,19 +11,21 @@ import (
 	"fmt"
 )
 
-func (s *MovieSvc) AddFreeMovies(frees []*entity.FreeMovie) error {
+func (s *MovieSvc) AddFreeMovies(frees []*dto2.FreeMovie) error {
 	for _, free := range frees {
-		_, i, e := mysqldb.GetFreeMovies(*free, nil)
-		if e != nil {
-			return e
-		}
-		if i > 0 {
-			continue
-		}
-		e = mysqldb.AddFreeMovies(free)
-		if e != nil {
-			return e
-		}
+		//_, i, e := mysqldb.GetFreeMovies(*free, nil)
+		//if e != nil {
+		//	return e
+		//}
+		//if i > 0 {
+		//	continue
+		//}
+		//e = mysqldb.AddFreeMovies(free)
+		//if e != nil {
+		//	return e
+		//}
+		fmt.Println(free)
+		//todo
 	}
 	return nil
 }
@@ -77,19 +79,29 @@ func (s *MovieSvc) GetFreeMovies(req dto.GetVideos) (*dto2.GetMoviesResp, error)
 	return &resp, nil
 }
 
-func (s *MovieSvc) UpdateFreeMovie(free entity.FreeMovie) error {
-	if len(free.ID) > 0 {
-		e := mysqldb.UpdateFreeMovie(free, nil)
-		if e != nil {
-			return e
-		}
-		return nil
+func (s *MovieSvc) UpdateFreeMovie(free dto2.FreeMovie) error {
+	if len(free.Video.ID) > 0 {
+		//todo
 	}
-	//todo
+	if len(free.FreeVideo.ID) > 0 {
+		//todo
+	}
+	if len(free.Movie.ID)>0 {
+		//todo
+	}
 	return nil
 }
 
-func (s *MovieSvc) DelFreeMovie(free entity.FreeMovie, token string) error {
-	e := mysqldb.DelFreeMovie(free)
-	return e
+func (s *MovieSvc) DelFreeMovie(free dto2.FreeMovie, token string) error {
+	if len(free.Video.ID) > 0 {
+		//todo
+	}
+	if len(free.FreeVideo.ID) > 0 {
+		//todo
+	}
+	if len(free.Movie.ID)>0 {
+		//todo
+	}
+	//e := mysqldb.DelFreeMovie(free)
+	return nil
 }

@@ -40,7 +40,7 @@ func GetFreeMovies(free entity.FreeMovie, filter *util.PageFilter) ([]*entity.Fr
 	return frees, total, db.Error
 }
 
-func UpdateFreeMovie(free entity.FreeMovie, querys map[string]interface{}) error {
+func UpdateFreeMovie(free entity.FreeMovie, args map[string]interface{}) error {
 	up := make(map[string]interface{}, 20)
 	if len(free.ID) > 0 {
 		up["id"] = free.ID
@@ -59,7 +59,7 @@ func UpdateFreeMovie(free entity.FreeMovie, querys map[string]interface{}) error
 		sql := ""
 		var params []interface{}
 		comma := ""
-		for k, v := range querys {
+		for k, v := range args {
 			sql = fmt.Sprintf("%s %s %s =?", sql, comma, k)
 			params = append(params, v)
 			comma = "AND"
