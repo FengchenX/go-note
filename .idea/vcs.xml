@@ -2,6 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" vcs="Git" />
   </component>
 </project>

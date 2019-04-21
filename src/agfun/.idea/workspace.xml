@@ -2,451 +2,480 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41fa711-9723-49f4-bc3e-2b1469154e70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/movie/controller/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/controller/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/dto/free.dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/dto/free.dto.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/service/free.go" beforeDir="false" afterPath="$PROJECT_DIR$/movie/service/free.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/account.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/acme.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/acme.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/acme_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/acme_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/challenge_http_provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/challenge_http_provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/challenge_tls_provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/challenge_tls_provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/localStore.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/localStore.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/acme/localStore_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/acme/localStore_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/anonymize/anonymize.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/anonymize/anonymize.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/anonymize/anonymize_config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/anonymize/anonymize_config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/anonymize/anonymize_doOnJSON_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/anonymize/anonymize_doOnJSON_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/anonymize/anonymize_doOnStruct_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/anonymize/anonymize_doOnStruct_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/api/dashboard.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/api/dashboard.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/api/debug.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/api/debug.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/api/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/api/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/api/handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/api/handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/autogen/gentemplates/gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/autogen/gentemplates/gen.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cluster/datastore.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cluster/datastore.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cluster/leadership.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cluster/leadership.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cluster/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cluster/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/bug/bug.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/bug/bug.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/bug/bug_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/bug/bug_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/configuration.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/context.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/convert/convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/convert/convert.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/healthcheck/healthcheck.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/healthcheck/healthcheck.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/storeconfig/storeconfig.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/storeconfig/storeconfig.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/traefik/traefik.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/traefik/traefik.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/cmd/version/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/cmd/version/version.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/collector/collector.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/collector/collector.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/config/dyn_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/config/dyn_config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/config/middlewares.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/config/middlewares.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/config/static/entrypoints.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/config/static/entrypoints.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/config/static/entrypoints_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/config/static/entrypoints_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/config/static/static_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/config/static/static_config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/examples/accessLog/exampleHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/examples/accessLog/exampleHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/generate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/h2c/h2c.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/h2c/h2c.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/healthcheck/healthcheck.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/healthcheck/healthcheck.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/healthcheck/healthcheck_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/healthcheck/healthcheck_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/hostresolver/hostresolver.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/hostresolver/hostresolver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/hostresolver/hostresolver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/hostresolver/hostresolver_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/access_log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/access_log_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/acme_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/acme_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/constraint_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/constraint_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/consul_catalog_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/consul_catalog_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/consul_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/consul_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/docker_compose_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/docker_compose_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/docker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/docker_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/dynamodb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/dynamodb_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/error_pages_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/error_pages_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/etcd3_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/etcd3_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/eureka_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/eureka_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/fake_dns_server.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/fake_dns_server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/file_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/grpc_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/grpc_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/healthcheck_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/healthcheck_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/helloworld/helloworld.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/helloworld/helloworld.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/hostresolver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/hostresolver_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/https_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/https_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/integration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/integration_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/log_rotation_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/log_rotation_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/marathon15_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/marathon15_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/marathon_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/marathon_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/mesos_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/mesos_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/proxy_protocol_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/proxy_protocol_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/ratelimit_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/ratelimit_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/rest_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/rest_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/retry_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/retry_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/simple_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/simple_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/timeout_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/timeout_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/tls_client_headers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/tls_client_headers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/tracing_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/tracing_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/try/condition.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/try/condition.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/try/try.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/try/try.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/integration/websocket_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/integration/websocket_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/ip/checker.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/ip/checker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/ip/checker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/ip/checker_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/ip/strategy.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/ip/strategy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/ip/strategy_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/ip/strategy_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/job/job.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/job/job.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/job/job_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/job/job_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/log/deprecated.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/log/deprecated.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/log/fields.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/log/fields.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/log/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/log/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/log/log_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/log/log_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/datadog.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/datadog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/datadog_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/datadog_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/influxdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/influxdb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/influxdb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/influxdb_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/metrics.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/metrics_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/metrics_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/prometheus.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/prometheus.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/prometheus_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/prometheus_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/statsd.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/statsd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/metrics/statsd_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/metrics/statsd_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/capture_request_reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/capture_request_reader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/capture_response_writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/capture_response_writer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/field_middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/field_middleware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logdata.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger_formatters.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger_formatters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger_formatters_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger_formatters_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/logger_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/parser_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/save_retries.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/save_retries.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/save_retries_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/accesslog/save_retries_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/addprefix/add_prefix.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/addprefix/add_prefix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/addprefix/add_prefix_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/addprefix/add_prefix_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/basic_auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/basic_auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/basic_auth_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/basic_auth_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/digest_auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/digest_auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/digest_auth_request_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/digest_auth_request_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/digest_auth_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/digest_auth_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/forward.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/forward.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/auth/forward_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/auth/forward_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/buffering/buffering.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/buffering/buffering.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/chain/chain.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/chain/chain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/circuitbreaker/circuit_breaker.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/circuitbreaker/circuit_breaker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/compress/compress.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/compress/compress.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/compress/compress_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/compress/compress_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/customerrors/custom_errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/customerrors/custom_errors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/customerrors/custom_errors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/customerrors/custom_errors_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/emptybackendhandler/empty_backend_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/emptybackendhandler/empty_backend_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/emptybackendhandler/empty_backend_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/emptybackendhandler/empty_backend_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/forwardedheaders/forwarded_header.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/forwardedheaders/forwarded_header.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/forwardedheaders/forwarded_header_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/forwardedheaders/forwarded_header_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/handler_switcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/handler_switcher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/headers/headers.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/headers/headers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/headers/headers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/headers/headers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/ipwhitelist/ip_whitelist.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/ipwhitelist/ip_whitelist.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/ipwhitelist/ip_whitelist_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/ipwhitelist/ip_whitelist_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/maxconnection/max_connection.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/maxconnection/max_connection.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/middleware.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/passtlsclientcert/pass_tls_client_cert.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/passtlsclientcert/pass_tls_client_cert.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/passtlsclientcert/pass_tls_client_cert_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/passtlsclientcert/pass_tls_client_cert_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/ratelimiter/rate_limiter.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/ratelimiter/rate_limiter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/recovery/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/recovery/recovery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/recovery/recovery_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/recovery/recovery_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_regex.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_regex.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_regex_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_regex_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_scheme.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_scheme.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_scheme_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/redirect/redirect_scheme_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/replacepath/replace_path.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/replacepath/replace_path.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/replacepath/replace_path_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/replacepath/replace_path_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/replacepathregex/replace_path_regex.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/replacepathregex/replace_path_regex.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/replacepathregex/replace_path_regex_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/replacepathregex/replace_path_regex_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/hostresolver.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/hostresolver.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/hostresolver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/hostresolver_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/request_decorator.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/request_decorator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/request_decorator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/requestdecorator/request_decorator_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/retry/retry.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/retry/retry.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/retry/retry_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/retry/retry_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/stateful.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/stateful.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/stripprefix/strip_prefix.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/stripprefix/strip_prefix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/stripprefix/strip_prefix_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/stripprefix/strip_prefix_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/stripprefixregex/strip_prefix_regex.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/stripprefixregex/strip_prefix_regex.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/stripprefixregex/strip_prefix_regex_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/stripprefixregex/strip_prefix_regex_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/entrypoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/entrypoint.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/entrypoint_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/entrypoint_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/forwarder.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/forwarder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/forwarder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/forwarder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/mock_tracing_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/mock_tracing_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/status_code.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/status_code.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/middlewares/tracing/wrapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/middlewares/tracing/wrapper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/api/dashboard.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/api/dashboard.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/api/debug.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/api/debug.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/api/handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/api/handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/configuration/configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/configuration/configuration.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/configuration/convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/configuration/convert.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/configuration/entrypoints.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/configuration/entrypoints.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/configuration/router/internal_router.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/configuration/router/internal_router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/log/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/log/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/capture_request_reader.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/capture_request_reader.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/capture_response_writer.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/capture_response_writer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logdata.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logdata.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger_formatters.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger_formatters.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger_formatters_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger_formatters_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/logger_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/parser_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_backend.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_backend.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_frontend.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_frontend.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_retries.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_retries.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_retries_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_retries_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_username.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/accesslog/save_username.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/addPrefix.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/addPrefix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/addPrefix_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/addPrefix_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/authenticator.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/authenticator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/authenticator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/authenticator_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/forward.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/forward.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/forward_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/forward_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/auth/parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/cbreaker.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/cbreaker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/compress.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/compress.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/compress_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/compress_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/empty_backend_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/empty_backend_handler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/empty_backend_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/empty_backend_handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/errorpages/error_pages.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/errorpages/error_pages.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/errorpages/error_pages_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/errorpages/error_pages_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/forwardedheaders/forwarded_header.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/forwardedheaders/forwarded_header.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/forwardedheaders/forwarded_header_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/forwardedheaders/forwarded_header_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/handlerSwitcher.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/handlerSwitcher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/headers.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/headers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/headers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/headers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/ip_whitelister.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/ip_whitelister.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/ip_whitelister_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/ip_whitelister_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/pipelining/pipelining.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/pipelining/pipelining.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/pipelining/pipelining_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/pipelining/pipelining_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/recover.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/recover.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/recover_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/recover_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/redirect/redirect.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/redirect/redirect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path_regex.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path_regex.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path_regex_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path_regex_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/replace_path_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/request_host.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/request_host.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/request_host_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/request_host_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/retry.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/retry.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/retry_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/retry_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/routes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/secure.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/secure.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/stateful.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/stateful.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/stats.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/stats.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefix.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefixRegex.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefixRegex.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefixRegex_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefixRegex_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefix_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/stripPrefix_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tlsClientHeaders.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tlsClientHeaders.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tlsClientHeaders_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tlsClientHeaders_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/carrier.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/carrier.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/datadog/datadog.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/datadog/datadog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/entrypoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/entrypoint.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/entrypoint_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/entrypoint_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/forwarder.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/forwarder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/forwarder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/forwarder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/jaeger/jaeger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/jaeger/jaeger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/jaeger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/jaeger/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/status_code.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/status_code.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/tracing.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/tracing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/tracing_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/tracing_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/wrapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/wrapper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/zipkin/zipkin.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/middlewares/tracing/zipkin/zipkin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/ping/ping.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/ping/ping.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/boltdb/boltdb.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/boltdb/boltdb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consul/consul.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consul/consul.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/consul_catalog.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/consul_catalog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/consul_catalog_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/consul_catalog_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/convert_types.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/convert_types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/convert_types_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/consulcatalog/convert_types_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/dynamodb/dynamodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/dynamodb/dynamodb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/dynamodb/dynamodb_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/dynamodb/dynamodb_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/builder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/builder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/cluster.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/cluster.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/cluster_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/cluster_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/config_segment_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/config_segment_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/ecs.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/ecs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/ecs/ecs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/ecs/ecs_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/etcd/etcd.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/etcd/etcd.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/eureka/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/eureka/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/eureka/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/eureka/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/eureka/eureka.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/eureka/eureka.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/annotations.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/annotations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/annotations_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/annotations_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_configuration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_configuration_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_endpoint_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_endpoint_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_ingress_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_ingress_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/builder_service_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/client_mock_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/client_mock_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/kubernetes.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/kubernetes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/kubernetes_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/kubernetes_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/namespace.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/namespace.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/percentage.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/percentage.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/percentage_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/percentage_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/weight_allocator.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/weight_allocator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/weight_allocator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kubernetes/weight_allocator_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/filler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/filler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/keynames.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/keynames.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_mock_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_mock_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/kv/kv_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/label.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/label.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/label_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/label_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/names.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/names.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/partial.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/partial.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/partial_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/partial_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/segment.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/segment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/label/segment_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/label/segment_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/builder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/builder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/config_segment_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/config_segment_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/convert_types.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/convert_types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/fake_client_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/fake_client_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/marathon.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/marathon.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/mocks/Marathon.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/mocks/Marathon.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/readiness.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/readiness.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/marathon/readiness_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/marathon/readiness_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/mesos/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/mesos/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/mesos/config_segment_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/mesos/config_segment_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/mesos/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/mesos/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/mesos/mesos.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/mesos/mesos.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/mesos/mesos_helper_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/mesos/mesos_helper_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/mesos/mesos_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/mesos/mesos_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/provider_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/provider_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/rancher/api.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/rancher/api.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/rancher/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/rancher/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/rancher/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/rancher/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/rancher/metadata.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/rancher/metadata.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/rancher/rancher.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/rancher/rancher.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/rest/rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/rest/rest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/provider/zk/zk.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/provider/zk/zk.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/tls/certificate.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/tls/certificate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/tls/certificate_store.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/tls/certificate_store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/tls/generate/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/tls/generate/generate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/tls/tls.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/tls/tls.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/dns_resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/dns_resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/domain_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/domain_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/domains.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/domains.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/internal_router.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/internal_router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/logs.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/logs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/logs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/logs_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/old/types/types_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/old/types/types_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/ping/ping.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/ping/ping.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/account.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/challenge_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/challenge_http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/challenge_tls.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/challenge_tls.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/local_store.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/local_store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/local_store_unix.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/local_store_unix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/local_store_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/local_store_windows.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/provider_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/provider_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/acme/store.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/acme/store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/aggregator/aggregator.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/aggregator/aggregator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/base_provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/base_provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/configuration.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/builder_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/builder_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/config_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/config_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/docker.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/docker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/docker_unix.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/docker_unix.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/docker_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/docker_windows.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/label.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/label.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/docker/swarm_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/docker/swarm_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/file/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/file/file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/file/file_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/file/file_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_fill.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_fill.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_fill_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_fill_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_nodes.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_nodes.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_nodes_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/element_nodes_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_decode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_decode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_decode_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_encode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_encode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/labels_encode_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/node.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/nodes_metadata.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/nodes_metadata.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/nodes_metadata_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/nodes_metadata_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/internal/tags.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/internal/tags.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/label/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/label/parser_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/provider/rest/rest.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/provider/rest/rest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/responsemodifiers/headers.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/responsemodifiers/headers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/responsemodifiers/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/responsemodifiers/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/responsemodifiers/response_modifier.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/responsemodifiers/response_modifier.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/responsemodifiers/response_modifier_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/responsemodifiers/response_modifier_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/rules/rules.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/rules/rules.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/rules/rules_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/rules/rules_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/safe/routine.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/safe/routine.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/safe/routine_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/safe/routine_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/safe/safe.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/safe/safe.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/safe/safe_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/safe/safe_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/aggregator.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/aggregator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/aggregator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/aggregator_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/cookie/cookie.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/cookie/cookie.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/cookie/cookie_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/cookie/cookie_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/internal/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/internal/provider.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/middleware/middlewares.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/middleware/middlewares.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/middleware/middlewares_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/middleware/middlewares_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/roundtripper.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/roundtripper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/route_appender_aggregator.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/route_appender_aggregator.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/route_appender_aggregator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/route_appender_aggregator_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/route_appender_factory.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/route_appender_factory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/router_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/router_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/rules.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/rules.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/router/rules_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/router/rules_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server_configuration.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server_configuration.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server_configuration_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server_configuration_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server_entrypoint.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server_entrypoint.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server_signals.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server_signals.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server_signals_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server_signals_windows.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/server_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/server_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/service/bufferpool.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/service/bufferpool.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/service/service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/service/service_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/server/uuid/uuid.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/server/uuid/uuid.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/testhelpers/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/testhelpers/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/testhelpers/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/testhelpers/helpers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/testhelpers/metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/testhelpers/metrics.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tls/certificate.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tls/certificate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tls/certificate_store.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tls/certificate_store.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tls/certificate_store_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tls/certificate_store_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tls/generate/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tls/generate/generate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tls/tls.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tls/tls.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/carrier.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/carrier.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/datadog/datadog.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/datadog/datadog.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/jaeger/jaeger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/jaeger/jaeger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/jaeger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/jaeger/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/operation_name.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/operation_name.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/operation_name_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/operation_name_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/tracing.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/tracing.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/tracing/zipkin/zipkin.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/tracing/zipkin/zipkin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/constraints.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/constraints.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/dns_resolvers.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/dns_resolvers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/domain_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/domain_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/domains.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/domains.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/http_code_range.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/http_code_range.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/logs.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/logs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/logs_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/logs_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/metrics.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/metrics.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/route_appender.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/route_appender.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/types/tls.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/types/tls.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/traefik/version/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/traefik/version/version.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/ansicolor.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/examples.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/controller.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/crypto.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/dbcentral/etcddb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/dbcentral/mysqldb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/dto.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/entity.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/router.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/service.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/agfun-service/util.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/controller.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/dbcentral/etcd.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/dbcentral/mysqldb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/dto.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/entity.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/router.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/auth/service.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/file-svc/controller.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/file-svc/router.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/movie-mgr/controller.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/movie-mgr/dbcentral/mysqldb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/movie-mgr/entity.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/movie-mgr/router.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/movie-mgr/service.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/service-mgr/controller.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/service-mgr/dbcentral/mysqldb.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/service-mgr/dto.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/service-mgr/entity.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/service-mgr/router.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/service-mgr/service.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/agfun/test/controller.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/gin-contrib/cors.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/gin-contrib/sse.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/gin-gonic/gin.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/gin-gonic/gin/binding.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/gin-gonic/gin/internal/json.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/gin-gonic/gin/render.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/golang/protobuf/proto.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/mattn/go-isatty.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/shiena/ansicolor.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/sirupsen/logrus.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/sirupsen/logrus/hooks/test.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/sirupsen/logrus/internal/testutils.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/github.com/ugorji/go/codec.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/gopkg.in/go-playground/validator.v8.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pkg/windows_amd64/gopkg.in/yaml.v2.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/.idea/agfun.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/auth.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/controller/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/controller/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/dbcentral/etcd/etcd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/dbcentral/etcd/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/dbcentral/mysqldb/authdb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/dto/dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/dto/swagger-params.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/dto/user.dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/entity/group.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/entity/resource.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/entity/role.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/entity/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/router/resource-router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/router/role-router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/router/user-router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/service/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/util/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/auth/wxFriendToVip/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/middlewares/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/ding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/extra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/live.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/promote.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/rank.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/routes/urlConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/BaseResp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/EnCodeKey" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/EncryptUtil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/ExcelHandler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/resState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/smsCode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/app/utils/utility.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/config/database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/config/development.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/config/production.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/config/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/bilibili-api/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/dev-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/dev-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/config/test.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/api/urlConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/app-box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/app-link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/app-qrcode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/b-post.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/live-eye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/images/state.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/banner/Banner.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/banner/BannerItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/common/BHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/common/BMenu.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/common/BMenuItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/common/PostMaterial.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/common/Search.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/common/TopContainer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/content/BContent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentRow/BContentRow.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentRow/BRowBody.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentRow/BRowHead.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentRow/BRowItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentRow/BRowRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentRow/BRowRankBody.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentTop/BContentTop.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/contentTop/BContentTopItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/live/BLive.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/live/BLiveItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/live/BLiveRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/live/BLiveRankItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/nav/BNavSide.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/nav/smooth-scroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/promote/BPromote.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/components/promote/BPromoteItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/actionType/bannerType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/actionType/contentType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/actionType/liveType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/actionType/promoteType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/actionType/rankType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/modules/bannerStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/modules/contentStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/modules/liveStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/modules/promoteStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/src/store/modules/rankStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/e2e/nightwatch.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/e2e/runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/e2e/specs/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/unit/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/unit/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/unit/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/test/unit/specs/Hello.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/bilibili-vue/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/assets/movie/free/湖南省国家储备林基地展示_MPEG.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/assets/swagger/auth.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/assets/swagger/movie.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/controller/contoller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/file-svc.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/router/static-file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/file-svc/router/upload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/controller/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/controller/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/controller/paid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dbcentral/etcd/etcd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dbcentral/mysqldb/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dbcentral/mysqldb/movie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dbcentral/mysqldb/paid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dbcentral/mysqldb/sys.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dto/dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dto/free.dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/dto/swagger-params.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/entity/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/entity/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/movie.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/router/free-router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/router/paid-router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/service/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/service/paid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/movie/util/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/Gopkg.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/Gopkg.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/hotstreak.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/hotstreak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/hotstreak/hotstreak_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/Dockerfile.management" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/Gopkg.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/Gopkg.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/config/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/controller_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/logging.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/manager.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/manager_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/routing.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/routing_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/streaming/processor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/streaming/processor_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/core/streaming/stream.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/rtsp-stream.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/supervisord.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui/src/components/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui/src/components/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/rtsp-stream/ui/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/test/traefik" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-2-1-0-alpha-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-2-2-0-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-2-2-0-rc-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-2-2-0-rc-memory-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-3-demo-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-3-watch-memory-benchmark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/benchmarks/etcd-storage-memory-benchmark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/branch_management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/demo.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/api_concurrency_reference_v3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/api_grpc_gateway.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/api_reference_v3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/apispec/swagger/rpc.swagger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/apispec/swagger/v3election.swagger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/apispec/swagger/v3lock.swagger.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/experimental_apis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/grpc_naming.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/interacting_v3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/limit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-guide/local_cluster.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-internal/discovery_protocol.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-internal/logging.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dev-internal/release.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/dl_build.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/docs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/faq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/integrations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/learning/api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/learning/api_guarantees.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/learning/auth_design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/learning/data_model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/learning/glossary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/learning/why.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/metrics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/authentication.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/clustering.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/container.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/etcd-sample-grafana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/etcd3_alert.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/etcd3_alert.rules.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/failures.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/gateway.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/grafana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/grpc_proxy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/hardware.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/maintenance.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/monitoring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/performance.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/recovery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/runtime-configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/runtime-reconf-design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/security.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/supported-platform.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/v2-migration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/op-guide/versioning.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/platforms/aws.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/platforms/container-linux-systemd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/platforms/freebsd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/production-users.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/reporting_bugs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/rfc/v3api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/tuning.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/upgrades/upgrade_3_0.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/upgrades/upgrade_3_1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/upgrades/upgrade_3_2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/upgrades/upgrade_3_3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/upgrades/upgrade_3_4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/upgrades/upgrading-etcd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/04_to_2_snapshot_migration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/admin_guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/api_v3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/auth_api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/authentication.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/backward_compatibility.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-2-1-0-alpha-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-2-2-0-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-2-2-0-rc-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-2-2-0-rc-memory-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-3-demo-benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-3-watch-memory-benchmark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/benchmarks/etcd-storage-memory-benchmark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/branch_management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/clustering.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/dev/release.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/discovery_protocol.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/docker_guide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/errorcode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/etcd_alert.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/etcd_alert.rules.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/faq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/glossary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/internal-protocol-versioning.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/libraries-and-tools.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/members_api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/metrics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/other_apis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/platforms/freebsd.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/production-users.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/proxy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/reporting_bugs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/rfc/v3api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/runtime-configuration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/runtime-reconf-design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/security.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/tuning.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/upgrade_2_1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/upgrade_2_2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/Documentation/v2/upgrade_2_3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/README-etcdctl.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/READMEv2-etcdctl.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/snap/db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/snap/db.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/wal/0.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/default.etcd/member/wal/0000000000000000-0000000000000000.wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/etcd.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/etcdctl.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/fastcgi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/fastcgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/koi-win" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/mime.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/nginx - 副本.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/scgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/uwsgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/conf/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/geo2nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/unicode2nginx/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/unicode2nginx/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/vim/indent/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/contrib/vim/syntax/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/CHANGES.ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/OpenSSL.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/PCRE.LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/docs/zlib.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/50x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/oauth2-redirect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui-bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui-bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui-standalone-preset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui-standalone-preset.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/dist/swagger-ui.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/logs/access.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/logs/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/logs/nginx.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/third-tools/nginx-1.14.2/nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/conf/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/conf/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/controller/banner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/controller/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/dbcentral/etcd/etcd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/dbcentral/mysqldb/banner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/dbcentral/mysqldb/sys.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/dto/dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/entity/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/router/banner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/service/banner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/top/util/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/controller/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/controller/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/controller/paid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/dbcentral/etcd/etcd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/dbcentral/mysqldb/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/dbcentral/mysqldb/paid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/dbcentral/mysqldb/sys.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/dto/dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/dto/free.dto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/entity/entity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/entity/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/router/free-svc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/router/paid-svc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/router/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/service/free.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/service/paid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/service/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/agfun/tv/util/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/mail/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/mog/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/mog/mgo.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/mysql/debug" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/mysql/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/postgresql/sql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/.idea/so.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/TLSSign/INSTALL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/TLSSign/TLSSignAPI.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/TLSSign/libsigcheck.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/TLSSign/multi_thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/TLSSign/sigcheck.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/so/readme.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -457,18 +486,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/movie/dto/free.dto.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="e#13#69#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie/dto/dto.go">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -476,11 +493,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/movie.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="76">
               <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-              <folding>
-                <element signature="e#17#63#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -488,8 +502,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="66" column="78" lean-forward="true" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
+            <state relative-caret-position="1178">
+              <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -497,11 +511,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie/service/free.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="e#17#95#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="190">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -519,26 +530,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie/router/free-router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movie/controller/free.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+            <state relative-caret-position="494">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/dto/free-video.dto.go">
+        <entry file="file://$PROJECT_DIR$/movie/controller/free.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="133">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/movie/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -606,14 +617,14 @@
       <replace>movie</replace>
     </replaceStrings>
   </component>
-  <component name="GOROOT" path="C:\Go" />
+  <component name="GOROOT" path="/snap/go/3584" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GoLibraries">
     <option name="urls">
       <list>
-        <option value="file://$PROJECT_DIR$/../../../go-third" />
+        <option value="file://$USER_HOME$/workspace/go-third" />
       </list>
     </option>
   </component>
@@ -647,7 +658,6 @@
         <option value="$PROJECT_DIR$/test/traefik/examples/k8s/traefik-deployment.yaml" />
         <option value="$PROJECT_DIR$/test/config.yml.go" />
         <option value="$PROJECT_DIR$/test/config.yml" />
-        <option value="$PROJECT_DIR$/movie/main.go" />
         <option value="$PROJECT_DIR$/top/dto/dto.go" />
         <option value="$PROJECT_DIR$/top/entity/entity.go" />
         <option value="$PROJECT_DIR$/top/router/free-svc.go" />
@@ -671,6 +681,7 @@
         <option value="$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go" />
         <option value="$PROJECT_DIR$/movie/service/free.go" />
         <option value="$PROJECT_DIR$/movie/controller/free.go" />
+        <option value="$PROJECT_DIR$/movie/main.go" />
       </list>
     </option>
   </component>
@@ -753,14 +764,16 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GO_FMT" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/top/main.go" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -952,16 +965,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="67" y="27" width="1853" height="945" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.15991472" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.16897507" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.15511727" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.3253796" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" visible="true" weight="0.30151844" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49861497" weight="0.32425743" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.30151844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -969,7 +982,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.24403471" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159913" side_tool="true" weight="0.40563992" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50138503" side_tool="true" weight="0.32532752" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1005,9 +1018,15 @@
       <path value="$PROJECT_DIR$/hotstreak" />
       <path value="$PROJECT_DIR$/rtsp-stream" />
       <path value="$PROJECT_DIR$/test/EasyDarwin" />
+      <path value="$USER_HOME$" />
+      <path value="$PROJECT_DIR$/test/traefik" />
+      <path value="$PROJECT_DIR$/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" />
     </ignored-roots>
     <MESSAGE value="add" />
     <option name="LAST_COMMIT_MESSAGE" value="add" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -1029,20 +1048,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/file-svc/router/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file-svc/router/static-file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/movie/router/paid-router.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1063,13 +1068,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-third/src/github.com/gin-contrib/cors/cors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3124">
-          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go-third/src/github.com/gin-contrib/cors/cors.go" />
     <entry file="file://$PROJECT_DIR$/top/router/banner.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1084,20 +1083,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/router/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/util/gin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/router/router.go" />
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/util/gin.go" />
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1105,13 +1092,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-third/src/github.com/gin-gonic/gin/recovery.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go-third/src/github.com/gin-gonic/gin/recovery.go" />
     <entry file="file://$PROJECT_DIR$/top/service/service.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1149,13 +1130,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Go/src/time/format.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="772" column="5" selection-start-line="772" selection-start-column="5" selection-end-line="772" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Go/src/time/format.go" />
     <entry file="file://$PROJECT_DIR$/top/dbcentral/mysqldb/banner.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1187,27 +1162,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3080">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Go/src/builtin/builtin.go" />
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/entity/entity.go" />
     <entry file="file://$PROJECT_DIR$/top/dto/dto.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1225,13 +1181,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/dbcentral/mysqldb/free-video.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/dbcentral/mysqldb/free-video.go" />
     <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/sys.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1256,80 +1206,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/command/tilesets.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-858" />
-      </provider>
-    </entry>
-    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/command/handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650" />
-      </provider>
-    </entry>
-    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/common/command/version.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31" />
-      </provider>
-    </entry>
-    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/command/commands.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1453" />
-      </provider>
-    </entry>
-    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/common/auth/auth.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1166">
-          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/command/tilesets.go" />
+    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/command/handler.go" />
+    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/common/command/version.go" />
+    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/main.go" />
+    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/command/commands.go" />
+    <entry file="file://D:/WorkSpace/TitanGRM/2.0/src/Services/titantile/src/titan-tile/common/auth/auth.go" />
     <entry file="file://$PROJECT_DIR$/movie/dto/swagger-params.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/movie.go">
+    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/dto/free-video.dto.go" />
+    <entry file="file://$USER_HOME$/src/github.com/mattn/go-isatty/isatty_linux.go" />
+    <entry file="file://$PROJECT_DIR$/movie/dto/free.dto.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="285">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <element signature="e#17#63#0" expanded="true" />
+            <element signature="e#13#69#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../go-service/src/agfun/dto/free-video.dto.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/movie/router/free-router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movie/dto/dto.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go">
+    <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/movie.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="66" column="78" lean-forward="true" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
+        <state relative-caret-position="76">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie/dto/free.dto.go">
+    <entry file="file://$PROJECT_DIR$/movie/dbcentral/mysqldb/free.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#13#69#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1178">
+          <caret line="66" column="78" selection-start-line="66" selection-start-column="78" selection-end-line="66" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie/service/free.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1339,20 +1257,27 @@
     <entry file="file://$PROJECT_DIR$/movie/service/service.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie/service/free.go">
+    <entry file="file://$PROJECT_DIR$/movie/router/free-router.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#17#95#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/movie/controller/free.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        <state relative-caret-position="133">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
         </state>
       </provider>
     </entry>
