@@ -1,7 +1,7 @@
 package main
 
 import (
-	"agfun/util"
+	"util"
 	"encoding/json"
 	"fmt"
 )

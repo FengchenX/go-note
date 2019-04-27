@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39c7910-20d6-45f8-92b2-012c7c0189ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/go-note.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/go-note.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ansicolor.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/examples.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/controller.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/crypto.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/dbcentral/etcddb.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/dbcentral/mysqldb.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/dto.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/entity.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/router.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/service.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/agfun-service/util.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/controller.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/dbcentral/etcd.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/dbcentral/mysqldb.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/dto.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/entity.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/router.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/auth/service.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/file-svc/controller.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/file-svc/router.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/movie-mgr/controller.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/movie-mgr/dbcentral/mysqldb.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/movie-mgr/entity.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/movie-mgr/router.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/movie-mgr/service.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/service-mgr/controller.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/service-mgr/dbcentral/mysqldb.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/service-mgr/dto.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/service-mgr/entity.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/service-mgr/router.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/service-mgr/service.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/agfun/test/controller.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/gin-contrib/cors.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/gin-contrib/sse.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/gin-gonic/gin.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/gin-gonic/gin/binding.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/gin-gonic/gin/internal/json.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/gin-gonic/gin/render.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/golang/protobuf/proto.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/mattn/go-isatty.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/shiena/ansicolor.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/sirupsen/logrus.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/sirupsen/logrus/hooks/test.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/sirupsen/logrus/internal/testutils.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/ugorji/go/codec.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/gopkg.in/go-playground/validator.v8.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/gopkg.in/yaml.v2.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/.idea/agfun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/agfun.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agfun/movie/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/agfun/movie/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/agfun/movie/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="209">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -89,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/snap/go/current" />
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -162,10 +108,10 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go-third" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -191,10 +137,9 @@
     </configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="27" width="1853" height="945" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27811635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28411514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -223,6 +168,9 @@
       <path value="$PROJECT_DIR$/src/agfun/third-tools/etcd-v3.3.10-windows-amd64/webui/etcd-browser" />
     </ignored-roots>
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/mail/main.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -234,20 +182,14 @@
     <entry file="file://$PROJECT_DIR$/src/agfun/auth/auth.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/../workspace/go-third/src/github.com/kataras/iris/iris.go" />
     <entry file="file://$PROJECT_DIR$/src/agfun/auth/main.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../workspace/go-third/src/github.com/kataras/iris/iris.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/agfun/movie/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="209">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
