@@ -1,15 +1,24 @@
 package router
 
 import (
-	"agfun/router"
-	"github.com/gin-gonic/gin"
+	"github.com/kataras/iris"
+	"router"
 )
 
-var rut *gin.Engine
+type Router struct {
+	router.Router
+}
 
-func Init() *gin.Engine {
-	rut = router.Init()
-	initFreeSvc()
-	initPaidSvc()
-	return rut
+func NewRouter() *Router {
+	return &Router{}
+}
+
+func (r *Router) Party(path string) iris.Party {
+	return r.App.Party(path)
+}
+
+func (r *Router) Handle() {
+	root := r.Party("/movies")
+	free := root.Party("/frees")
+	free.Post("", )
 }

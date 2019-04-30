@@ -7,10 +7,12 @@ func main() {
 
 
 	defaultSvc := service.NewMovieSvc()
-	//defer defaultSvc.Dynamic.Close()
-	//defer defaultSvc.AuthDB.Close()
-	//defer defaultSvc.SysDB.Close()
-	//
+	defer defaultSvc.SysDB.Close()
+	defer defaultSvc.AuthDB.Close()
+	defer defaultSvc.Dynamic.Close()
+
+
+
 	//mysqldb.CreateTable()
 	//router := router.Init()
 	//router.Run(":8080")
