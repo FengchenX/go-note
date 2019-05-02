@@ -12,6 +12,7 @@ func main() {
 	defer defaultSvc.SysDB.Close()
 	defer defaultSvc.AuthDB.Close()
 	defer defaultSvc.Dynamic.Close()
+	defaultSvc.SysDB.CreateTable()
 
 	router := router.NewRouter()
 	router.Router = *defaultSvc.Router

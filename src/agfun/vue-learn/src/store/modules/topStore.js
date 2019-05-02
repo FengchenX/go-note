@@ -11,6 +11,7 @@ const getters = {
 
 const actions = {
 	toplist({commit, state, rootState}) {
+		console.log('111111111111111111111111111111111');
 		rootState.requesting = true
 		commit(TYPE.TOP_LIST_REQUEST)
 		topApi.list().then((response) => {
@@ -29,6 +30,7 @@ const mutations = {
 	},
 	[TYPE.TOP_LIST_SUCCESS] (state, toplist) {
 		// state.toplist = toplist.data
+		console.log(toplist);
 		state.toplist = toplist.Data.data
 	},
 	[TYPE.TOP_LIST_FAILURE] (state) {
