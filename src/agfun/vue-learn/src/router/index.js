@@ -21,6 +21,10 @@ let router = new VueRouter({
         {
             path: '/document',
             component: document
+        },
+        {
+            path: '*',
+            component: home
         }
     ]
 })

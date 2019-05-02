@@ -1,6 +1,18 @@
 import * as url from './urlConfig'
 import axios from 'axios'
 
+
+/**************************************************************/
+export const topApi = {
+	list() {
+		return axios.get(url.top).then((response) => {
+			return response.data
+		})
+	}
+}
+
+/**************************************************************/
+
 //获取轮播图
 export const bannerApi = {
 	list() {

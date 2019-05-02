@@ -3,11 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import VueLazyload from 'vue-lazyload'
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';
+
+// import iView from 'iview';
+// import 'iview/dist/styles/iview.css';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.use(VueLazyload)
-Vue.use(iView);
+// Vue.use(iView);
+Vue.use(ElementUI);
 
 import store from './store'
 import router from './router'

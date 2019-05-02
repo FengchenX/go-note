@@ -1,34 +1,22 @@
 package main
 
 import (
+	"agfun/movie/router"
 	"agfun/movie/service"
+	"github.com/kataras/iris"
 )
-func main() {
 
+func main() {
 
 	defaultSvc := service.NewMovieSvc()
 	defer defaultSvc.SysDB.Close()
 	defer defaultSvc.AuthDB.Close()
 	defer defaultSvc.Dynamic.Close()
 
+	router := router.NewRouter()
+	router.Router = *defaultSvc.Router
+	router.Svr = defaultSvc
+	router.Handle()
 
-
-	//mysqldb.CreateTable()
-	//router := router.Init()
-	//router.Run(":8080")
+	defaultSvc.Run(iris.Addr(":8080"))
 }
-
-//package main
-//
-//import "github.com/kataras/iris"
-//
-//func main() {
-//	app := iris.Default()
-//	app.Get("/ping", func(ctx iris.Context) {
-//		ctx.JSON(iris.Map{
-//			"message": "pong",
-//		})
-//	})
-//	// listen and serve on http://0.0.0.0:8080.
-//	app.Run(iris.Addr(":8080"))
-//}

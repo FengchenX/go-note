@@ -5,98 +5,117 @@
 <!--    <BContent :rows="rows"></BContent>-->
 <!--    <BNavSide :options="options" v-on:change="isShowMask"></BNavSide>-->
 <!--    <div class="wnd-mask" ref="mask" v-show="showMask"></div>-->
-     <div class="nav-box">
-       <ul class="nav">
-         <li>
-           <a href="/home">home</a>
-         </li>
-         <li>
-           <a href="/document">document</a>
-         </li>
-         <li>
-           <a href="/about">about</a>
-         </li>
-       </ul>
-     </div>
-     
-     <router-view></router-view>
+    <el-container>
+      <el-header>
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" text-color="#303133" router>
+          <el-menu-item index="/home" >主页</el-menu-item>
+          <el-menu-item index="/document">文档</el-menu-item>
+          <el-menu-item index="/about">关于我</el-menu-item>
+        </el-menu>
+      </el-header>
+
+
+      <el-main>
+        <el-row :gutter="20">
+          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
+          <el-col :span="16">
+            <div class="grid-content bg-purple">
+              <router-view></router-view>
+            </div>
+          </el-col>
+          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
+        </el-row>
+      </el-main>
+
+      
+      <el-footer>
+        Footer
+      </el-footer>
+    </el-container>
   </div>
 </template>
 
 <script>
-import TopContainer from 'components/common/TopContainer.vue'
-import BHeader from 'components/common/BHeader.vue'
-import BContent from 'components/content/BContent.vue'
-import BNavSide from 'components/nav/BNavSide'
-
 import { mapGetters } from 'vuex'
 export default {
-  name: 'app',
-  components: {
-    TopContainer,
-    BHeader,
-    BContent,
-    BNavSide
-  },
-  mounted() {
-    this.$store.dispatch('getContentRows')
-  },
   data() {
     return {
-      showMask: false
-    }
-  },
-  watch: {
-    options() {
-      console.log('options 变化了')
-    },
-    items() {
-      console.log('items 变化了')
-    }
-  },
-  computed: {
-    ...mapGetters([
-      'requesting',
-      'error',
-      'rows'
-    ]),
-    options() {
-      let options = {
-        offset: 100, //偏移的距离
-        items: this.rows,
-        offsetTop: 0 //距离顶部距离
-      }
-      return options
-    }
+      activeIndex: '/home',
+      activeIndex2: '/home'
+    };
   },
   methods: {
-    isShowMask() {
-      this.showMask = !this.showMask
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
     }
   }
 }
 </script>
 
-<style lang="stylus">
-  #app 
-    font-family "Microsoft YaHei",Arial,Helvetica,sans-serif
-    -webkit-font-smoothing antialiased
-    font-size 12px
-    margin 0
-    padding 0
-    background #fff
-    color #222
-    min-width 990px
-    tap-highlight-color transparent
-    -webkit-tap-highlight-color transparent
-    .wnd-mask
-      position fixed
-      width 100%
-      height 150%
-      background-color #000
-      opacity .5!important
-      z-index 1000
-      top 0px
-      left 0px
-      transition .2s
+<style scoped>
+  .el-header, .el-footer {
+    background-color: #409EFF;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+  }
+  .el-menu{
+    background: #409EFF;
+  }  
+  .el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+  }
+
+  .el-main {
+    background-color: #E9EEF3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
+  }
+  
+  body > .el-container {
+    margin-bottom: 40px;
+  }
+  
+  .el-container:nth-child(5) .el-aside,
+  .el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+  }
+  
+  .el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+  }
+
+  .el-row {
+    margin-bottom: 20px;
+  }
+  .el-row:last-child {
+    margin-bottom: 0;
+  }
+  .el-col {
+    border-radius: 4px;
+  }
+  .bg-purple-dark {
+    background: #99a9bf;
+  }
+  /* .bg-both-sides {
+
+  } */
+  .bg-purple {
+    background: #d3dce6;
+  }
+  .bg-purple-light {
+    background: #e5e9f2;
+  }
+  .grid-content {
+    border-radius: 4px;
+    min-height: 36px;
+  }
+  .row-bg {
+    padding: 10px 0;
+    background-color: #f9fafc;
+  }
 </style>

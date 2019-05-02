@@ -1,5 +1,15 @@
 
-const serverRoot = 'http://localhost:9050'
+// const serverRoot = 'http://192.168.1.245:8080'
+
+
+/**********************************************************/
+const serverRoot = 'http://localhost:8080'
+export const top = serverRoot + '/movies'
+
+/**********************************************************/
+
+
+
 
 // export const banner = serverRoot + '/top/banner'
 export const banner = serverRoot + '/banner'

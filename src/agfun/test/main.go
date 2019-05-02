@@ -1,9 +1,9 @@
 package main
 
 import (
-	"util"
 	"encoding/json"
 	"fmt"
+	"util"
 )
 
 func main() {

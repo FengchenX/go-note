@@ -3,7 +3,7 @@ package mysqldb
 import (
 	"agfun/auth/dto"
 	"agfun/auth/entity"
-	auth "agfun/dbcentral/mysqldb"
+	auth "agfun/dbcentral/pg"
 	"agfun/util"
 	"fmt"
 	"github.com/jinzhu/gorm"
