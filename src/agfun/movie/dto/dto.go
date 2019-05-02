@@ -12,7 +12,7 @@ type Movie struct {
 
 type FreeMovie struct {
 	entity.FreeMovie
-	Movie Movie
+	Movie Movie `json:"movie"`
 }
 
 type FreeMovies struct {
