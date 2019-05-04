@@ -1,14 +1,13 @@
-package router
+package service
 
 import (
-	"agfun/movie/service"
 	"github.com/kataras/iris"
-	"router"
+	"service"
 )
 
 type Router struct {
-	router.Router
-	Svr *service.MovieSvc
+	service.Router
+	Svr *VideoSvc
 }
 
 func NewRouter() *Router {
@@ -16,17 +15,17 @@ func NewRouter() *Router {
 }
 
 func (r *Router) Party(path string) iris.Party {
-	return r.App.Party(path)
+	return r.Svr.Party(path)
 }
 
 func (r *Router) Handle() {
 	root := r.Party("/movies")
 
 	free := root.Party("/frees")
-	free.Post("", r.Svr.AddFree)
-	free.Get("", r.Svr.GetFrees)
-	free.Put("/{id}", r.Svr.UpdateFree)
-	free.Delete("/{id}", r.Svr.DeleteFree)
+	free.Post("", r.Svr.AddVideo)
+	free.Get("", r.Svr.GetVideos)
+	free.Put("/{id}", r.Svr.UpVideo)
+	free.Delete("/{id}", r.Svr.DelVideo)
 
 	//pay := root.Party("/pays")
 	//pay.Post("")

@@ -15,3 +15,6 @@ func (db *SysDB) CreateTable() {
 		log.Fatal(migrate.Error)
 	}
 }
+func (db *SysDB) AddFreeMovie() {
+
+}

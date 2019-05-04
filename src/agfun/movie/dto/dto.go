@@ -16,6 +16,6 @@ type FreeMovie struct {
 }
 
 type FreeMovies struct {
-	Total int `json:"total"`
-	Rows []FreeMovie `json:"rows"`
+	Total int         `json:"total"`
+	Rows  []FreeMovie `json:"rows"`
 }

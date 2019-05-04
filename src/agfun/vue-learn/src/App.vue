@@ -7,10 +7,9 @@
 <!--    <div class="wnd-mask" ref="mask" v-show="showMask"></div>-->
     <el-container>
       <el-header>
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" text-color="#303133" router>
-          <el-menu-item index="/home" >主页</el-menu-item>
-          <el-menu-item index="/document">文档</el-menu-item>
-          <el-menu-item index="/about">关于我</el-menu-item>
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal"
+                 @select="handleSelect" text-color="#303133" router>
+          <el-menu-item v-for="menu in menus" :index="menu.path">{{ menu.label }}</el-menu-item>
         </el-menu>
       </el-header>
 
@@ -41,7 +40,20 @@ export default {
   data() {
     return {
       activeIndex: '/home',
-      activeIndex2: '/home'
+      activeIndex2: '/home',
+      menus: [{
+        path:  "/home",
+        label: "主页"
+      },{
+        path:  "/document",
+        label: "文档"
+      },{
+        path:  "/about",
+        label: "关于我"
+      },{
+        path:  "/application",
+        label: "应用中心"
+      }]
     };
   },
   methods: {
