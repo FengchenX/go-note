@@ -1,12 +1,20 @@
 <template>
 	<div>
-		<el-row :gutter="20">
-			<el-col :span="6" v-for="video in toplist">
+    <el-row :gutter="20">
+      <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
+      <el-col :span="16">
         <div class="grid-content bg-purple">
-          <VideoItem :video=video></VideoItem>
+          <el-row :gutter="20">
+            <el-col :span="6" v-for="video in videos">
+              <div class="grid-content bg-purple">
+                <VideoItem :video=video></VideoItem>
+              </div>
+            </el-col>
+          </el-row>
         </div>
       </el-col>
-		</el-row>
+      <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
+    </el-row>
 	</div>
 </template>
 

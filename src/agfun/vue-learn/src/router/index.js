@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 import home from 'components/home'
 import about from 'components/about'
 import document from 'components/document'
-import application from 'components/application'
+import operation from 'components/operation'
 import VideoUp from  'components/VideoUp'
 
 let router = new VueRouter({
@@ -25,8 +25,8 @@ let router = new VueRouter({
         component: document
       },
       {
-        path: '/application',
-        component: application
+        path: '/operation',
+        component: operation
         // children:[{
         //   path: 'upload-video',
         //   component: VideoUp

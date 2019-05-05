@@ -15,15 +15,16 @@
 
 
       <el-main>
-        <el-row :gutter="20">
-          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
-          <el-col :span="16">
-            <div class="grid-content bg-purple">
-              <router-view></router-view>
-            </div>
-          </el-col>
-          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
-        </el-row>
+<!--        <el-row :gutter="20">-->
+<!--          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>-->
+<!--          <el-col :span="16">-->
+<!--            <div class="grid-content bg-purple">-->
+<!--              <router-view></router-view>-->
+<!--            </div>-->
+<!--          </el-col>-->
+<!--          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>-->
+<!--        </el-row>-->
+        <router-view></router-view>
       </el-main>
 
       
@@ -51,8 +52,8 @@ export default {
         path:  "/about",
         label: "关于我"
       },{
-        path:  "/application",
-        label: "应用中心"
+        path:  "/operation",
+        label: "运维管理"
       }]
     };
   },
