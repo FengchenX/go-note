@@ -1,7 +1,12 @@
 <template>
 	<div>
     <el-row :gutter="20">
-      <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>
+      <el-col :span="4">
+        <div class="grid-content bg-both-sides">
+          <operate-left :items="items"></operate-left>
+        </div>
+      </el-col>
+
       <el-col :span="20">
         <div class="grid-content bg-purple">
           <el-row :gutter="20">
@@ -13,6 +18,7 @@
           </el-row>
         </div>
       </el-col>
+
     </el-row>
 	</div>
 </template>
@@ -20,18 +26,20 @@
 <script>
 import { mapGetters } from 'vuex'
 import OperateItem from  'components/OperateItem'
+import OperateLeft from "components/OperateLeft";
 
 export default {
 	data() {
 		return {
 		  items:[
-        {name:'视频上传', path: '/upload-video'}
-        // {name:'其他'}
+        {id: 1, name:'视频上传', path: '/upload-video'},
+        {id: 2, name:'其他', path: "/other"}
       ]
     }
   },
   components: {
-    OperateItem
+    OperateItem,
+    OperateLeft,
   },
   // computed: {
 	// 	...mapGetters([

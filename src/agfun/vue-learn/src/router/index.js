@@ -26,16 +26,16 @@ let router = new VueRouter({
       },
       {
         path: '/operation',
-        component: operation
-        // children:[{
-        //   path: 'upload-video',
-        //   component: VideoUp
-        // }]
+        component: operation,
+        children:[{
+          path: 'upload-video',
+          component: VideoUp
+        }]
       },
-      {
-        path: '/upload-video',
-        component: VideoUp
-      },
+      // {
+      //   path: '/upload-video',
+      //   component: VideoUp
+      // },
       {
         path: '*',
         component: home
