@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="grid-content">
     <el-row :gutter="20">
       <el-col :span="4">
         <div class="grid-content bg-both-sides">
@@ -59,6 +59,6 @@ export default {
 <style scoped>
   .grid-content {
     border-radius: 4px;
-    min-height: 36px;
+    min-height: 790px;
   }
 </style>
