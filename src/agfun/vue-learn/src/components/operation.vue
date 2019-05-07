@@ -8,15 +8,16 @@
       </el-col>
 
       <el-col :span="20">
-        <div class="grid-content bg-purple">
-          <el-row :gutter="20">
-            <el-col :span="6" v-for="app in items">
-              <div class="grid-content bg-purple">
-                <OperateItem :item=app></OperateItem>
-              </div>
-            </el-col>
-          </el-row>
-        </div>
+<!--        <div class="grid-content bg-purple">-->
+<!--          <el-row :gutter="20">-->
+<!--            <el-col :span="6" v-for="app in items">-->
+<!--              <div class="grid-content bg-purple">-->
+<!--                <OperateItem :item=app></OperateItem>-->
+<!--              </div>-->
+<!--            </el-col>-->
+<!--          </el-row>-->
+<!--        </div>-->
+        <router-view></router-view>
       </el-col>
 
     </el-row>
@@ -26,15 +27,15 @@
 <script>
 import { mapGetters } from 'vuex'
 import OperateItem from  'components/OperateItem'
-import OperateLeft from "components/OperateLeft";
+import OperateLeft from 'components/OperateLeft'
+
+var conf = require('config/conf.js');
+
 
 export default {
 	data() {
 		return {
-		  items:[
-        {id: 1, name:'视频上传', path: '/upload-video'},
-        {id: 2, name:'其他', path: "/other"}
-      ]
+		  items: conf.items
     }
   },
   components: {

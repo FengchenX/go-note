@@ -8,22 +8,13 @@
     <el-container>
       <el-header>
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal"
-                 @select="handleSelect" text-color="#303133" router>
+                 @select="handleSelect" text-color="#303133" :router="true">
           <el-menu-item v-for="menu in menus" :index="menu.path">{{ menu.label }}</el-menu-item>
         </el-menu>
       </el-header>
 
 
       <el-main>
-<!--        <el-row :gutter="20">-->
-<!--          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>-->
-<!--          <el-col :span="16">-->
-<!--            <div class="grid-content bg-purple">-->
-<!--              <router-view></router-view>-->
-<!--            </div>-->
-<!--          </el-col>-->
-<!--          <el-col :span="4"><div class="grid-content bg-both-sides"></div></el-col>-->
-<!--        </el-row>-->
         <router-view></router-view>
       </el-main>
 
@@ -37,24 +28,15 @@
 
 <script>
 import { mapGetters } from 'vuex'
+
+var conf = require('config/conf')
+
 export default {
   data() {
     return {
       activeIndex: '/home',
-      activeIndex2: '/home',
-      menus: [{
-        path:  "/home",
-        label: "主页"
-      },{
-        path:  "/document",
-        label: "文档"
-      },{
-        path:  "/about",
-        label: "关于我"
-      },{
-        path:  "/operation",
-        label: "运维管理"
-      }]
+      // activeIndex2: '/home',
+      menus: conf.menus
     };
   },
   methods: {

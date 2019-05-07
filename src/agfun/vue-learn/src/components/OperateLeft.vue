@@ -1,24 +1,17 @@
 <template>
-  <div>
-<!--    <el-row :gutter="0" v-for="item in items">-->
-<!--      <el-col :span="24">-->
-<!--        <div class="grid-content bg-purple">-->
-<!--          <el-button type="primary">-->
-<!--            {{ item.name }}-->
-<!--          </el-button>-->
-<!--        </div>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-
+  <div class="left-pane">
+    <div class="left-title">
+      <i></i>
+      运维管理
+    </div>
     <el-menu
-      default-active="1"
       class="el-menu-vertical-demo"
-      @open="handleOpen"
-      @close="handleClose"
+      @select="handleSelect"
+      :router="true"
       background-color="#FFFFFF"
       text-color="#606266"
       active-text-color="#409EFF">
-      <el-menu-item v-for="item in items" :index="item.id">
+      <el-menu-item v-for="item in items" :index="item.path">
         <i class="el-icon-menu"></i>
         <span slot="title">{{item.name}}</span>
       </el-menu-item>
@@ -30,14 +23,14 @@
 export default {
   props: {
 		items: {
-			type: Object
+			type: Array
 		}
 	},
 	data() {
     return {};
   },
   methods: {
-    handleOpen: function () {
+    handleSelect: function () {
       console.log("1111111111111111111111")
     }
   }
@@ -45,10 +38,10 @@ export default {
 </script>
 
 <style scoped>
-  /*.grid-content{*/
-  /*  height: 72px;*/
-  /*}*/
-  /*.bg-purple{*/
-  /*  background: #FFFFFF;*/
-  /*}*/
+  .left-title{
+    background: #409EFF;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+  }
 </style>
