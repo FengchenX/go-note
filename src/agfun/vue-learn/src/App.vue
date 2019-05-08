@@ -97,9 +97,6 @@ export default {
   .bg-purple-dark {
     background: #99a9bf;
   }
-  /* .bg-both-sides {
-
-  } */
   .bg-purple {
     background: #d3dce6;
   }
