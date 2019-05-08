@@ -59,6 +59,5 @@ export default {
 <style scoped>
   .grid-content {
     border-radius: 4px;
-    min-height: 790px;
   }
 </style>
