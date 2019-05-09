@@ -5,12 +5,14 @@
         <el-upload
           class="upload-demo"
           ref="upload"
-          action="https://jsonplaceholder.typicode.com/posts/"
+          :action="fileUrl"
           :on-preview="handlePreview"
           :on-remove="handleRemove"
           :file-list="fileList"
           :before-upload="beforeUpload"
-          :auto-upload="false">
+          :auto-upload="false"
+          :multiple="false"
+          :data="data">
           <el-button slot="trigger" size="small" type="primary">
             选取文件
           </el-button>
@@ -54,6 +56,8 @@
 <script>
 import { mapGetters } from 'vuex'
 
+var conf = require('config/conf.js');
+
 export default {
 	data() {
     return {
@@ -63,7 +67,11 @@ export default {
         describe: '',
         thumb: ''
       },
-      fileList: []
+      fileList: [],
+      fileUrl: conf.File,
+      data: {
+        file: ''
+      }
     }
   },
   // components: {
