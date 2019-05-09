@@ -54,7 +54,7 @@ func (r *Router) Handle() {
 
 		// Create a file with the same name
 		// assuming that you have a folder named 'uploads'
-		out, err := os.OpenFile("./file/assets/videos"+fname,
+		out, err := os.OpenFile("./file/assets/videos/"+fname,
 			os.O_WRONLY|os.O_CREATE, 0666)
 
 		if err != nil {

@@ -19,5 +19,5 @@ module.exports = {
     path:  "/operation",
     label: "运维管理"
   }],
-  File: "http://localhost:8081/api/files/upload/videos"
+  File: "/api/files/upload/videos"
 }

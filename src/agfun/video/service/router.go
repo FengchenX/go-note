@@ -19,7 +19,7 @@ func (r *Router) Party(path string) iris.Party {
 }
 
 func (r *Router) Handle() {
-	root := r.Party("/movies")
+	root := r.Party("/videos")
 
 	free := root.Party("/frees")
 	free.Post("", r.Svr.AddVideo)
