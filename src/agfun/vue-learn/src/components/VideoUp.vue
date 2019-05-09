@@ -82,8 +82,8 @@ export default {
   methods: {
     onSubmit: function() {
       console.log('submit!');
-      // console.log(this.form.type)
-      this.$refs.upload.submit();
+      console.log(this.form)
+      // this.$refs.upload.submit();
     },
 
     submitUpload: function() {

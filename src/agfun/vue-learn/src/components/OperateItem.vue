@@ -24,7 +24,6 @@ export default {
   },
   methods: {
     upload: function () {
-      console.log("1111111111111111111111")
     }
   }
 }

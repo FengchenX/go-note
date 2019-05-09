@@ -31,7 +31,6 @@ export default {
   },
   methods: {
     handleSelect: function () {
-      console.log("1111111111111111111111")
     }
   }
 }
