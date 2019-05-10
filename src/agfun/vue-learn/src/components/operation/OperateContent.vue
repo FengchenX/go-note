@@ -12,7 +12,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import OperateItem from  'components/OperateItem'
+import OperateItem from  'components/operation/OperateItem'
 
 var conf = require('config/conf.js')
 

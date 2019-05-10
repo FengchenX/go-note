@@ -62,11 +62,11 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 	// 写入文件系统
 	dir := ""
 	if typ == "电影" {
-		dir = "./file/assets/videos/movies"
+		dir = "./file/assets/videos/movies/"
 	}else if typ == "电视剧" {
-		dir = "./file/assets/videos/tvs"
+		dir = "./file/assets/videos/tvs/"
 	} else if typ == "动漫" {
-		dir = "./file/assets/videos/tvs"
+		dir = "./file/assets/videos/tvs/"
 	}
 
 	// Create a file with the same name

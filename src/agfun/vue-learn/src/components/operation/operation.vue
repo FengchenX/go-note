@@ -26,8 +26,8 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import OperateItem from  'components/OperateItem'
-import OperateLeft from 'components/OperateLeft'
+import OperateItem from  'components/operation/OperateItem'
+import OperateLeft from 'components/operation/OperateLeft'
 
 var conf = require('config/conf.js');
 

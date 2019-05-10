@@ -4,6 +4,8 @@ module.exports = {
   version: '1.0.0',
   items: [
     {name:'视频上传', path: '/operation/upload-video'},
+    {name:'电影管理', path: '/operation/movies'},
+    {name:'TV管理', path: '/operation/tvs'},
     {name:'其他上传', path: "/other"}
   ],
   menus: [{

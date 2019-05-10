@@ -43,4 +43,7 @@ export default {
     height: 40px;
     line-height: 40px;
   }
+  .el-menu-vertical-demo{
+    text-align: left;
+  }
 </style>
