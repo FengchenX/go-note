@@ -2,9 +2,7 @@ package service
 
 import (
 	"github.com/kataras/iris"
-	"mime/multipart"
 	"service"
-	"strings"
 )
 
 const maxSize = 1 << 30 // 5MB

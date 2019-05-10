@@ -7,10 +7,10 @@ import (
 
 func main() {
 	defaultSvc := service.NewFileSvc()
-	//defer defaultSvc.SysDB.Close()
+	defer defaultSvc.SysDB.Close()
 	//defer defaultSvc.AuthDB.Close()
 	//defer defaultSvc.Dynamic.Close()
-	//defaultSvc.SysDB.CreateTable()
+	defaultSvc.SysDB.CreateTable()
 
 	router := service.NewRouter()
 	router.Svr = defaultSvc

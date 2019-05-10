@@ -3,6 +3,9 @@ package service
 import (
 	"agfun/file/dbcentral/etcd"
 	"agfun/file/dbcentral/pg"
+	"entity"
+	"fmt"
+
 	pg2 "db/pg"
 	"github.com/kataras/iris"
 	"io"
@@ -54,12 +57,9 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 	defer file.Close()
 	fname := info.Filename
 
-
-	name:=ctx.FormValue("name")
-	describe:=ctx.FormValue("describe")
-	thumb:=ctx.FormValue("thumb")
 	typ:=ctx.FormValue("type")
 
+	// 写入文件系统
 	dir := ""
 	if typ == "电影" {
 		dir = "./file/assets/videos/movies"
@@ -83,8 +83,28 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 
 	io.Copy(out, file)
 
+	//写数据库
+	after := strings.SplitAfter(dir+fname, "assets")
+	url:=""
+	if len(after) == 2 {
+		url= fmt.Sprintf("File:%s", after[1])
+	}
+	meta:=entity.Video{
+		ID: util.NewUUID(),
+		Name:     ctx.FormValue("name"),
+		Url:      url,
+		Describe: ctx.FormValue("describe"),
+		Thumb:    ctx.FormValue("thumb"),
+		Creator:  "",
+		CreateAt: util.TimeNowStd(),
+	}
+	e := s.SysDB.AddVideo(&meta)
+	if e != nil {
+		util.Fail(ctx, e)
+		return
+	}
 
-	util.Success(ctx, nil)
+	util.Success(ctx, &meta)
 }
 
 
