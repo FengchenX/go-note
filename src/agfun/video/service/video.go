@@ -22,7 +22,7 @@ func (s *VideoSvc) AddVideo(c iris.Context) {
 	util.Success(c, nil)
 }
 func (s *VideoSvc) GetVideos(c iris.Context) {
-	req:=dto.Video{}
+	req := dto.Video{}
 	e := c.ReadJSON(&req)
 	if e != nil {
 		util.Fail(c, e)
@@ -33,9 +33,9 @@ func (s *VideoSvc) GetVideos(c iris.Context) {
 		util.Fail(c, e)
 		return
 	}
-	res:=dto.Videos{Total:i}
+	res := dto.Videos{Total: i}
 	for _, video := range videos {
-		dtoVideo:=dto.Video{
+		dtoVideo := dto.Video{
 			Video: video,
 		}
 		res.Videos = append(res.Videos, dtoVideo)

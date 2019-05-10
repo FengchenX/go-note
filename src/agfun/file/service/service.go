@@ -25,8 +25,8 @@ type FileSvc struct {
 
 func NewFileSvc() *FileSvc {
 	svc := &FileSvc{
-		Svc:     *service.DefaultSvc(),
-		SysDB:   &pg.SysDB{SysDB: *pg2.DefaultSysDB()},
+		Svc:   *service.DefaultSvc(),
+		SysDB: &pg.SysDB{SysDB: *pg2.DefaultSysDB()},
 		//AuthDB:  &pg.AuthDB{AuthDB: *pg2.DefaultAuthDB()},
 		//Dynamic: &etcd.Client{Client: *etcd2.DefaultCli()},
 	}
@@ -57,13 +57,13 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 	defer file.Close()
 	fname := info.Filename
 
-	typ:=ctx.FormValue("type")
+	typ := ctx.FormValue("type")
 
 	// 写入文件系统
 	dir := ""
 	if typ == "电影" {
 		dir = "./file/assets/videos/movies/"
-	}else if typ == "电视剧" {
+	} else if typ == "电视剧" {
 		dir = "./file/assets/videos/tvs/"
 	} else if typ == "动漫" {
 		dir = "./file/assets/videos/tvs/"
@@ -85,12 +85,12 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 
 	//写数据库
 	after := strings.SplitAfter(dir+fname, "assets")
-	url:=""
+	url := ""
 	if len(after) == 2 {
-		url= fmt.Sprintf("File:%s", after[1])
+		url = fmt.Sprintf("File:%s", after[1])
 	}
-	meta:=entity.Video{
-		ID: util.NewUUID(),
+	meta := entity.Video{
+		ID:       util.NewUUID(),
 		Name:     ctx.FormValue("name"),
 		Url:      url,
 		Describe: ctx.FormValue("describe"),
@@ -106,7 +106,6 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 
 	util.Success(ctx, &meta)
 }
-
 
 func beforeSave(ctx iris.Context, file *multipart.FileHeader) {
 	ip := ctx.RemoteAddr()

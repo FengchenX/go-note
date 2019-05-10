@@ -9,6 +9,7 @@ import document from 'components/document'
 import operation from 'components/operation/operation'
 import VideoUp from  'components/operation/VideoUp'
 import OperateContent from  'components/operation/OperateContent'
+import Movie from 'components/operation/Movie'
 
 let router = new VueRouter({
     mode: 'history',
@@ -34,6 +35,9 @@ let router = new VueRouter({
         },{
           path: 'upload-video',
           component: VideoUp
+        },{
+          path: 'movies',
+          component: Movie
         }]
       },
       // {
