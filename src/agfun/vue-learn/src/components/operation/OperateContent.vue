@@ -17,6 +17,7 @@ import OperateItem from  'components/operation/OperateItem'
 var conf = require('config/conf.js')
 
 export default {
+  name: 'OperateContent',
 	data() {
 		return {
       items:conf.items

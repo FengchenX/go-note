@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'OperateLeft',
   props: {
 		items: {
 			type: Array

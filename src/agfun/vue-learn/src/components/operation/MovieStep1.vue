@@ -32,7 +32,22 @@
 
 <script>
   export default {
-    name: "MovieStep1"
+    name: "MovieStep1",
+    data() {
+      return {
+        movie: {
+          name: '',
+          describe: '',
+          thumb: '',
+          types:[]
+        }
+      };
+    },
+    methods:{
+      onSubmit: function () {
+        
+      }
+    }
   }
 </script>
 

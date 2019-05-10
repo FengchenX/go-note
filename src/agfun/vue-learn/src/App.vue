@@ -32,6 +32,7 @@ import { mapGetters } from 'vuex'
 var conf = require('config/conf')
 
 export default {
+  name: 'app',
   data() {
     return {
       activeIndex: '/home',

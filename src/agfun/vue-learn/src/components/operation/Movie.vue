@@ -1,14 +1,19 @@
 <template>
   <el-tabs v-model="activeName" @tab-click="handleClick" class="movie-title">
     <el-tab-pane label="添加电影" name="first">
+
       <span slot="label">
-        <img src="../../assets/images/operation/upload.svg" style="height: 20px;">
+        <el-tooltip class="item" effect="dark" content="Top Center 添加电影" placement="top">
+          <img src="../../assets/images/operation/upload.svg" style="height: 20px;">
+        </el-tooltip>
       </span>
       <AddMovie></AddMovie>
     </el-tab-pane>
     <el-tab-pane label="查看电影" name="second">
       <span slot="label">
-        <img src="../../assets/images/operation/refresh.svg" style="height: 20px;">
+        <el-tooltip class="item" effect="dark" content="Top Center 查看电影" placement="top">
+          <img src="../../assets/images/operation/refresh.svg" style="height: 20px;">
+        </el-tooltip>
       </span>
       查看电影
     </el-tab-pane>
@@ -20,6 +25,7 @@
   import AddMovie from 'components/operation/AddMovie'
 
   export default {
+    name: 'Movie',
     data() {
       return {
         activeName: 'first'

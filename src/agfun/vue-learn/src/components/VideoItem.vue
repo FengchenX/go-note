@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'VideoItem',
   props: {
 		video: {
 			type: Object

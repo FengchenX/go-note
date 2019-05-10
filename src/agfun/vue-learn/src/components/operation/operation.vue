@@ -33,6 +33,7 @@ var conf = require('config/conf.js');
 
 
 export default {
+  name: 'operation',
 	data() {
 		return {
 		  items: conf.items

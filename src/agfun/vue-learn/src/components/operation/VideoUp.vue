@@ -55,6 +55,7 @@ import { mapGetters } from 'vuex'
 var conf = require('config/conf.js');
 
 export default {
+  name: 'VideoUp',
 	data() {
     return {
       form: {

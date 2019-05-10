@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  name: 'OperateItem',
   props: {
 		item: {
 			type: Object

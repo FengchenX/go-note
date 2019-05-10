@@ -23,6 +23,7 @@ import VideoItem from 'components/VideoItem'
 import { mapGetters } from 'vuex'
 
 export default {
+  name: 'home',
 	data() {
 		return {
 			videos: [
