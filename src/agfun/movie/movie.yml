@@ -1,31 +1,164 @@
-host: localhost:8080
-info:
-  description: |-
-    The purpose of this service is to provide an application
-    that is using plain go code to define an API
-  title: movie API.
-  version: 0.0.1
-paths:
-  /free-movies:
-    get:
-      description: get free movies
-      operationId: getFreeMovies
-      responses:
-        "200":
-          $ref: '#/responses/FreeMovie'
-      summary: get free movies
-      tags:
-      - movies
-    post:
-      description: add free movies
-      operationId: addFreeMovies
-      responses:
-        "200":
-          $ref: '#/responses/FreeMovie'
-      summary: add free movies addFreeMovies
-      tags:
-      - movies
-schemes:
-- http
-- https
 swagger: "2.0"
+info:
+  description: "This is a sample server movie server"
+  version: "1.0.0"
+  title: "Swagger movie"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:8080/movies"
+basePath: "/v2"
+
+tags:
+  - name: "movie"
+    description: "Everything about your Movies"
+    externalDocs:
+      description: "Find out more"
+      url: "http://swagger.io"
+  - name: "store"
+    description: "Access to Movies orders"
+  - name: "user"
+    description: "Operations about user"
+    externalDocs:
+      description: "Find out more about our store"
+      url: "http://swagger.io"
+schemes:
+  - "https"
+  - "http"
+paths:
+  /movies:
+    post:
+      tags:
+        - "movie"
+      summary: "Add a new Movie to the store"
+      description: ""
+      operationId: "addMovie"
+      consumes:
+        - "application/json"
+        - "application/xml"
+      produces:
+        - "application/xml"
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Movie object that needs to be added to the store"
+          required: true
+          schema:
+            $ref: "#/definitions/Movie"
+      responses:
+        405:
+          description: "Invalid input"
+      security:
+        - moviestore_auth:
+            - "write:movies"
+            - "read:movies"
+    put:
+      tags:
+        - "movies"
+      summary: "Update an existing movie"
+      description: ""
+      operationId: "updatePet"
+      consumes:
+        - "application/json"
+        - "application/xml"
+      produces:
+        - "application/xml"
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Movie object that needs to be added to the store"
+          required: true
+          schema:
+            $ref: "#/definitions/Movie"
+      responses:
+        400:
+          description: "Invalid ID supplied"
+        404:
+          description: "Movie not found"
+        405:
+          description: "Validation exception"
+      security:
+        - moviestore_auth:
+            - "write:movies"
+            - "read:movies"
+securityDefinitions:
+  moviestore_auth:
+    type: "oauth2"
+    authorizationUrl: "http://moviestore.swagger.io/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      write:movies: "modify movies in your account"
+      read:movies: "read your movies"
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+definitions:
+  Movie:
+    type: "object"
+    required:
+      - "name"
+      - "types"
+      - "year"
+    properties:
+      id:
+        type: "string"
+        example: ""
+      name:
+        type: "string"
+        example: "复仇者联盟4"
+      creator:
+        type: "string"
+        example: ""
+      create_at:
+        type: "string"
+        example: "2019-05-11 08:17:00"
+      thumb:
+        type: "string"
+        example: "http://www.icon.com"
+      describe:
+        type: "string"
+        example: "美国超人电影"
+      main_players:
+        type: "array"
+        xml:
+          name: "Player_name"
+          wrapped: true
+        items:
+          $ref: "#/definitions/PlayerName"
+      types:
+        type: "array"
+        xml:
+          name: "type"
+          wrapped: true
+        items:
+          $ref: "#/definitions/MovieType"
+      year:
+        type: "integer"
+        format: "int64"
+    xml:
+      name: "Movie"
+  PlayerName:
+    type: "string"
+    example: "安东尼"
+  MovieType:
+    type: "string"
+    example: "科幻"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

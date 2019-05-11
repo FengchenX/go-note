@@ -1,6 +1,7 @@
 <template>
   <el-row :gutter="20">
     <el-col :span="12">
+      <Pop1 :msg="res.Msg" :centerDialogVisible="centerDialogVisible" :closeDialog="closeDialog"></Pop1>
       <el-form ref="form" :model="movie" label-width="80px" class="form-video">
         <el-form-item label="视频名称">
           <el-input v-model="movie.name"></el-input>
@@ -32,6 +33,7 @@
 
 <script>
   import { movieApi } from 'api'
+  import Pop1 from 'components/common/Pop1'
 
   export default {
     name: "MovieStep1",
@@ -43,15 +45,30 @@
           thumb: '',
           types:[],
           main_players: []
-        }
+        },
+        res: {
+          Code: 0,
+          Msg: '',
+          Data: {},
+        },
+        centerDialogVisible: false
       };
     },
     methods:{
       onSubmit: function () {
-        console.log(this.movie)
-        let res = movieApi.addMovie(this.movie)
-        console.log(res)
+        this.res = movieApi.addMovie(this.movie);
+        if (this.res.Code !== 0) {
+          this.centerDialogVisible = true;
+        } else {
+          this.centerDialogVisible = true;
+        }
+      },
+      closeDialog: function () {
+        this.centerDialogVisible = false;
       }
+    },
+    components: {
+      Pop1
     }
   }
 </script>
