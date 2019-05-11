@@ -11,7 +11,7 @@ type SysDB struct {
 }
 
 func (db *SysDB) CreateTable() {
-	if migrate := db.AutoMigrate(entity.Movie{}); migrate.Error != nil {
+	if migrate := db.AutoMigrate(entity.Movie{}, entity.MovieVideo{}); migrate.Error != nil {
 		log.Fatal(migrate.Error)
 	}
 }

@@ -3,10 +3,15 @@ package service
 import (
 	"agfun/file/dbcentral/etcd"
 	"agfun/file/dbcentral/pg"
-	"entity"
+	"agfun/video/dto"
+	entity2 "agfun/video/entity"
+	"bytes"
+	"conf"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"net/http"
 
-	pg2 "db/pg"
 	"github.com/kataras/iris"
 	"io"
 	"mime/multipart"
@@ -25,8 +30,8 @@ type FileSvc struct {
 
 func NewFileSvc() *FileSvc {
 	svc := &FileSvc{
-		Svc:   *service.DefaultSvc(),
-		SysDB: &pg.SysDB{SysDB: *pg2.DefaultSysDB()},
+		Svc: *service.DefaultSvc(),
+		//SysDB: &pg.SysDB{SysDB: *pg2.DefaultSysDB()},
 		//AuthDB:  &pg.AuthDB{AuthDB: *pg2.DefaultAuthDB()},
 		//Dynamic: &etcd.Client{Client: *etcd2.DefaultCli()},
 	}
@@ -83,27 +88,41 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 
 	io.Copy(out, file)
 
-	//写数据库
+	//向video服务发送添加视频
 	after := strings.SplitAfter(dir+fname, "assets")
 	url := ""
 	if len(after) == 2 {
 		url = fmt.Sprintf("File:%s", after[1])
 	}
-	meta := entity.Video{
-		ID:       util.NewUUID(),
-		Name:     ctx.FormValue("name"),
-		Url:      url,
-		Describe: ctx.FormValue("describe"),
-		Thumb:    ctx.FormValue("thumb"),
-		Creator:  "",
-		CreateAt: util.TimeNowStd(),
+	meta := dto.Video{
+		Video: entity2.Video{
+			ID:       util.NewUUID(),
+			Name:     ctx.FormValue("name"),
+			Url:      url,
+			Describe: ctx.FormValue("describe"),
+			Thumb:    ctx.FormValue("thumb"),
+			Creator:  "",
+			CreateAt: util.TimeNowStd(),
+		},
 	}
-	e := s.SysDB.AddVideo(&meta)
+	client := &http.Client{}
+	buf, e := json.Marshal(meta)
 	if e != nil {
 		util.Fail(ctx, e)
 		return
 	}
-
+	videoReader := bytes.NewBuffer(buf)
+	req, _ := http.NewRequest("POST", conf.AgfunInst().VideoHost+"/videos", videoReader)
+	req.Header.Set("Content-type", "application/json")
+	res, e := client.Do(req)
+	if res.StatusCode == 200 {
+		body, _ := ioutil.ReadAll(res.Body)
+		fmt.Println(string(body))
+	}
+	if e != nil {
+		util.Fail(ctx, e)
+		return
+	}
 	util.Success(ctx, &meta)
 }
 

@@ -1,13 +1,13 @@
 package main
 
 import (
-	"agfun/movie/service"
+	"agfun/video/service"
 	"github.com/kataras/iris"
 )
 
 func main() {
 
-	defaultSvc := service.NewMovieSvc()
+	defaultSvc := service.NewVideoSvc()
 	defer defaultSvc.SysDB.Close()
 	defer defaultSvc.AuthDB.Close()
 	defer defaultSvc.Dynamic.Close()

@@ -15,7 +15,7 @@ type VideoSvc struct {
 	Dynamic *etcd.Client
 }
 
-func NewMovieSvc() *VideoSvc {
+func NewVideoSvc() *VideoSvc {
 	svc := &VideoSvc{
 		Svc:     *service.DefaultSvc(),
 		SysDB:   &pg.SysDB{SysDB: *pg2.DefaultSysDB()},

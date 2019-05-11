@@ -1,7 +1,7 @@
 package service
 
 import (
-	"dto"
+	"agfun/video/dto"
 	"github.com/kataras/iris"
 	"util"
 )

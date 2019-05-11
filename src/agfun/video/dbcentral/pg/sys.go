@@ -1,8 +1,8 @@
 package pg
 
 import (
+	"agfun/video/entity"
 	"db/pg"
-	"entity"
 	"log"
 )
 
