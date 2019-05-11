@@ -1,0 +1,18 @@
+资源                     post             get              update         delete
+/movies                  新增一个电影      获取所有电影      更新全部电影    删除全部电影
+/movies/1                error            查询电影一详细信息 更新电影1      删除电影1
+/movies/1/videos         
+
+/videos                  新增一个视频      获取所有视频      更新全部视频    删除全部视频
+/videos/1                error 
+
+
+ID          string `json:"id"`
+Name        string `json:"name"`
+Creator     string `json:"creator"`
+CreateAt    string `json:"create_at"`
+Thumb       string `json:"thumb"`
+Describe    string `json:"describe"`
+MainPlayers string `json:"main_players"`
+Types       string `json:"types"`
+Year        int    `json:"year"`

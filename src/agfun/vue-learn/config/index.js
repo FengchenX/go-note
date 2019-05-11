@@ -36,6 +36,20 @@ module.exports = {
           '^/file': ''
         }
       },
+      '/video': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/video': ''
+        }
+      },
+      '/movie': {
+        target: 'http://localhost:8082',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/movie': ''
+        }
+      },
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

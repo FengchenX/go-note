@@ -71,7 +71,9 @@ func (s *FileSvc) AddVideo(ctx iris.Context) {
 	} else if typ == "电视剧" {
 		dir = "./file/assets/videos/tvs/"
 	} else if typ == "动漫" {
-		dir = "./file/assets/videos/tvs/"
+		dir = "./file/assets/videos/cartoons/"
+	} else {
+		dir = "./file/assets/videos/short-videos/"
 	}
 
 	// Create a file with the same name

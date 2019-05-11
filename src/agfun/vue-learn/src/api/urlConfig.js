@@ -5,8 +5,8 @@
 /**********************************************************/
 const serverRoot = '/api'
 export const top = serverRoot + '/movies'
-export const movie = serverRoot + '/movies'
 
+export const movie = '/movie' + '/movies'
 /**********************************************************/
 
 
