@@ -21,5 +21,5 @@ module.exports = {
     path:  "/operation",
     label: "运维管理"
   }],
-  File: "/api/files/upload/videos"
+  File: "/file/files/upload/videos"
 }

@@ -3,8 +3,9 @@
 
 
 /**********************************************************/
-const serverRoot = 'http://localhost:8080'
+const serverRoot = '/api'
 export const top = serverRoot + '/movies'
+export const movie = serverRoot + '/movies'
 
 /**********************************************************/
 

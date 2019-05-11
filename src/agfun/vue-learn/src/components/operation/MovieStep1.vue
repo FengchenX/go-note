@@ -31,6 +31,8 @@
 </template>
 
 <script>
+  import { movieApi } from 'api'
+
   export default {
     name: "MovieStep1",
     data() {
@@ -39,13 +41,16 @@
           name: '',
           describe: '',
           thumb: '',
-          types:[]
+          types:[],
+          main_players: []
         }
       };
     },
     methods:{
       onSubmit: function () {
-        
+        console.log(this.movie)
+        let res = movieApi.addMovie(this.movie)
+        console.log(res)
       }
     }
   }

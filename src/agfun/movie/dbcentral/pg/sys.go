@@ -15,6 +15,24 @@ func (db *SysDB) CreateTable() {
 		log.Fatal(migrate.Error)
 	}
 }
-func (db *SysDB) AddFreeMovie() {
 
+func (db *SysDB) AddMovie(m *entity.Movie) error {
+	if e := db.Create(m); e.Error != nil {
+		return e.Error
+	}
+	return nil
+}
+
+func (db *SysDB) GetMovies(m entity.Movie) ([]entity.Movie, int, error) {
+	ms := []entity.Movie{}
+	e := db.Find(&ms).Where(&m)
+	if e.Error != nil {
+		return nil, 0, e.Error
+	}
+	total := 0
+	e = db.Count(&total).Where(&m)
+	if e.Error != nil {
+		return nil, 0, e.Error
+	}
+	return ms, total, nil
 }

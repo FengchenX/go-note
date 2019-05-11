@@ -21,13 +21,6 @@ func (r *Router) Party(path string) iris.Party {
 func (r *Router) Handle() {
 	root := r.Party("/movies")
 
-	free := root.Party("/frees")
-	free.Post("", r.Svr.AddFree)
-	free.Get("", r.Svr.GetFrees)
-	free.Put("/{id}", r.Svr.UpdateFree)
-	free.Delete("/{id}", r.Svr.DeleteFree)
-
-	//pay := root.Party("/pays")
-	//pay.Post("")
-
+	root.Post("", r.Svr.AddMovie)
+	root.Get("", r.Svr.GetMovies)
 }

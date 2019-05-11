@@ -11,6 +11,14 @@ export const topApi = {
 	}
 }
 
+export const movieApi = {
+  addMovie(param) {
+    return axios.post(url.movie, param).then((response) => {
+      return response.data
+    })
+  },
+}
+
 /**************************************************************/
 
 //获取轮播图

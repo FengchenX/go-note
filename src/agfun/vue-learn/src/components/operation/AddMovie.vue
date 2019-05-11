@@ -8,7 +8,7 @@
         <el-steps :active="active" finish-status="success">
           <el-step title="步骤 1" icon="el-icon-edit"></el-step>
           <el-step title="步骤 2" icon="el-icon-upload"></el-step>
-          <el-step title="步骤 3" icon="el-icon-picture"></el-step>
+<!--          <el-step title="步骤 3" icon="el-icon-picture"></el-step>-->
         </el-steps>
       </el-col>
       <el-col :span="4">
@@ -16,10 +16,22 @@
       </el-col>
     </el-row>
 
-    <MovieStep1></MovieStep1>
-    <MovieStep2></MovieStep2>
-
-    <el-button style="margin-top: 12px;" @click="next">下一步</el-button>
+    <el-row class="step" style="height:calc(100vh - 348px);">
+      <el-col :span="8">
+        <div style="height: 36px"></div>
+      </el-col>
+      <el-col :span="16">
+        <MovieStep1 v-if="showStep1"></MovieStep1>
+        <MovieStep2 v-if="showStep2"></MovieStep2>
+      </el-col>
+      <el-col :span="0">
+        <div style="height: 36px"></div>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="20" style="height: 36px"></el-col>
+      <el-col :span="4"><el-button style="margin-top: 12px;" @click="next">下一步</el-button></el-col>
+    </el-row>
   </div>
 </template>
 
@@ -35,7 +47,9 @@
     name: 'AddMovie',
     data() {
       return {
-        active: 0
+        active: 0,
+        showStep1: true,
+        showStep2: false
       };
     },
     components: {
@@ -55,6 +69,16 @@
     methods: {
       next: function() {
         if (this.active++ > 2) this.active = 0;
+        switch (this.active) {
+          case 0:
+            this.showStep1= true;
+            this.showStep2= false;
+            break;
+          case 1:
+            this.showStep1= false;
+            this.showStep2= true;
+            break;
+        }
       }
     }
   }
@@ -65,5 +89,8 @@
   .movie-status{
     line-height: 30px;
     text-align: left;
+  }
+  .step {
+
   }
 </style>

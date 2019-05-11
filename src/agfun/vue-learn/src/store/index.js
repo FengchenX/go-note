@@ -12,6 +12,7 @@ import contentStore from './modules/contentStore'
 
 /***********************************************************/
 import topStore from './modules/topStore'
+import movieStore from './modules/movieStore'
 /***********************************************************/
 
 const state = {
@@ -34,7 +35,8 @@ export default new Vuex.Store({
 		liveStore,
 		contentStore,
 		/******************************************/
-		topStore
+		topStore,
+    movieStore
 		/******************************************/
 	}
 })
