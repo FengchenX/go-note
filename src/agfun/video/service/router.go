@@ -21,4 +21,5 @@ func (r *Router) Party(path string) iris.Party {
 func (r *Router) Handle() {
 	root := r.Party("/videos")
 	root.Post("", r.Svr.AddVideo)
+	root.Get("", r.Svr.GetVideos)
 }

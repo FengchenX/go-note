@@ -17,5 +17,5 @@ func main() {
 	router.Svr = defaultSvc
 	router.Handle()
 
-	defaultSvc.Run(iris.Addr(":8080"))
+	defaultSvc.Run(iris.Addr(":8082"))
 }

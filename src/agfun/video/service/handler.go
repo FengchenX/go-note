@@ -2,6 +2,7 @@ package service
 
 import (
 	"agfun/video/dto"
+	"agfun/video/entity"
 	"github.com/kataras/iris"
 	"util"
 )
@@ -13,8 +14,11 @@ func (s *VideoSvc) AddVideo(c iris.Context) {
 		util.Fail(c, e)
 		return
 	}
-	req.Video.ID = util.NewUUID()
-	e = s.SysDB.AddVideo(&req.Video)
+	m := entity.Video{}
+	util.Copy(&m, &req.Video)
+	m.ID = util.NewUUID()
+	m.CreateAt = util.TimeNowStd()
+	e = s.SysDB.AddVideo(&m)
 	if e != nil {
 		util.Fail(c, e)
 		return
