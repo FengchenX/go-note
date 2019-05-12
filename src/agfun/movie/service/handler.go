@@ -41,7 +41,11 @@ func (s *MovieSvc) AddMovie(c iris.Context) {
 		util.Fail(c, e)
 		return
 	}
-	util.Success(c, &m)
+	res := dto.Movie{}
+	util.Copy(&res.Movie, &m)
+	res.MainPlayers = req.MainPlayers
+	res.Types = req.Types
+	util.Success(c, &res)
 }
 func (s *MovieSvc) GetMovies(c iris.Context) {
 

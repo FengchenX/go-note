@@ -43,9 +43,9 @@
         showStep1: true,
         showStep2: false,
         res: {
-          Code: 0,
-          Msg: '',
-          Data: {},
+          code: 0,
+          msg: '',
+          data: {},
         },
       };
     },

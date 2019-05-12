@@ -44,9 +44,9 @@
     name: "MovieStep2",
     props:{
       res: {
-        Code: 0,
-        Msg: '',
-        Data: {},
+        code: 0,
+        msg: '',
+        data: {},
       }
     },
     data() {

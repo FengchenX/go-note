@@ -12,18 +12,6 @@ const getters = {
 }
 
 const actions = {
-	videoList({commit, state, rootState}) {
-		rootState.requesting = true;
-		commit(TYPE.VIDEO_LIST_REQUEST);
-		videoApi.list().then((response) => {
-			rootState.requesting = false
-			commit(TYPE.VIDEO_LIST_SUCCESS, response)
-		}, (error) => {
-			rootState.requesting = false
-			commit(TYPE.VIDEO_LIST_FAILURE)
-		});
-	},
-// {commit, params, rootState}
 	getVideos({commit, state, rootState}, params) {
     rootState.requesting = true;
     commit(TYPE.VIDEO_LIST_REQUEST);
@@ -42,8 +30,8 @@ const mutations = {
 
 	},
 	[TYPE.VIDEO_LIST_SUCCESS] (state, res) {
-		state.videoList = res.Data.videos;
-		state.total = res.Data.total;
+		state.videoList = res.data.videos;
+		state.total = res.data.total;
 	},
 	[TYPE.VIDEO_LIST_FAILURE] (state) {
 
