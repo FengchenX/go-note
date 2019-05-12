@@ -9,3 +9,9 @@ type Movie struct {
 	MainPlayers []string `json:"main_players"`
 	Types       []string `json:"types"`
 }
+
+type MovieVideo struct {
+	entity.MovieVideo
+}
+
+//type MovieVideos []MovieVideo

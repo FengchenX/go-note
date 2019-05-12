@@ -4,7 +4,8 @@
       ref="multipleTable"
       :data="videoList"
       tooltip-effect="dark"
-      style="width: 100%"
+      style="width: 100%;"
+      :height="580"
       @selection-change="handleSelectionChange">
       <el-table-column
         type="selection"
@@ -34,6 +35,9 @@
         :total="total">
       </el-pagination>
     </div>
+    <div>
+      <el-button type="primary" v-on:click="handleClick">添加到電影</el-button>
+    </div>
   </div>
 </template>
 
@@ -43,23 +47,18 @@
   export default {
     name: "MovieStep2",
     props:{
-      res: {
-        code: 0,
-        msg: '',
-        data: {},
-      }
     },
     data() {
       return {
         currentPage: 1,
         pageSize: 2,
-        // total: 10
         pageFilter: {
           sort: '',
           order: '',
           limit: '',
           offset: ''
-        }
+        },
+        selectRow:[]
       }
     },
     computed: {
@@ -67,7 +66,8 @@
         'requesting',
         'error',
         'videoList',
-        'total'
+        'total',
+        'movie'
       ])
     },
     mounted() {
@@ -77,12 +77,18 @@
     },
     methods: {
       handleSelectionChange(val) {
-        console.log(val)
+        this.selectRow = val
       },
       handleCurrentChange(page) {
         this.currentPage = page;
         this.pageFilter.offset = (this.currentPage-1)*this.pageSize
         this.$store.dispatch('getVideos', this.pageFilter);
+      },
+      handleClick(){
+        this.selectRow.forEach((row)=>{
+          let mv = {movie_id: this.movie.id, meta: row.id}
+          this.$store.dispatch('addMV', mv).then(()=>{})
+        })
       }
     }
   }

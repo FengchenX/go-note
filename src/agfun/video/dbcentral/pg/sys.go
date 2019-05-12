@@ -22,7 +22,7 @@ func (db *SysDB) AddVideo(v *entity.Video) error {
 }
 func (db *SysDB) GetVideos(v *entity.Video, filter *util.PageFilter) ([]entity.Video, int, error) {
 	vs := []entity.Video{}
-	args:=db.Where(v)
+	args := db.Where(v)
 	sql := util.PageFilterSql(args, "id", filter)
 	if e := sql.Find(&vs); e.Error != nil {
 		return nil, 0, e.Error

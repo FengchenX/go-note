@@ -5,6 +5,7 @@ const state = {
 	movieList: [],
   movie: {},
   msg: '',
+  mv:{}
 }
 
 const getters = {
@@ -35,6 +36,17 @@ const actions = {
       rootState.requesting = false;
       commit(TYPE.MOVIE_POST_FAILURE);
     })
+  },
+  addMV({commit, state, rootState}, mv) {
+    rootState.requesting = true;
+    commit(TYPE.MV_POST_REQUEST);
+    movieApi.addMV(mv).then((res)=>{
+      rootState.requesting = false;
+      commit(TYPE.MV_POST_SUCCESS, res);
+    }, (error)=>{
+      rootState.requesting = false;
+      commit(TYPE.MV_POST_FAILURE);
+    })
   }
 }
 
@@ -59,6 +71,17 @@ const mutations = {
     state.msg = res.msg;
   },
   [TYPE.MOVIE_POST_FAILURE] (state) {
+
+  },
+
+  [TYPE.MV_POST_REQUEST] (state) {
+
+  },
+  [TYPE.MV_POST_SUCCESS] (state, res) {
+    state.mv = res.data;
+    state.msg = res.msg;
+  },
+  [TYPE.MV_POST_FAILURE] (state) {
 
   },
 }

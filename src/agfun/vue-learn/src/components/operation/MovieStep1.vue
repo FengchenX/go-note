@@ -40,7 +40,6 @@
   export default {
     name: "MovieStep1",
     props:{
-      setRes: Function
     },
     data() {
       return {
@@ -51,11 +50,6 @@
           types:[],
           main_players: []
         },
-        // res: {
-        //   code: 0,
-        //   msg: '',
-        //   data: {},
-        // },
         centerDialogVisible: false
       };
     },

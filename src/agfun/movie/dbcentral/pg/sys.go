@@ -36,3 +36,10 @@ func (db *SysDB) GetMovies(m entity.Movie) ([]entity.Movie, int, error) {
 	}
 	return ms, total, nil
 }
+
+func (db *SysDB) AddMovieVideo(mv *entity.MovieVideo) error {
+	if e := db.Create(mv); e.Error != nil {
+		return e.Error
+	}
+	return nil
+}

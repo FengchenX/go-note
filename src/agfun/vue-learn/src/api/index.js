@@ -13,10 +13,15 @@ export const topApi = {
 
 export const movieApi = {
   addMovie(param) {
-    return axios.post(url.movie, {param}).then((response) => {
+    return axios.post(url.movie, param).then((response) => {
       return response.data
     })
   },
+  addMV(mv){
+    return axios.post(`${url.movie}/${mv.movie_id}/videos`, mv).then((res)=>{
+      return res.data
+    })
+  }
 }
 export const videoApi = {
   list(params) {

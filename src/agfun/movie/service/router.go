@@ -20,7 +20,12 @@ func (r *Router) Party(path string) iris.Party {
 
 func (r *Router) Handle() {
 	root := r.Party("/movies")
-
 	root.Post("", r.Svr.AddMovie)
 	root.Get("", r.Svr.GetMovies)
+
+	movie := root.Party("/{id}")
+	movie.Get("", r.Svr.GetMovie)
+
+	videos := movie.Party("/videos")
+	videos.Post("", r.Svr.AddMovieVideo)
 }

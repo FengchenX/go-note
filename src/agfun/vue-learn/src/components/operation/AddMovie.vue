@@ -8,7 +8,6 @@
         <el-steps :active="active" finish-status="success">
           <el-step title="步骤 1" icon="el-icon-edit"></el-step>
           <el-step title="步骤 2" icon="el-icon-upload"></el-step>
-<!--          <el-step title="步骤 3" icon="el-icon-picture"></el-step>-->
         </el-steps>
       </el-col>
       <el-col :span="4">
@@ -17,8 +16,8 @@
     </el-row>
 
     <div style="height:calc(100vh - 348px);">
-      <MovieStep1 v-if="showStep1" :setRes="setRes"></MovieStep1>
-      <MovieStep2 v-if="showStep2" :res="res"></MovieStep2>
+      <MovieStep1 v-if="showStep1"></MovieStep1>
+      <MovieStep2 v-if="showStep2"></MovieStep2>
     </div>
     <el-row>
       <el-col :span="20" style="height: 36px"></el-col>
@@ -42,30 +41,15 @@
         active: 0,
         showStep1: true,
         showStep2: false,
-        res: {
-          code: 0,
-          msg: '',
-          data: {},
-        },
       };
     },
     components: {
       MovieStep1,
       MovieStep2
     },
-    // computed: {
-    // 	...mapGetters([
-    // 		'requesting',
-    // 		'error',
-    // 		'toplist'
-    // 	])
-    // },
-    // mounted(){
-    //   this.$store.dispatch('toplist')
-    // },
     methods: {
       next: function() {
-        if (this.active++ > 2) this.active = 0;
+        if (this.active++ > 1) this.active = 0;
         switch (this.active) {
           case 0:
             this.showStep1= true;
@@ -76,9 +60,6 @@
             this.showStep2= true;
             break;
         }
-      },
-      setRes: function (res) {
-        this.res = res
       }
     }
   }

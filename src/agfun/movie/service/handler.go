@@ -50,9 +50,33 @@ func (s *MovieSvc) AddMovie(c iris.Context) {
 func (s *MovieSvc) GetMovies(c iris.Context) {
 
 }
+func (s *MovieSvc) GetMovie(c iris.Context) {
+
+}
 func (s *MovieSvc) UpdateMovie(c iris.Context) {
 
 }
 func (s *MovieSvc) DeleteMovie(c iris.Context) {
 
+}
+func (s *MovieSvc) AddMovieVideo(c iris.Context) {
+	req := dto.MovieVideo{}
+	e := c.ReadJSON(&req)
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	mv := entity.MovieVideo{}
+	util.Copy(&mv, &req.MovieVideo)
+	mv.ID = util.NewUUID()
+	mv.CreateAt = util.TimeNowStd()
+	mv.MovieID = c.Params().Get("id")
+	e = s.SysDB.AddMovieVideo(&mv)
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	res := dto.MovieVideo{}
+	util.Copy(&res.MovieVideo, &mv)
+	util.Success(c, &res)
 }
