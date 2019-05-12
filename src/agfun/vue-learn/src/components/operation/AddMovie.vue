@@ -16,18 +16,10 @@
       </el-col>
     </el-row>
 
-    <el-row class="step" style="height:calc(100vh - 348px);">
-      <el-col :span="8">
-        <div style="height: 36px"></div>
-      </el-col>
-      <el-col :span="16">
-        <MovieStep1 v-if="showStep1"></MovieStep1>
-        <MovieStep2 v-if="showStep2"></MovieStep2>
-      </el-col>
-      <el-col :span="0">
-        <div style="height: 36px"></div>
-      </el-col>
-    </el-row>
+    <div style="height:calc(100vh - 348px);">
+      <MovieStep1 v-if="showStep1" :setRes="setRes"></MovieStep1>
+      <MovieStep2 v-if="showStep2" :res="res"></MovieStep2>
+    </div>
     <el-row>
       <el-col :span="20" style="height: 36px"></el-col>
       <el-col :span="4"><el-button style="margin-top: 12px;" @click="next">下一步</el-button></el-col>
@@ -49,7 +41,12 @@
       return {
         active: 0,
         showStep1: true,
-        showStep2: false
+        showStep2: false,
+        res: {
+          Code: 0,
+          Msg: '',
+          Data: {},
+        },
       };
     },
     components: {
@@ -79,6 +76,9 @@
             this.showStep2= true;
             break;
         }
+      },
+      setRes: function (res) {
+        this.res = res
       }
     }
   }
@@ -89,8 +89,5 @@
   .movie-status{
     line-height: 30px;
     text-align: left;
-  }
-  .step {
-
   }
 </style>

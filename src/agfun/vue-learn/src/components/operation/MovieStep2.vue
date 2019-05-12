@@ -1,13 +1,91 @@
 <template>
-    <div>
-      step2
+  <div>
+    <el-table
+      ref="multipleTable"
+      :data="videoList"
+      tooltip-effect="dark"
+      style="width: 100%"
+      @selection-change="handleSelectionChange">
+      <el-table-column
+        type="selection"
+        width="55">
+      </el-table-column>
+      <el-table-column
+        prop="name"
+        label="视频"
+        width="180">
+      </el-table-column>
+      <el-table-column
+        prop="url"
+        label="链接地址"
+        width="180">
+      </el-table-column>
+      <el-table-column
+        prop="describe"
+        label="描述">
+      </el-table-column>
+    </el-table>
+    <div class="block">
+      <el-pagination
+        layout="prev, pager, next"
+        :page-size="pageSize"
+        :current-page="currentPage"
+        @current-change="handleCurrentChange"
+        :total="total">
+      </el-pagination>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "MovieStep2"
+  import { mapGetters } from 'vuex'
+
+  export default {
+    name: "MovieStep2",
+    props:{
+      res: {
+        Code: 0,
+        Msg: '',
+        Data: {},
+      }
+    },
+    data() {
+      return {
+        currentPage: 1,
+        pageSize: 2,
+        // total: 10
+        pageFilter: {
+          sort: '',
+          order: '',
+          limit: '',
+          offset: ''
+        }
+      }
+    },
+    computed: {
+      ...mapGetters([
+        'requesting',
+        'error',
+        'videoList',
+        'total'
+      ])
+    },
+    mounted() {
+      this.pageFilter.offset = this.currentPage -1;
+      this.pageFilter.limit = this.pageSize;
+      this.$store.dispatch('getVideos', this.pageFilter);
+    },
+    methods: {
+      handleSelectionChange(val) {
+        console.log(val)
+      },
+      handleCurrentChange(page) {
+        this.currentPage = page;
+        this.pageFilter.offset = (this.currentPage-1)*this.pageSize
+        this.$store.dispatch('getVideos', this.pageFilter);
+      }
     }
+  }
 </script>
 
 <style scoped>

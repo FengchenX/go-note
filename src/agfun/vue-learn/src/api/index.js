@@ -18,6 +18,13 @@ export const movieApi = {
     })
   },
 }
+export const videoApi = {
+  list(params) {
+    return axios.get(url.video, {params}).then((response) => {
+      return response.data
+    })
+  }
+}
 
 /**************************************************************/
 

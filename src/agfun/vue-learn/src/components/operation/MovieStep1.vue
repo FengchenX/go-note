@@ -1,8 +1,9 @@
 <template>
   <el-row :gutter="20">
+    <el-col :span="6" style="height: 36px;"></el-col>
     <el-col :span="12">
       <Pop1 :msg="res.Msg" :centerDialogVisible="centerDialogVisible" :closeDialog="closeDialog"></Pop1>
-      <el-form ref="form" :model="movie" label-width="80px" class="form-video">
+      <el-form ref="form" :model="movie" label-width="80px">
         <el-form-item label="视频名称">
           <el-input v-model="movie.name"></el-input>
         </el-form-item>
@@ -28,6 +29,7 @@
         </el-form-item>
       </el-form>
     </el-col>
+    <el-col :span="6" style="height: 36px;"></el-col>
   </el-row>
 </template>
 
@@ -37,6 +39,9 @@
 
   export default {
     name: "MovieStep1",
+    props:{
+      setRes: Function
+    },
     data() {
       return {
         movie: {
@@ -56,12 +61,15 @@
     },
     methods:{
       onSubmit: function () {
-        this.res = movieApi.addMovie(this.movie);
-        if (this.res.Code !== 0) {
-          this.centerDialogVisible = true;
-        } else {
-          this.centerDialogVisible = true;
-        }
+        movieApi.addMovie(this.movie).then((res)=>{
+          this.res = res;
+          if (this.res.Code !== 0) {
+            this.centerDialogVisible = true;
+          } else {
+            this.centerDialogVisible = true;
+            this.setRes(this.res)
+          }
+        })
       },
       closeDialog: function () {
         this.centerDialogVisible = false;

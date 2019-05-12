@@ -27,12 +27,8 @@ func (s *VideoSvc) AddVideo(c iris.Context) {
 }
 func (s *VideoSvc) GetVideos(c iris.Context) {
 	req := dto.Video{}
-	e := c.ReadJSON(&req)
-	if e != nil {
-		util.Fail(c, e)
-		return
-	}
-	videos, i, e := s.SysDB.GetVideos(&req.Video)
+	filter := util.ParsePageFilter(c)
+	videos, i, e := s.SysDB.GetVideos(&req.Video, filter)
 	if e != nil {
 		util.Fail(c, e)
 		return
