@@ -17,6 +17,11 @@ export const movieApi = {
       return response.data
     })
   },
+  getMovies(params) {
+    return axios.get(url.movie, {params}).then((res)=>{
+      return res.data
+    })
+  },
   addMV(mv){
     return axios.post(`${url.movie}/${mv.movie_id}/videos`, mv).then((res)=>{
       return res.data

@@ -16,7 +16,10 @@ export default {
   name: 'VideoItem',
   props: {
 		video: {
-			name: ''
+		  id: '',
+			name: '',
+      type: '',
+      score: 0
 		}
 	},
 	data() {

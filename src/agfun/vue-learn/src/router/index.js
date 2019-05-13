@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 import home from 'components/home'
 import about from 'components/about'
-import document from 'components/document'
+import movie from 'components/movie'
 import operation from 'components/operation/operation'
 import VideoUp from  'components/operation/VideoUp'
 import OperateContent from  'components/operation/OperateContent'
@@ -23,8 +23,8 @@ let router = new VueRouter({
         component: about
       },
       {
-        path: '/document',
-        component: document
+        path: '/movie',
+        component: movie
       },
       {
         path: '/operation',

@@ -2,7 +2,10 @@ import { movieApi } from 'api'
 import * as TYPE from '../actionType/movieType'
 
 const state = {
-	movieList: [],
+	movieList: {
+	  total: 0,
+    movies: []
+  },
   movie: {},
   msg: '',
   mv:{}
@@ -37,6 +40,17 @@ const actions = {
       commit(TYPE.MOVIE_POST_FAILURE);
     })
   },
+  getMovies({commit, state, rootState}, params) {
+    rootState.requesting = true;
+    commit(TYPE.MOVIE_LIST_REQUEST);
+    movieApi.getMovies(params).then((res) => {
+      rootState.requesting = false
+      commit(TYPE.MOVIE_LIST_SUCCESS, res)
+    }, (error) => {
+      rootState.requesting = false
+      commit(TYPE.MOVIE_LIST_FAILURE)
+    });
+  },
   addMV({commit, state, rootState}, mv) {
     rootState.requesting = true;
     commit(TYPE.MV_POST_REQUEST);
@@ -55,10 +69,7 @@ const mutations = {
 
 	},
 	[TYPE.MOVIE_LIST_SUCCESS] (state, res) {
-		// state.movieList = movieList.data
-	
-		console.log(res);
-		state.movieList = res.data.rows;
+		state.movieList = res.data;
 	},
 	[TYPE.MOVIE_LIST_FAILURE] (state) {
 

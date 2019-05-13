@@ -15,3 +15,8 @@ type MovieVideo struct {
 }
 
 //type MovieVideos []MovieVideo
+
+type Movies struct {
+	Total int `json:"total"`
+	Movies []Movie `json:"movies"`
+}

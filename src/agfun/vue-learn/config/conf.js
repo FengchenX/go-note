@@ -12,8 +12,8 @@ module.exports = {
     path:  "/home",
     label: "主页"
   },{
-    path:  "/document",
-    label: "文档"
+    path:  "/movie",
+    label: "电影"
   },{
     path:  "/about",
     label: "关于我"
@@ -21,5 +21,5 @@ module.exports = {
     path:  "/operation",
     label: "运维管理"
   }],
-  File: "/file/files/upload/videos"
+  File: "/fileApi/files/upload/videos"
 }

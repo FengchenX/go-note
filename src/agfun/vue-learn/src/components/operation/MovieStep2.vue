@@ -5,7 +5,7 @@
       :data="videoList"
       tooltip-effect="dark"
       style="width: 100%;"
-      :height="580"
+      :height="540"
       @selection-change="handleSelectionChange">
       <el-table-column
         type="selection"
@@ -51,7 +51,7 @@
     data() {
       return {
         currentPage: 1,
-        pageSize: 2,
+        pageSize: 5,
         pageFilter: {
           sort: '',
           order: '',

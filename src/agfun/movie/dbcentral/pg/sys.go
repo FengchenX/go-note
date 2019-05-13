@@ -4,6 +4,7 @@ import (
 	"agfun/movie/entity"
 	"db/pg"
 	"log"
+	"util"
 )
 
 type SysDB struct {
@@ -23,14 +24,16 @@ func (db *SysDB) AddMovie(m *entity.Movie) error {
 	return nil
 }
 
-func (db *SysDB) GetMovies(m entity.Movie) ([]entity.Movie, int, error) {
+func (db *SysDB) GetMovies(m *entity.Movie, filter *util.PageFilter) ([]entity.Movie, int, error) {
 	ms := []entity.Movie{}
-	e := db.Find(&ms).Where(&m)
+	args := db.Where(m)
+	sql := util.PageFilterSql(args, "id", filter)
+	e := sql.Find(&ms)
 	if e.Error != nil {
 		return nil, 0, e.Error
 	}
 	total := 0
-	e = db.Count(&total).Where(&m)
+	e = args.Model(&entity.Movie{}).Count(&total)
 	if e.Error != nil {
 		return nil, 0, e.Error
 	}

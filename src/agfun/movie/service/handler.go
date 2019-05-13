@@ -48,7 +48,27 @@ func (s *MovieSvc) AddMovie(c iris.Context) {
 	util.Success(c, &res)
 }
 func (s *MovieSvc) GetMovies(c iris.Context) {
-
+	filter := util.ParsePageFilter(c)
+	movies, i, e := s.SysDB.GetMovies(nil, filter)
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	res := dto.Movies{
+		Total:  i,
+		Movies: nil,
+	}
+	for _, movie:=range movies{
+		dtoMovie:=dto.Movie{
+			Movie:       movie,
+			MainPlayers: nil,
+			Types:       nil,
+		}
+		json.Unmarshal([]byte(movie.MainPlayers), &dtoMovie.MainPlayers)
+		json.Unmarshal([]byte(movie.Types), &dtoMovie.Types)
+		res.Movies = append(res.Movies, dtoMovie)
+	}
+	util.Success(c, &res)
 }
 func (s *MovieSvc) GetMovie(c iris.Context) {
 

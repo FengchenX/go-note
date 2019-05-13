@@ -29,25 +29,25 @@ module.exports = {
           '^/api': ''
         }
       },
-      '/file': {
+      '/fileApi': {
         target: 'http://localhost:8081',
         changeOrigin: true,
         pathRewrite: {
-          '^/file': ''
+          '^/fileApi': ''
         }
       },
-      '/video': {
+      '/videoApi': {
         target: 'http://localhost:8080',
         changeOrigin: true,
         pathRewrite: {
-          '^/video': ''
+          '^/videoApi': ''
         }
       },
-      '/movie': {
+      '/movieApi': {
         target: 'http://localhost:8082',
         changeOrigin: true,
         pathRewrite: {
-          '^/movie': ''
+          '^/movieApi': ''
         }
       },
     },
