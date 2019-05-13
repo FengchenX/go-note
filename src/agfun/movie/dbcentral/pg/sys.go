@@ -46,3 +46,18 @@ func (db *SysDB) AddMovieVideo(mv *entity.MovieVideo) error {
 	}
 	return nil
 }
+func (db *SysDB) GetMovieVideos(mv *entity.MovieVideo, filter *util.PageFilter) ([]entity.MovieVideo, int, error) {
+	mvs := []entity.MovieVideo{}
+	args := db.Where(mv)
+	sql := util.PageFilterSql(args, "id", filter)
+	e := sql.Find(&mvs)
+	if e.Error != nil {
+		return nil, 0, e.Error
+	}
+	total := 0
+	e = args.Model(&entity.MovieVideo{}).Count(&total)
+	if e.Error != nil {
+		return nil, 0, e.Error
+	}
+	return mvs, total, nil
+}

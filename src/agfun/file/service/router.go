@@ -25,4 +25,9 @@ func (r *Router) Handle() {
 
 	upload := root.Party("/upload")
 	upload.Post("/videos", iris.LimitRequestBodySize(maxSize), r.Svr.AddVideo)
+
+	static:=root.Party("/static")
+
+	video:=static.Party("/videos")
+	video.StaticWeb("/", "./file/assets/videos")
 }

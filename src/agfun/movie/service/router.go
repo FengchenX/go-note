@@ -28,4 +28,5 @@ func (r *Router) Handle() {
 
 	videos := movie.Party("/videos")
 	videos.Post("", r.Svr.AddMovieVideo)
+	videos.Get("", r.Svr.GetMovieVideos)
 }

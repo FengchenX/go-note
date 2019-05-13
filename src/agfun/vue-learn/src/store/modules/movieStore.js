@@ -8,27 +8,21 @@ const state = {
   },
   movie: {},
   msg: '',
-  mv:{}
+  mv:{},
+  mvList:{
+	  total: 0,
+    movie_videos: []
+  }
 }
 
 const getters = {
 	movieList: state => state.movieList,
   movie: state => state.movie,
-  msg: state => state.msg
+  msg: state => state.msg,
+  mvList: state=>state.mvList
 }
 
 const actions = {
-	movieList({commit, state, rootState}) {
-		rootState.requesting = true;
-		commit(TYPE.MOVIE_LIST_REQUEST);
-		movieApi.list().then((response) => {
-			rootState.requesting = false
-			commit(TYPE.MOVIE_LIST_SUCCESS, response)
-		}, (error) => {
-			rootState.requesting = false
-			commit(TYPE.MOVIE_LIST_FAILURE)
-		});
-	},
   addMovie({commit, state, rootState}, movie) {
 	  rootState.requesting = true;
 	  commit(TYPE.MOVIE_POST_REQUEST);
@@ -61,7 +55,18 @@ const actions = {
       rootState.requesting = false;
       commit(TYPE.MV_POST_FAILURE);
     })
-  }
+  },
+  async getMVs({commit, state, rootState}, args) {
+    rootState.requesting = true;
+    commit(TYPE.MV_LIST_REQUEST);
+    await movieApi.getMVs(args).then((res) => {
+      rootState.requesting = false
+      commit(TYPE.MV_LIST_SUCCESS, res)
+    }, (error) => {
+      rootState.requesting = false
+      commit(TYPE.MV_LIST_FAILURE)
+    });
+  },
 }
 
 const mutations = {
@@ -93,6 +98,17 @@ const mutations = {
     state.msg = res.msg;
   },
   [TYPE.MV_POST_FAILURE] (state) {
+
+  },
+
+  [TYPE.MV_LIST_REQUEST] (state) {
+
+  },
+  [TYPE.MV_LIST_SUCCESS] (state, res) {
+	  console.log('get mv list', res.data)
+    state.mvList = res.data;
+  },
+  [TYPE.MV_LIST_FAILURE] (state) {
 
   },
 }

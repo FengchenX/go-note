@@ -100,3 +100,18 @@ func (s *MovieSvc) AddMovieVideo(c iris.Context) {
 	util.Copy(&res.MovieVideo, &mv)
 	util.Success(c, &res)
 }
+func (s *MovieSvc) GetMovieVideos(c iris.Context){
+	movieID := c.Params().Get("id")
+	mv:= entity.MovieVideo{MovieID:movieID}
+	mvs, i, e := s.SysDB.GetMovieVideos(&mv, nil)
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	res := dto.MovieVideos{Total:i}
+	for _, mv := range mvs{
+		dtoMV := dto.MovieVideo{MovieVideo:mv}
+		res.MovieVideos = append(res.MovieVideos, dtoMV)
+	}
+	util.Success(c, &res)
+}

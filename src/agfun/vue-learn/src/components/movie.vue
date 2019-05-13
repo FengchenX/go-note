@@ -54,8 +54,9 @@ export default {
     getVideos() {
       let videos = []
       this.movieList.movies.forEach((movie)=>{
-        let {id, name}=movie
-        let video = {id, name, type:'movie'}
+        let {id, name, describe}=movie
+        let video = {id, name, describe, type:'movie'}
+        console.log(video)
         videos.push(video)
       })
       return videos

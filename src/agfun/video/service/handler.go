@@ -42,6 +42,17 @@ func (s *VideoSvc) GetVideos(c iris.Context) {
 	}
 	util.Success(c, &res)
 }
+func (s *VideoSvc) GetVideo(c iris.Context) {
+	id:=c.Params().Get("id")
+	v:=entity.Video{ID:id}
+	videos, _, e := s.SysDB.GetVideos(&v, nil)
+	if e != nil {
+		util.Fail(c, e)
+		return
+	}
+	res:=dto.Video{Video:videos[0]}
+	util.Success(c, &res)
+}
 func (s *VideoSvc) UpVideo(c iris.Context) {
 
 }

@@ -14,9 +14,12 @@ type MovieVideo struct {
 	entity.MovieVideo
 }
 
-//type MovieVideos []MovieVideo
-
 type Movies struct {
 	Total int `json:"total"`
 	Movies []Movie `json:"movies"`
+}
+
+type MovieVideos struct {
+	Total int `json:"total"`
+	MovieVideos []MovieVideo `json:"movie_videos"`
 }

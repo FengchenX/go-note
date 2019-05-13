@@ -26,11 +26,22 @@ export const movieApi = {
     return axios.post(`${url.movie}/${mv.movie_id}/videos`, mv).then((res)=>{
       return res.data
     })
+  },
+  getMVs(args){
+    let {movie_id, params} = args
+    return axios.get(`${url.movie}/${movie_id}/videos`, {params}).then((res)=>{
+      return res.data
+    })
   }
 }
 export const videoApi = {
   list(params) {
     return axios.get(url.video, {params}).then((response) => {
+      return response.data
+    })
+  },
+  getVideo(id){
+    return axios.get(`${url.video}/${id}`).then((response) => {
       return response.data
     })
   }

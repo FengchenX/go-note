@@ -22,4 +22,7 @@ func (r *Router) Handle() {
 	root := r.Party("/videos")
 	root.Post("", r.Svr.AddVideo)
 	root.Get("", r.Svr.GetVideos)
+
+	video:=root.Party("/{id}")
+	video.Get("", r.Svr.GetVideo)
 }
