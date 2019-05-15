@@ -16,8 +16,8 @@
     </el-row>
 
     <div style="height:calc(100vh - 348px);">
-      <MovieStep1 v-if="showStep1"></MovieStep1>
-      <MovieStep2 v-if="showStep2"></MovieStep2>
+      <MovieStep1 ref="MovieStep1" v-if="showStep1"></MovieStep1>
+      <MovieStep2 ref="MovieStep2" v-if="showStep2"></MovieStep2>
     </div>
     <el-row>
       <el-col :span="20" style="height: 36px"></el-col>
@@ -49,17 +49,19 @@
     },
     methods: {
       next: function() {
-        if (this.active++ > 1) this.active = 0;
         switch (this.active) {
           case 0:
-            this.showStep1= true;
-            this.showStep2= false;
-            break;
-          case 1:
             this.showStep1= false;
             this.showStep2= true;
+            this.$refs.MovieStep1.onSubmit();
+            break;
+          case 1:
+            this.showStep1= true;
+            this.showStep2= false;
+            this.$refs.MovieStep2.handleClick();
             break;
         }
+        if (this.active++ > 1) this.active = 0;
       }
     }
   }

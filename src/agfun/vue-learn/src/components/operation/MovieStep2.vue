@@ -35,9 +35,6 @@
         :total="total">
       </el-pagination>
     </div>
-    <div>
-      <el-button type="primary" v-on:click="handleClick">添加到電影</el-button>
-    </div>
   </div>
 </template>
 
@@ -84,7 +81,7 @@
         this.pageFilter.offset = (this.currentPage-1)*this.pageSize
         this.$store.dispatch('getVideos', this.pageFilter);
       },
-      handleClick(){
+      handleClick: function(){
         this.selectRow.forEach((row)=>{
           let mv = {movie_id: this.movie.id, meta: row.id}
           this.$store.dispatch('addMV', mv).then(()=>{})
