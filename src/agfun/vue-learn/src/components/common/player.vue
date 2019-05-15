@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: "player.vue"
+        name: "player"
     }
 </script>
 

@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import VideoItem from 'components/VideoItem'
+import VideoItem from 'components/common/VideoItem'
 import { mapGetters } from 'vuex'
 
 export default {
