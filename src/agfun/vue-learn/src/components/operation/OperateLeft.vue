@@ -2,11 +2,7 @@
   <div class="left-pane">
     <div class="left-title">
       <span style="position: absolute;left: 30px; top: 4px;"><img src="../../assets/images/operation/operation.png" width="20px"></span>
-      <span style="    display: inline-block;
-    height: 40px;
-    margin-left: 50px;
-    line-height: 40px;">运维管理</span>
-
+      <span style="display: inline-block;height: 40px;margin-left: 50px;line-height: 40px;">运维管理</span>
     </div>
     <el-menu
       class="el-menu-vertical-demo"
