@@ -1,8 +1,6 @@
 <template>
   <div class="left-pane">
     <div class="left-title">
-<!--      <span style="position: absolute;left: 30px; top: 4px;"><img src="../../assets/images/operation/operation.png" width="20px"></span>-->
-<!--      <span style="display: inline-block;height: 40px;margin-left: 50px;line-height: 40px;">运维管理</span>-->
       <span style="display: inline-block;height: 40px;vertical-align: middle; line-height: 0px;">
         <img src="../../assets/images/operation/operation.png" style="position: relative;top: 8px;left: 22px; width: 20px">
       </span>
@@ -18,7 +16,7 @@
       text-color="#606266"
       active-text-color="#409EFF">
       <el-menu-item v-for="item in items" :index="item.path">
-        <i class="el-icon-menu"></i>
+        <i :class="item.icon" ></i>
         <span slot="title">{{item.name}}</span>
       </el-menu-item>
     </el-menu>

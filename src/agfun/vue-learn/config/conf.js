@@ -3,10 +3,9 @@ module.exports = {
   name: 'app',
   version: '1.0.0',
   items: [
-    {name:'视频上传', path: '/operation/upload-video'},
-    {name:'电影管理', path: '/operation/movies'},
-    {name:'TV管理', path: '/operation/tvs'},
-    {name:'其他上传', path: "/other"}
+    {name:'视频上传', path: '/operation/upload-video', icon:'el-icon-upload'},
+    {name:'电影管理', path: '/operation/movies', icon:'el-icon-film'},
+    {name:'TV管理', path: '/operation/tvs', icon:'el-icon-monitor'},
   ],
   menus: [{
     path:  "/home",
